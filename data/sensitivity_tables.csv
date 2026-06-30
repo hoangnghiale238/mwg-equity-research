@@ -1,0 +1,76 @@
+﻿table_id,x_label,x_value,y_value,target_price
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.097,0.024999999999999998,123946.03873780942
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.10450000000000001,0.024999999999999998,112765.49308970141
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.112,0.024999999999999998,103526.3068866353
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.1195,0.024999999999999998,95765.85085882322
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.127,0.024999999999999998,89157.57770265237
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.097,0.0275,127221.65851560356
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.10450000000000001,0.0275,115371.14598147881
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.112,0.0275,105638.05534318527
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.1195,0.0275,97504.13700314812
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.127,0.0275,90607.41203360628
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.097,0.03,130741.72753054652
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.10450000000000001,0.03,118151.6749062614
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.112,0.03,107878.56894952491
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.1195,0.03,99339.5341052565
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.127,0.03,92131.98009295987
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.097,0.0325,134534.6701125393
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.10450000000000001,0.0325,121125.29611748719
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.112,0.0325,110259.99536129468
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.1195,0.0325,101280.41379944012
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.127,0.0325,93737.21312899885
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.097,0.034999999999999996,138633.4951608218
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.10450000000000001,0.034999999999999996,124312.8469122544
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.112,0.034999999999999996,112796.0598517508
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.1195,0.034999999999999996,103336.1384459423
+dcf_wacc_terminal_growth,Terminal Growth (vertically) \ WACC,0.127,0.034999999999999996,95429.68709090949
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.05,0.6000000000000001,94247.55665283353
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.025,0.6000000000000001,92151.79998034677
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0,0.6000000000000001,90056.04330786
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.025,0.6000000000000001,87960.28663537325
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.05,0.6000000000000001,85864.52996288649
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.05,0.7000000000000001,98216.09834731898
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.025,0.7000000000000001,96025.85258686829
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0,0.7000000000000001,93835.60682641758
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.025,0.7000000000000001,91645.3610659669
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.05,0.7000000000000001,89455.1153055162
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.05,0.8,102184.64004180448
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.025,0.8,99899.90519338982
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0,0.8,97615.1703449752
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.025,0.8,95330.43549656055
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.05,0.8,93045.70064814592
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.05,0.9,106153.18173628996
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.025,0.9,103773.95779991135
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0,0.9,101394.73386353279
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.025,0.9,99015.50992715421
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.05,0.9,96636.28599077562
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.05,1,110121.72343077544
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,-0.025,1,107648.01040643289
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0,1,105174.29738209039
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.025,1,102700.58435774787
+bhx_ev_sales_platform_discount,BHX EV/Sales \ Holding Discount,0.05,1,100226.87133340533
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.05,100000,100672.13689663979
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.025,100000,98423.41402787191
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0,100000,96174.69115910406
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.025,100000,93925.96829033621
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.05,100000,91677.24542156834
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.05,102460,102184.64004180448
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.025,102460,99899.90519338982
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0,102460,97615.1703449752
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.025,102460,95330.43549656055
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.05,102460,93045.70064814592
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.05,107600,105344.910841051
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.025,107600,102984.93144979715
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0,107600,100624.95205854332
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.025,107600,98264.97266728948
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.05,107600,95904.99327603562
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.05,114999.99999999999,109894.71705008295
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.025,114999.99999999999,107426.40893956643
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0,114999.99999999999,104958.10082904992
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.025,114999.99999999999,102489.79271853344
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.05,114999.99999999999,100021.48460801691
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.05,117800,111616.26534539233
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,-0.025,117800,109106.96798974939
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0,117800,106597.67063410649
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.025,117800,104088.37327846355
+dmx_value_platform_discount,DMX 100% Equity Value \ Holding Discount,0.05,117800,101579.07592282064

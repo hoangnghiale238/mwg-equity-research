@@ -1,0 +1,48 @@
+﻿source_id,used_for,data_point,period,value,source,location,note
+HIST-001,Historical FS,Annual financial statements used in model,2021A-2025A,See model,Annual reports / BCTC / vnstock raw sheets,03_Historical_FS; 90-92_Raw_*,"Historical statements feed ratios, 3-statement base and charts."
+QFS-001,Q1 / LTM analysis,Quarterly financial statements,Q1/2025; Q1/2026,See model,MWG consolidated FS Q1/2026 + raw quarterly sheets,04_Q1_Historical_FS; 93-95_Raw_*,Used for Q1 bridge and LTM calculations.
+KQKD5M26-001,Revenue Drivers,Group revenue,5M2026,79159 VND bn,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row group_revenue_5m_2026,Latest public trading anchor.
+KQKD5M26-002,Revenue Drivers,Group revenue,5M2025,61229 VND bn,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row group_revenue_5m_2025,Prior-year base for 5M YoY context.
+KQKD5M26-003,Revenue Drivers,TGDD / TopZone chain mix,5M2026,"22,5%",kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row tgd_mix_5m_2026,Used to split core chain revenue.
+KQKD5M26-004,Revenue Drivers,DMX chain mix,5M2026,"46,3%",kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row dmx_mix_5m_2026,Used to split core chain revenue.
+KQKD5M26-005,Revenue Drivers,BHX chain mix,5M2026,"29,2%",kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row bhx_mix_5m_2026,Used to cross-check BHX revenue share.
+KQKD5M26-006,Revenue Drivers,DMX Investment / core ICT+CE revenue,5M2026,54500 VND bn,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row core_revenue_5m_2026,Anchor for core business actual vs 2026 plan.
+KQKD5M26-007,Revenue Drivers,Core same-store sales growth,5M2026,33%,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row core_sssg_5m_2026,Supports productivity / quality-led growth thesis.
+KQKD5M26-008,Revenue Drivers,BHX revenue,5M2026,23000 VND bn,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row bhx_revenue_5m_2026,Conservative anchor because source says more than VND23tn.
+KQKD5M26-009,Revenue Drivers,BHX revenue growth,5M2026,"22,5%",kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row bhx_yoy_5m_2026,Used for BHX growth discussion.
+KQKD5M26-010,Revenue Drivers / FP&A,BHX new stores,5M2026,532 stores,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row bhx_new_stores_5m_2026,Actual Jan-May rollout anchor.
+KQKD5M26-011,Revenue Drivers,EraBlue revenue,5M2026,1560 IDR bn,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row erablue_revenue_idr_5m_2026,Memo/optionality context only.
+KQKD5M26-012,Revenue Drivers,EraBlue new stores,5M2026,64 stores,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row erablue_new_stores_5m_2026,Memo/optionality context only.
+KQKD5M26-013,Revenue Drivers,EraBlue SSSG,5M2026,19%,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row erablue_sssg_5m_2026,Memo/optionality context only.
+KQKD5M26-014,Revenue Drivers / FP&A,Online / Super App revenue,5M2026,6000 VND bn,kqkd 5t 2026.pdf,96_Raw_Phase4_Drivers row superapp_online_revenue_5m_2026,Used in FP&A dashboard tracking.
+BD2026-001,Revenue Drivers /,Group revenue target,2026E,185000 VND bn,Business Directions 2026,96_Raw_Phase4_Drivers row group_revenue_target_2026,"Management guidance, not independent forecast."
+BD2026-002,Revenue Drivers /,Group NPAT target,2026E,9200 VND bn,Business Directions 2026,96_Raw_Phase4_Drivers row npat_target_2026,"Management guidance, not independent forecast."
+BD2026-003,Revenue Drivers,DMX Investment revenue contribution,2026E,65%,Business Directions 2026,96_Raw_Phase4_Drivers row core_revenue_mix_2026,Used to anchor 2026 core revenue.
+BD2026-004,Revenue Drivers,BHX revenue contribution,2026E,30%,Business Directions 2026,96_Raw_Phase4_Drivers row bhx_revenue_mix_2026,Used to anchor 2026 BHX revenue.
+BD2026-005,Revenue Drivers,DMX revenue growth guidance,2026E,15%,Business Directions 2026,96_Raw_Phase4_Drivers row core_revenue_growth_2026,Source-backed base; bull/bear are scenario assumptions.
+BD2026-006,Revenue Drivers,BHX revenue growth guidance,2026E,20%,Business Directions 2026,96_Raw_Phase4_Drivers row bhx_revenue_growth_2026,Source-backed base; bull/bear are scenario assumptions.
+BD2026-007,Revenue Drivers / FP&A,BHX new stores target,2026E,1000 stores,Business Directions 2026 / management response,96_Raw_Phase4_Drivers row bhx_new_stores_2026,FP&A rollout target; monthly phasing is simulated.
+BD2026-008,Revenue Drivers,An Khang revenue growth,2026E,30%,Business Directions 2026,96_Raw_Phase4_Drivers row ak_revenue_growth_2026,Used for simple An Khang forecast.
+BD2026-009,Revenue Drivers,An Khang new stores,2026E,100 stores,Business Directions 2026,96_Raw_Phase4_Drivers row ak_new_stores_2026,Used for simple An Khang forecast.
+BD2026-010,Revenue Drivers,AVAKids revenue growth,2026E,20%,Business Directions 2026,96_Raw_Phase4_Drivers row ava_revenue_growth_2026,Used for simple AVAKids forecast.
+BD2026-011,Revenue Drivers,EraBlue ending store target,2026E,300 stores,Business Directions 2026,96_Raw_Phase4_Drivers row erablue_target_stores_2026,Memo/optionality context only.
+BD2026-012,Revenue Drivers,EraBlue revenue growth,2026E,30%,Business Directions 2026,96_Raw_Phase4_Drivers row erablue_revenue_growth_2026,Memo/optionality context only.
+ROLL-001,FP&A Module,Revenue seasonality bridge,2023A-2025A,See model,KQKD 2023-2025 monthly/YTD reports,24_FPA_Module rows 119-136,Weighted monthly mix; 2025 has highest weight.
+ROLL-002,FP&A Module,BHX store rollout bridge,2025A-2026E,See model,KQKD 2025/2026 + Business Directions 2026,24_FPA_Module rows 138-153,Jan-Feb split assumption; Mar-May actual; Jun-Dec allocated by 2025 pattern.
+WACC-001,WACC,Risk-free rate,2026-06,5%,Trading Economics Vietnam 10Y; ADB AsianBondsOnline cross-check,19_WACC row 6,VND DCF should use VND risk-free proxy.
+WACC-002,WACC,Mature market ERP,2026.0,"4,2%",Damodaran CompanyERP,19_WACC row 7,Base equity risk premium component.
+WACC-003,WACC,Vietnam country risk premium,2026.0,"3,9%",Damodaran country risk premiums,19_WACC row 8,Added to mature ERP for Vietnam risk.
+WACC-004,WACC,Beta,2024-05-31 to 2026-06-26,"1,14x",18_Beta_Calculation / vnstock Quote.history source=VCI,19_WACC row 10,Weekly beta vs VNINDEX.
+COMPS-001,Trading Comps,Current price / market data cutoff,2026-06-26,See model,vnstock API,16_Trading_Comps; 100_Raw_Peer_Metrics; 101_Raw_Peer_Market,LTM = FY2025 + Q1/2026 - Q1/2025.
+COMPS-002,Trading Comps,Peer financials,FY2025; Q1/2025; Q1/2026,See raw sheets,vnstock API,97_Raw_Peer_IS; 98_Raw_Peer_BS; 99_Raw_Peer_CF,"Used for market cap, EV and multiples."
+SOTP-001,SOTP,DMX post-money equity benchmark,IPO 2026,102460 VND bn,MWG DMX IPO offering article,21_Target_Multiple_Bridge row 6,Main anchor for DMX value.
+SOTP-002,SOTP,DMX pre-IPO charter capital,IPO 2026,"11012,8 VND bn",MWG DMX IPO offering article,21_Target_Multiple_Bridge row 9,Used to calculate implied MWG ownership after IPO.
+SOTP-003,SOTP,DMX post-IPO charter capital,IPO 2026,"12807,8 VND bn",MWG DMX IPO offering article,21_Target_Multiple_Bridge row 10,Used to calculate implied MWG ownership after IPO.
+SOTP-004,SOTP,BHX benchmark P/S,2026E,"0,9x",Shinhan MWG Update Q1/2026,21_Target_Multiple_Bridge row 12,Broker benchmark minus simple company-specific adjustment.
+SOTP-005,SOTP,An Khang proxy EV/Sales,LTM,"0,46x",16_Trading_Comps / vnstock,21_Target_Multiple_Bridge row 15,FRT/Long Chau proxy with turnaround discount.
+SOTP-006,SOTP,AVAKids proxy EV/Sales,LTM,"0,38x",16_Trading_Comps / vnstock,21_Target_Multiple_Bridge row 18,Domestic retail proxy plus/minus niche adjustment.
+SOTP-007,SOTP,Net cash adjustment,Base case,0 VND bn,16_Trading_Comps + analyst convention,22_SOTP row 38,Base includes 50% net cash to reduce double-count risk.
+FPA-001,FP&A Module,Module type,2026E-2027E,External FP&A simulation,Model convention,24_FPA_Module row 19,Not MWG internal budget; based on public actuals and management guidance.
+FPA-002,FP&A Module,5M actual vs budget snapshot,5M2026,See model,Public KQKD + model budget,24_FPA_Module rows 5-13,External budget variance analysis.
+ASSUMP-001,Revenue Drivers,Online mix forecast,2026E-2030E,See model,Analyst assumption,96_Raw_Phase4_Drivers rows 38-42,Anchored to Q1/5M online disclosures; used as operating KPI.
+ASSUMP-002,Revenue Drivers,2027E+ store/RPSM assumptions,2027E-2030E,See model,Analyst assumption,96_Raw_Phase4_Drivers rows 57-93,Forecast assumptions checked against historical driver metrics.
