@@ -1,9 +1,9 @@
 ﻿method,line_item,unit,bull,base,bear,source,note
-DCF,Enterprise Value,VND bn,185920.6979592317,140759.44067790452,106487.07897957061,Formula,"EV thường bị terminal value chi phối, nhất là công ty còn tăng trưởng dài hạn."
-DCF,Equity Value,VND bn,203572.68620165836,158411.42892033118,124139.06722199726,Formula,Đây là numerator trước khi chia cho số cổ phiếu.
-DCF,Target Price,VND/share,138633.4951608218,107878.56894952491,84539.00715315851,Formula,"Vì equity value đang là VND bn, cần nhân 1 tỷ rồi chia shares."
-DCF,Upside / Downside,%,0.7660317854881757,0.374249285981209,0.07693002742877075,Formula,Nếu dương thì DCF implied target cao hơn giá hiện tại; nếu âm thì ngược lại.
-SOTP,DCF Target Price,VND/share,138633.4951608218,107878.56894952491,84539.00715315851,20_DCF,DCF la cross-check cho SOTP target range.
-SOTP,SOTP Target Price,VND/share,115387.02427104997,97615.1703449752,81966.20419854646,SOTP bridge below,Gia muc tieu theo SOTP sau holding discount va net cash convention.
-SOTP,SOTP equity value,VND bn,169437.02138090384,143340.41292190462,120361.1028279642,Formula,Gia tri von chu so huu theo SOTP.
-SOTP,Upside / Downside,%,0.4698983983573246,0.2435053547130599,0.044155467497407175,SOTP bridge below,So sanh voi gia thi truong hien tai.
+DCF,Enterprise Value,VND bn,185920.6979592317,140759.44067790452,106487.07897957061,Formula,
+DCF,Equity Value,VND bn,203572.68620165836,158411.42892033118,124139.06722199726,Formula,
+DCF,Target Price,VND/share,138633.4951608218,107878.56894952491,84539.00715315851,Formula,
+DCF,Upside / Downside,%,0.7660317854881757,0.374249285981209,0.07693002742877075,Formula,
+SOTP,DCF Target Price,VND/share,138633.4951608218,107878.56894952491,84539.00715315851,20_DCF,
+SOTP,SOTP Target Price,VND/share,110240.25069833641,88476.23095131665,69671.27356876449,SOTP bridge below,
+SOTP,SOTP equity value,VND bn,161879.37796829588,129920.57928615142,102306.93740376958,Formula,
+SOTP,Upside / Downside,%,0.4043344038004639,0.12708574460276,-0.11246785262720393,SOTP bridge below,

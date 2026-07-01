@@ -7,14 +7,14 @@ GROUP SUMMARY,Months represented,months,2027E,12.0,,07_Revenue_Drivers
 GROUP SUMMARY,Months represented,months,2028E,12.0,,07_Revenue_Drivers
 GROUP SUMMARY,Months represented,months,2029E,12.0,,07_Revenue_Drivers
 GROUP SUMMARY,Months represented,months,2030E,12.0,,07_Revenue_Drivers
-GROUP SUMMARY,Total Revenue,VND bn,2025A,155928.0,Historical / latest update / guidance,07_Revenue_Drivers
-GROUP SUMMARY,Total Revenue,VND bn,3M2026A,46462.0,Historical / latest update / guidance,07_Revenue_Drivers
-GROUP SUMMARY,Total Revenue,VND bn,5M2026A,79159.0,Historical / latest update / guidance,07_Revenue_Drivers
-GROUP SUMMARY,Total Revenue,VND bn,2026E,185000.0,Historical / latest update / guidance,07_Revenue_Drivers
-GROUP SUMMARY,Total Revenue,VND bn,2027E,210702.27006116117,Historical / latest update / guidance,07_Revenue_Drivers
-GROUP SUMMARY,Total Revenue,VND bn,2028E,232016.73569640506,Historical / latest update / guidance,07_Revenue_Drivers
-GROUP SUMMARY,Total Revenue,VND bn,2029E,250797.0728139098,Historical / latest update / guidance,07_Revenue_Drivers
-GROUP SUMMARY,Total Revenue,VND bn,2030E,267230.44217471726,Historical / latest update / guidance,07_Revenue_Drivers
+GROUP SUMMARY,Total Revenue,VND bn,2025A,155928.0,,07_Revenue_Drivers
+GROUP SUMMARY,Total Revenue,VND bn,3M2026A,46462.0,,07_Revenue_Drivers
+GROUP SUMMARY,Total Revenue,VND bn,5M2026A,79159.0,,07_Revenue_Drivers
+GROUP SUMMARY,Total Revenue,VND bn,2026E,185000.0,,07_Revenue_Drivers
+GROUP SUMMARY,Total Revenue,VND bn,2027E,210702.27006116117,,07_Revenue_Drivers
+GROUP SUMMARY,Total Revenue,VND bn,2028E,232016.73569640506,,07_Revenue_Drivers
+GROUP SUMMARY,Total Revenue,VND bn,2029E,250797.0728139098,,07_Revenue_Drivers
+GROUP SUMMARY,Total Revenue,VND bn,2030E,267230.44217471726,,07_Revenue_Drivers
 GROUP SUMMARY,YoY Revenue Growth,%,2025A,0.16068809968661846,,07_Revenue_Drivers
 GROUP SUMMARY,YoY Revenue Growth,%,5M2026A,0.2928350944813731,,07_Revenue_Drivers
 GROUP SUMMARY,YoY Revenue Growth,%,2026E,0.18644502590939416,,07_Revenue_Drivers
@@ -40,52 +40,52 @@ GROUP SUMMARY,Online / Super App Mix,%,2027E,0.075,,07_Revenue_Drivers
 GROUP SUMMARY,Online / Super App Mix,%,2028E,0.08,,07_Revenue_Drivers
 GROUP SUMMARY,Online / Super App Mix,%,2029E,0.085,,07_Revenue_Drivers
 GROUP SUMMARY,Online / Super App Mix,%,2030E,0.09,,07_Revenue_Drivers
-REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2025A,37300.0,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,3M2026A,10872.0,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,5M2026A,17810.775,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2026E,39325.944767441855,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2027E,40898.98255813953,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2028E,42125.95203488371,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2029E,43389.73059593023,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2030E,44474.47386082848,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,DMX Revenue,VND bn,2025A,68400.0,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,DMX Revenue,VND bn,3M2026A,21512.0,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,DMX Revenue,VND bn,5M2026A,36650.617,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,DMX Revenue,VND bn,2026E,80924.05523255814,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,DMX Revenue,VND bn,2027E,85693.9756167544,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,DMX Revenue,VND bn,2028E,89978.67439759211,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,DMX Revenue,VND bn,2029E,93577.8213734958,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,DMX Revenue,VND bn,2030E,96385.15601470068,2026E: core guidance split by 5M chain mix; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,BHX Revenue,VND bn,2025A,46900.0,2026E: company BHX revenue mix guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,BHX Revenue,VND bn,3M2026A,13100.0,2026E: company BHX revenue mix guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,BHX Revenue,VND bn,5M2026A,23114.428,2026E: company BHX revenue mix guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,BHX Revenue,VND bn,2026E,55500.0,2026E: company BHX revenue mix guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,BHX Revenue,VND bn,2027E,73515.27459954233,2026E: company BHX revenue mix guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,BHX Revenue,VND bn,2028E,88192.61155606408,2026E: company BHX revenue mix guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,BHX Revenue,VND bn,2029E,101081.65469107551,2026E: company BHX revenue mix guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,BHX Revenue,VND bn,2030E,112697.20371624714,2026E: company BHX revenue mix guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,An Khang Revenue,VND bn,2025A,2200.0,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,An Khang Revenue,VND bn,5M2026A,1109.1666666666667,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,An Khang Revenue,VND bn,2026E,2860.0,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,An Khang Revenue,VND bn,2027E,3525.2148148148144,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,An Khang Revenue,VND bn,2028E,4060.0560000000005,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,An Khang Revenue,VND bn,2029E,4513.751146666667,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,An Khang Revenue,VND bn,2030E,4915.0472249185195,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,AVAKids Revenue,VND bn,2025A,1400.0,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,AVAKids Revenue,VND bn,5M2026A,700.0,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,AVAKids Revenue,VND bn,2026E,1680.0,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,AVAKids Revenue,VND bn,2027E,1982.0224719101122,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,AVAKids Revenue,VND bn,2028E,2267.433707865169,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,AVAKids Revenue,VND bn,2029E,2572.5066067415733,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,AVAKids Revenue,VND bn,2030E,2870.4886220224726,2026E: growth guidance; 2027E+: Avg stores x RPSM x 12,07_Revenue_Drivers
-REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2025A,-272.0,Residual / unallocated,07_Revenue_Drivers
-REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,3M2026A,978.0,Residual / unallocated,07_Revenue_Drivers
-REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,5M2026A,-225.9866666666785,Residual / unallocated,07_Revenue_Drivers
-REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2026E,4710.0,Residual / unallocated,07_Revenue_Drivers
-REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2027E,5086.8,Residual / unallocated,07_Revenue_Drivers
-REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2028E,5392.008000000001,Residual / unallocated,07_Revenue_Drivers
-REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2029E,5661.608400000001,Residual / unallocated,07_Revenue_Drivers
-REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2030E,5888.072736000001,Residual / unallocated,07_Revenue_Drivers
+REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2025A,37300.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,3M2026A,10872.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,5M2026A,17810.775,,07_Revenue_Drivers
+REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2026E,39325.944767441855,,07_Revenue_Drivers
+REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2027E,40898.98255813953,,07_Revenue_Drivers
+REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2028E,42125.95203488371,,07_Revenue_Drivers
+REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2029E,43389.73059593023,,07_Revenue_Drivers
+REVENUE BY CHAIN,TGDD / TopZone Revenue,VND bn,2030E,44474.47386082848,,07_Revenue_Drivers
+REVENUE BY CHAIN,DMX Revenue,VND bn,2025A,68400.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,DMX Revenue,VND bn,3M2026A,21512.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,DMX Revenue,VND bn,5M2026A,36650.617,,07_Revenue_Drivers
+REVENUE BY CHAIN,DMX Revenue,VND bn,2026E,80924.05523255814,,07_Revenue_Drivers
+REVENUE BY CHAIN,DMX Revenue,VND bn,2027E,85693.9756167544,,07_Revenue_Drivers
+REVENUE BY CHAIN,DMX Revenue,VND bn,2028E,89978.67439759211,,07_Revenue_Drivers
+REVENUE BY CHAIN,DMX Revenue,VND bn,2029E,93577.8213734958,,07_Revenue_Drivers
+REVENUE BY CHAIN,DMX Revenue,VND bn,2030E,96385.15601470068,,07_Revenue_Drivers
+REVENUE BY CHAIN,BHX Revenue,VND bn,2025A,46900.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,BHX Revenue,VND bn,3M2026A,13100.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,BHX Revenue,VND bn,5M2026A,23114.428,,07_Revenue_Drivers
+REVENUE BY CHAIN,BHX Revenue,VND bn,2026E,55500.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,BHX Revenue,VND bn,2027E,73515.27459954233,,07_Revenue_Drivers
+REVENUE BY CHAIN,BHX Revenue,VND bn,2028E,88192.61155606408,,07_Revenue_Drivers
+REVENUE BY CHAIN,BHX Revenue,VND bn,2029E,101081.65469107551,,07_Revenue_Drivers
+REVENUE BY CHAIN,BHX Revenue,VND bn,2030E,112697.20371624714,,07_Revenue_Drivers
+REVENUE BY CHAIN,An Khang Revenue,VND bn,2025A,2200.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,An Khang Revenue,VND bn,5M2026A,1109.1666666666667,,07_Revenue_Drivers
+REVENUE BY CHAIN,An Khang Revenue,VND bn,2026E,2860.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,An Khang Revenue,VND bn,2027E,3525.2148148148144,,07_Revenue_Drivers
+REVENUE BY CHAIN,An Khang Revenue,VND bn,2028E,4060.0560000000005,,07_Revenue_Drivers
+REVENUE BY CHAIN,An Khang Revenue,VND bn,2029E,4513.751146666667,,07_Revenue_Drivers
+REVENUE BY CHAIN,An Khang Revenue,VND bn,2030E,4915.0472249185195,,07_Revenue_Drivers
+REVENUE BY CHAIN,AVAKids Revenue,VND bn,2025A,1400.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,AVAKids Revenue,VND bn,5M2026A,700.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,AVAKids Revenue,VND bn,2026E,1680.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,AVAKids Revenue,VND bn,2027E,1982.0224719101122,,07_Revenue_Drivers
+REVENUE BY CHAIN,AVAKids Revenue,VND bn,2028E,2267.433707865169,,07_Revenue_Drivers
+REVENUE BY CHAIN,AVAKids Revenue,VND bn,2029E,2572.5066067415733,,07_Revenue_Drivers
+REVENUE BY CHAIN,AVAKids Revenue,VND bn,2030E,2870.4886220224726,,07_Revenue_Drivers
+REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2025A,-272.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,3M2026A,978.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,5M2026A,-225.9866666666785,,07_Revenue_Drivers
+REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2026E,4710.0,,07_Revenue_Drivers
+REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2027E,5086.8,,07_Revenue_Drivers
+REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2028E,5392.008000000001,,07_Revenue_Drivers
+REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2029E,5661.608400000001,,07_Revenue_Drivers
+REVENUE BY CHAIN,Other / Unallocated / Rounding,VND bn,2030E,5888.072736000001,,07_Revenue_Drivers
 REVENUE BY CHAIN,Revenue Check: Segment Sum - Total Revenue,VND bn,2025A,0.0,,07_Revenue_Drivers
 REVENUE BY CHAIN,Revenue Check: Segment Sum - Total Revenue,VND bn,3M2026A,0.0,,07_Revenue_Drivers
 REVENUE BY CHAIN,Revenue Check: Segment Sum - Total Revenue,VND bn,5M2026A,0.0,,07_Revenue_Drivers
@@ -133,14 +133,14 @@ REVENUE GROWTH BY CHAIN,Other Growth,%,2027E,0.08000000000000007,,07_Revenue_Dri
 REVENUE GROWTH BY CHAIN,Other Growth,%,2028E,0.06000000000000005,,07_Revenue_Drivers
 REVENUE GROWTH BY CHAIN,Other Growth,%,2029E,0.050000000000000044,,07_Revenue_Drivers
 REVENUE GROWTH BY CHAIN,Other Growth,%,2030E,0.040000000000000036,,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2025A,1012.0,Linked history + latest update + assumptions,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,3M2026A,1014.0,Linked history + latest update + assumptions,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,5M2026A,1012.0,Linked history + latest update + assumptions,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2026E,1012.0,Linked history + latest update + assumptions,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2027E,1012.0,Linked history + latest update + assumptions,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2028E,1012.0,Linked history + latest update + assumptions,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2029E,1012.0,Linked history + latest update + assumptions,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2030E,1012.0,Linked history + latest update + assumptions,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2025A,1012.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,3M2026A,1014.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,5M2026A,1012.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2026E,1012.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2027E,1012.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2028E,1012.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2029E,1012.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,TGDD / TopZone Stores,stores,2030E,1012.0,,07_Revenue_Drivers
 ENDING STORE COUNT BY CHAIN,DMX Stores,stores,2025A,2008.0,,07_Revenue_Drivers
 ENDING STORE COUNT BY CHAIN,DMX Stores,stores,3M2026A,2006.0,,07_Revenue_Drivers
 ENDING STORE COUNT BY CHAIN,DMX Stores,stores,5M2026A,2004.0,,07_Revenue_Drivers
@@ -149,14 +149,14 @@ ENDING STORE COUNT BY CHAIN,DMX Stores,stores,2027E,2004.0,,07_Revenue_Drivers
 ENDING STORE COUNT BY CHAIN,DMX Stores,stores,2028E,2004.0,,07_Revenue_Drivers
 ENDING STORE COUNT BY CHAIN,DMX Stores,stores,2029E,2004.0,,07_Revenue_Drivers
 ENDING STORE COUNT BY CHAIN,DMX Stores,stores,2030E,2004.0,,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2025A,2559.0,Linked history + latest update + new-store guidance,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,BHX Stores,stores,3M2026A,2839.0,Linked history + latest update + new-store guidance,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,BHX Stores,stores,5M2026A,3051.0,Linked history + latest update + new-store guidance,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2026E,3559.0,Linked history + latest update + new-store guidance,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2027E,4159.0,Linked history + latest update + new-store guidance,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2028E,4659.0,Linked history + latest update + new-store guidance,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2029E,5059.0,Linked history + latest update + new-store guidance,07_Revenue_Drivers
-ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2030E,5359.0,Linked history + latest update + new-store guidance,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2025A,2559.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,BHX Stores,stores,3M2026A,2839.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,BHX Stores,stores,5M2026A,3051.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2026E,3559.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2027E,4159.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2028E,4659.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2029E,5059.0,,07_Revenue_Drivers
+ENDING STORE COUNT BY CHAIN,BHX Stores,stores,2030E,5359.0,,07_Revenue_Drivers
 ENDING STORE COUNT BY CHAIN,An Khang Stores,stores,2025A,382.0,,07_Revenue_Drivers
 ENDING STORE COUNT BY CHAIN,An Khang Stores,stores,3M2026A,409.0,,07_Revenue_Drivers
 ENDING STORE COUNT BY CHAIN,An Khang Stores,stores,5M2026A,416.0,,07_Revenue_Drivers
@@ -229,14 +229,14 @@ AVERAGE STORE COUNT,AVAKids Average Stores,stores,2027E,100.0,,07_Revenue_Driver
 AVERAGE STORE COUNT,AVAKids Average Stores,stores,2028E,110.0,,07_Revenue_Drivers
 AVERAGE STORE COUNT,AVAKids Average Stores,stores,2029E,120.0,,07_Revenue_Drivers
 AVERAGE STORE COUNT,AVAKids Average Stores,stores,2030E,130.0,,07_Revenue_Drivers
-REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2025A,3.0578783407115924,Derived,07_Revenue_Drivers
-REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,3M2026A,3.577492596248766,Derived,07_Revenue_Drivers
-REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,5M2026A,3.519916007905139,Derived,07_Revenue_Drivers
-REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2026E,3.238302434736648,Derived,07_Revenue_Drivers
-REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2027E,3.367834532126114,Derived,07_Revenue_Drivers
-REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2028E,3.4688695680898975,Derived,07_Revenue_Drivers
-REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2029E,3.5729356551325946,Derived,07_Revenue_Drivers
-REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2030E,3.662259046510909,Derived,07_Revenue_Drivers
+REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2025A,3.0578783407115924,,07_Revenue_Drivers
+REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,3M2026A,3.577492596248766,,07_Revenue_Drivers
+REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,5M2026A,3.519916007905139,,07_Revenue_Drivers
+REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2026E,3.238302434736648,,07_Revenue_Drivers
+REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2027E,3.367834532126114,,07_Revenue_Drivers
+REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2028E,3.4688695680898975,,07_Revenue_Drivers
+REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2029E,3.5729356551325946,,07_Revenue_Drivers
+REVENUE / STORE / MONTH,TGDD / TopZone Rev/Store/Month,VND bn/store/month,2030E,3.662259046510909,,07_Revenue_Drivers
 REVENUE / STORE / MONTH,DMX Rev/Store/Month,VND bn/store/month,2025A,2.825979176995538,,07_Revenue_Drivers
 REVENUE / STORE / MONTH,DMX Rev/Store/Month,VND bn/store/month,3M2026A,3.572828433814981,,07_Revenue_Drivers
 REVENUE / STORE / MONTH,DMX Rev/Store/Month,VND bn/store/month,5M2026A,3.6540994017946162,,07_Revenue_Drivers
@@ -295,18 +295,18 @@ SUPPLEMENTAL KPI / GUIDANCE,EraBlue New Stores in Period,stores,2027E,120.0,,07_
 SUPPLEMENTAL KPI / GUIDANCE,EraBlue New Stores in Period,stores,2028E,130.0,,07_Revenue_Drivers
 SUPPLEMENTAL KPI / GUIDANCE,EraBlue New Stores in Period,stores,2029E,150.0,,07_Revenue_Drivers
 SUPPLEMENTAL KPI / GUIDANCE,EraBlue New Stores in Period,stores,2030E,150.0,,07_Revenue_Drivers
-MODEL CHECKS,Segment Revenue Check,VND bn,2025A,0.0,Check,07_Revenue_Drivers
-MODEL CHECKS,Segment Revenue Check,VND bn,3M2026A,0.0,Check,07_Revenue_Drivers
-MODEL CHECKS,Segment Revenue Check,VND bn,5M2026A,0.0,Check,07_Revenue_Drivers
-MODEL CHECKS,Segment Revenue Check,VND bn,2026E,0.0,Check,07_Revenue_Drivers
-MODEL CHECKS,Segment Revenue Check,VND bn,2027E,0.0,Check,07_Revenue_Drivers
-MODEL CHECKS,Segment Revenue Check,VND bn,2028E,0.0,Check,07_Revenue_Drivers
-MODEL CHECKS,Segment Revenue Check,VND bn,2029E,0.0,Check,07_Revenue_Drivers
-MODEL CHECKS,Segment Revenue Check,VND bn,2030E,0.0,Check,07_Revenue_Drivers
+MODEL CHECKS,Segment Revenue Check,VND bn,2025A,0.0,,07_Revenue_Drivers
+MODEL CHECKS,Segment Revenue Check,VND bn,3M2026A,0.0,,07_Revenue_Drivers
+MODEL CHECKS,Segment Revenue Check,VND bn,5M2026A,0.0,,07_Revenue_Drivers
+MODEL CHECKS,Segment Revenue Check,VND bn,2026E,0.0,,07_Revenue_Drivers
+MODEL CHECKS,Segment Revenue Check,VND bn,2027E,0.0,,07_Revenue_Drivers
+MODEL CHECKS,Segment Revenue Check,VND bn,2028E,0.0,,07_Revenue_Drivers
+MODEL CHECKS,Segment Revenue Check,VND bn,2029E,0.0,,07_Revenue_Drivers
+MODEL CHECKS,Segment Revenue Check,VND bn,2030E,0.0,,07_Revenue_Drivers
 MODEL CHECKS,2026 Scenario Target Check,VND bn,2026E,0.0,,07_Revenue_Drivers
 MODEL CHECKS,2026 Core Mix Check,ppt,2026E,0.0,,07_Revenue_Drivers
 MODEL CHECKS,2026 BHX Mix Check,ppt,2026E,0.0,,07_Revenue_Drivers
-MODEL CHECKS,5M Annualized Run-rate vs 2026E,%,2026E,-0.026221486712397324,,07_Revenue_Drivers
+MODEL CHECKS,2026E vs 5M Annualized Run-rate,%,2026E,-0.026221486712397324,,07_Revenue_Drivers
 RPSM GROWTH CHECK,TGDD / TopZone RPSM growth,%,2025A,0.030198272593624287,OK,07_Revenue_Drivers
 RPSM GROWTH CHECK,TGDD / TopZone RPSM growth,%,3M2026A,0.040000000000000036,OK,07_Revenue_Drivers
 RPSM GROWTH CHECK,TGDD / TopZone RPSM growth,%,5M2026A,0.030000000000000027,OK,07_Revenue_Drivers

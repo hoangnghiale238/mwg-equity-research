@@ -1,288 +1,288 @@
 ﻿source_sheet,section,line_item,unit,period_or_scenario,value_num,value_text,method,source,note
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2021A,122958.106103174,122958.106103174,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2022A,133404.777591,133404.777591,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2023A,118279.788455,118279.788455,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2024A,134341.152849,134341.152849,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2025A,155928.145619,155928.145619,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2026E,185000.0,185000.0,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2027E,210702.27006116117,210702.270061161,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2028E,232016.73569640506,232016.735696405,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2029E,250797.0728139098,250797.07281391,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2030E,267230.44217471726,267230.442174717,Linked,Linked,Historical from 03_Historical_FS; forecast from revenue driver model.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2022A,0.08496122637949721,0.0849612263794972,Formula,Formula,Growth implied by revenue row.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2023A,-0.11337666768105603,-0.113376667681056,Formula,Formula,Growth implied by revenue row.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2024A,0.1357912844095981,0.135791284409598,Formula,Formula,Growth implied by revenue row.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2025A,0.16068786304271065,0.160687863042711,Formula,Formula,Growth implied by revenue row.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2026E,0.18644391790584836,0.186443917905848,Formula,Formula,Growth implied by revenue row.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2027E,0.13893118951979,0.13893118951979,Formula,Formula,Growth implied by revenue row.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2028E,0.1011591646784673,0.101159164678467,Formula,Formula,Growth implied by revenue row.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2029E,0.08094388993593493,0.0809438899359349,Formula,Formula,Growth implied by revenue row.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2030E,0.06552456604228762,0.0655245660422876,Formula,Formula,Growth implied by revenue row.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2021A,0.2247280221797489,0.224728022179749,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2022A,0.23134135863273664,0.231341358632737,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2023A,0.19040119582702883,0.190401195827029,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2024A,0.20469684451725095,0.204696844517251,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2025A,0.19882156153996097,0.198821561539961,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2026E,0.205,0.205,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2027E,0.208,0.208,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2028E,0.21,0.21,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2029E,0.211,0.211,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2030E,0.212,0.212,Historical link / analyst input,Historical link / analyst input,Forecast assumes Q1/LTM recovery partly persists but remains below peak 2021-2022 margin.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2021A,0.14569330864053193,0.145693308640532,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2022A,0.16743656765038475,0.167436567650385,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2023A,0.17684095506273112,0.176840955062731,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2024A,0.14775693962006783,0.147756939620068,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2025A,0.12397315096809892,0.123973150968099,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2026E,0.122,0.122,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2027E,0.12,0.12,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2028E,0.118,0.118,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2029E,0.116,0.116,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2030E,0.115,0.115,Historical implied / analyst input,Historical implied / analyst input,"Operating leverage assumption from store productivity, BHX scale and logistics efficiency."
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2021A,0.03109506315554989,0.0310950631555499,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2022A,0.014100151538552555,0.0141001515385526,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2023A,0.009871945818065423,0.00987194581806542,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2024A,0.026542630514775595,0.0265426305147756,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2025A,0.029475592714545588,0.0294755927145456,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2026E,0.028,0.028,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2027E,0.027,0.027,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2028E,0.026,0.026,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2029E,0.025,0.025,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2030E,0.025,0.025,Historical implied / analyst input,Historical implied / analyst input,Forecast assumes modest scale benefit from higher revenue base.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2021A,0.010474754914346823,0.0104747549143468,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2022A,0.009843255449410452,0.00984325544941045,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2023A,0.018320659373046052,0.0183206593730461,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2024A,0.017690056655023635,0.0176900566550236,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2025A,0.01992808111495534,0.0199280811149553,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2026E,0.017,0.017,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2027E,0.016,0.016,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2028E,0.015,0.015,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2029E,0.014,0.014,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2030E,0.013,0.013,Historical implied / analyst input,Historical implied / analyst input,Used as a simple group-level forecast proxy.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2021A,0.027362955674913828,0.0273629556749138,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2022A,0.06606438089046521,0.0660643808904652,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2023A,0.06942963771170668,0.0694296377117067,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2024A,0.043394333338085116,0.0433943333380851,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2025A,0.05139419963555829,0.0513941996355583,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2026E,0.052,0.052,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2027E,0.052,0.052,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2028E,0.051,0.051,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2029E,0.05,0.05,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2030E,0.05,0.05,Historical implied / analyst input,Historical implied / analyst input,Forecast rate uses implied borrowing cost rather than detailed debt maturities.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2021A,4.8608687758941635e-05,4.86086877589416e-05,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2022A,-0.0038854554863780918,-0.00388545548637809,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2023A,-0.003021445934830743,-0.00302144593483074,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2024A,-0.0029870401101220493,-0.00298704011012205,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2025A,-0.00019889229027181512,-0.000198892290271815,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2026E,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2027E,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2028E,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2029E,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2030E,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,Kept neutral in forecast because other income/loss is not thesis core.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2021A,0.2426233109509331,0.242623310950933,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2022A,0.32274211605733955,0.32274211605734,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2023A,0.7566608494064124,0.756660849406412,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2024A,0.22638384459763358,0.226383844597634,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2025A,0.18075205389018206,0.180752053890182,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2026E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2027E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2028E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2029E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2030E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast uses normalized 20% Vietnam corporate tax rate.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2021A,0.0005217655674873806,0.000521765567487381,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2022A,0.0004757517949338952,0.000475751794933895,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2023A,0.0009519323385737121,0.000951932338573712,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2024A,0.0030589084741144963,0.0030589084741145,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2025A,0.005498966455144319,0.00549896645514432,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2026E,0.006,0.006,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2027E,0.0065,0.0065,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2028E,0.007,0.007,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2029E,0.0075,0.0075,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2030E,0.008,0.008,Historical implied / analyst input,Historical implied / analyst input,Simple group-level proxy; detailed subsidiary minority ownership is not fully public.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2021A,0.04889280106490802,0.048892801064908,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2022A,0.17851149204970868,0.178511492049709,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2023A,4.361440158610224,4.36144015861022,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2024A,0.1963953603924832,0.196395360392483,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2025A,0.2101952450761774,0.210195245076177,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2026E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2027E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2028E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2029E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2030E,0.2,0.2,Historical implied / analyst input,Historical implied / analyst input,Forecast retained earnings roll-forward uses a normalized payout ratio.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2021A,111.68036715009337,111.680367150093,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2022A,97.64274447233971,97.6427444723397,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2023A,90.56528694965716,90.5652869496572,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2024A,75.27546039279073,75.2754603927907,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2025A,72.32949517886831,72.3294951788683,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2026E,73.0,73.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2027E,72.0,72.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2028E,70.0,70.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2029E,69.0,69.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2030E,68.0,68.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast assumes inventory discipline broadly holds after recovery.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2021A,9.386729807471363,9.38672980747136,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2022A,8.431005753090242,8.43100575309024,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2023A,12.589977892093955,12.589977892094,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2024A,18.998026599609446,18.9980265996094,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2025A,22.24802721327809,22.2480272132781,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2026E,18.0,18.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2027E,17.0,17.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2028E,16.0,16.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2029E,15.0,15.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2030E,15.0,15.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Forecast normalizes below 2025 and closer to LTM/Q1 improvement.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2021A,46.63595450556861,46.6359545055686,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2022A,37.24225202722244,37.2422520272224,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2023A,31.775583949752384,31.7755839497524,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2024A,29.220488924090155,29.2204889240902,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2025A,32.567772400057535,32.5677724000575,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2026E,33.0,33.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2027E,34.0,34.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2028E,34.0,34.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2029E,34.0,34.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2030E,34.0,34.0,Historical from ratio sheet / input,Historical from ratio sheet / input,Supplier financing stays near recent level.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2021A,0.20045424461974337,0.200454244619743,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2022A,0.12435378200517451,0.124353782005175,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2023A,0.2123253021166388,0.212325302116639,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2024A,0.20321581394113528,0.203215813941135,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2025A,0.19195343369973925,0.191953433699739,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2026E,0.19,0.19,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2027E,0.18,0.18,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2028E,0.17,0.17,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2029E,0.16,0.16,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2030E,0.15,0.15,Historical implied / analyst input,Historical implied / analyst input,Forecast tapers as cash generation improves.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2021A,0.010143791632903198,0.0101437916329032,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2022A,0.005625299839715993,0.00562529983971599,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2023A,0.005618340121168084,0.00561834012116808,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2024A,0.004049963547741358,0.00404996354774136,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2025A,0.0056293044883940655,0.00562930448839407,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2026E,0.006,0.006,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2027E,0.006,0.006,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2028E,0.006,0.006,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2029E,0.006,0.006,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2030E,0.006,0.006,Historical implied / analyst input,Historical implied / analyst input,Non-core current assets forecast as small percent of revenue.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2021A,0.046893287049638105,0.0468932870496381,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2022A,0.049220861887955256,0.0492208618879553,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2023A,0.03136333820390072,0.0313633382039007,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2024A,0.04344399312666345,0.0434439931266635,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2025A,0.04953986704795868,0.0495398670479587,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2026E,0.05,0.05,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2027E,0.05,0.05,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2028E,0.048,0.048,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2029E,0.047,0.047,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2030E,0.046,0.046,Historical implied / analyst input,Historical implied / analyst input,Current liabilities excluding trade payables and debt.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2021A,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2022A,0.0017318333284008752,0.00173183332840088,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2023A,0.006312424656424365,0.00631242465642437,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2024A,0.0018016504463978303,0.00180165044639783,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2025A,0.020113851495825376,0.0201138514958254,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2026E,0.018,0.018,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2027E,0.017,0.017,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2028E,0.016,0.016,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2029E,0.015,0.015,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2030E,0.015,0.015,Historical implied / analyst input,Historical implied / analyst input,Kept visible because it affects cash/liquid funds plug.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2021A,0.006562324990106294,0.00656232499010629,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2022A,0.005026732131407869,0.00502673213140787,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2023A,0.003822018426859047,0.00382201842685905,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2024A,0.0026682398237486034,0.0026682398237486,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2025A,0.0033011409964287964,0.0033011409964288,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2026E,0.003,0.003,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2027E,0.003,0.003,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2028E,0.003,0.003,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2029E,0.003,0.003,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2030E,0.003,0.003,Historical implied / analyst input,Historical implied / analyst input,Small balance sheet support assumption.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2021A,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2022A,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2023A,9.880732923736047e-06,9.88073292373605e-06,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2024A,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2025A,0.0,0.0,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2026E,0.001,0.001,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2027E,0.001,0.001,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2028E,0.001,0.001,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2029E,0.001,0.001,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2030E,0.001,0.001,Historical implied / analyst input,Historical implied / analyst input,No long-term debt assumed; other LT liabilities held minimal.
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2021A,0.04047619752568333,0.0404761975256833,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2022A,0.03347226092374409,0.0334722609237441,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2023A,0.00442495998544268,0.00442495998544268,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2024A,0.002261018463503985,0.00226101846350398,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2025A,0.0056978930036845135,0.00569789300368451,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2026E,0.012,0.012,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2027E,0.012,0.012,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2028E,0.011,0.011,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2029E,0.01,0.01,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2030E,0.01,0.01,Historical implied / analyst input,Historical implied / analyst input,"Forecast higher than 2025 due to BHX expansion, then tapers."
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2021A,0.023753729631775824,0.0237537296317758,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2022A,0.026538215421745465,0.0265382154217455,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2023A,0.02833378645477558,0.0283337864547756,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2024A,0.02168672085369622,0.0216867208536962,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2025A,0.012126624744324506,0.0121266247443245,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2026E,0.0115,0.0115,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2027E,0.011,0.011,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2028E,0.0105,0.0105,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2029E,0.01,0.01,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2030E,0.0095,0.0095,Historical implied / analyst input,Historical implied / analyst input,Group-level proxy; detailed PPE roll-forward not public enough for chain-level forecast.
-19_WACC,CAPM AND COST OF EQUITY,Risk-free rate,%,Bull,0.04,0.04,"Vietnam 10Y government bond yield, rounded for model use.",Trading Economics Vietnam 10Y; ADB AsianBondsOnline cross-check,Dùng lợi suất TPCP Việt Nam 10 năm vì DCF định giá bằng VND và cần lãi suất phi rủi ro cùng đồng tiền.
-19_WACC,CAPM AND COST OF EQUITY,Risk-free rate,%,Base,0.045,0.045,"Vietnam 10Y government bond yield, rounded for model use.",Trading Economics Vietnam 10Y; ADB AsianBondsOnline cross-check,Dùng lợi suất TPCP Việt Nam 10 năm vì DCF định giá bằng VND và cần lãi suất phi rủi ro cùng đồng tiền.
-19_WACC,CAPM AND COST OF EQUITY,Risk-free rate,%,Bear,0.049999999999999996,0.05,"Vietnam 10Y government bond yield, rounded for model use.",Trading Economics Vietnam 10Y; ADB AsianBondsOnline cross-check,Dùng lợi suất TPCP Việt Nam 10 năm vì DCF định giá bằng VND và cần lãi suất phi rủi ro cùng đồng tiền.
-19_WACC,CAPM AND COST OF EQUITY,Mature market ERP,%,Bull,0.0423,0.0423,Damodaran mature market equity risk premium.,Damodaran CompanyERP,"Đây là phần premium của thị trường cổ phiếu phát triển, làm nền trước khi cộng rủi ro quốc gia."
-19_WACC,CAPM AND COST OF EQUITY,Mature market ERP,%,Base,0.0423,0.0423,Damodaran mature market equity risk premium.,Damodaran CompanyERP,"Đây là phần premium của thị trường cổ phiếu phát triển, làm nền trước khi cộng rủi ro quốc gia."
-19_WACC,CAPM AND COST OF EQUITY,Mature market ERP,%,Bear,0.0423,0.0423,Damodaran mature market equity risk premium.,Damodaran CompanyERP,"Đây là phần premium của thị trường cổ phiếu phát triển, làm nền trước khi cộng rủi ro quốc gia."
-19_WACC,CAPM AND COST OF EQUITY,Vietnam country risk premium,%,Bull,0.039,0.039,Damodaran Vietnam CRP based on sovereign rating/default spread.,Damodaran country risk premiums,Cộng thêm CRP vì nhà đầu tư vào Việt Nam chịu rủi ro quốc gia cao hơn mature market.
-19_WACC,CAPM AND COST OF EQUITY,Vietnam country risk premium,%,Base,0.039,0.039,Damodaran Vietnam CRP based on sovereign rating/default spread.,Damodaran country risk premiums,Cộng thêm CRP vì nhà đầu tư vào Việt Nam chịu rủi ro quốc gia cao hơn mature market.
-19_WACC,CAPM AND COST OF EQUITY,Vietnam country risk premium,%,Bear,0.039,0.039,Damodaran Vietnam CRP based on sovereign rating/default spread.,Damodaran country risk premiums,Cộng thêm CRP vì nhà đầu tư vào Việt Nam chịu rủi ro quốc gia cao hơn mature market.
-19_WACC,CAPM AND COST OF EQUITY,Equity risk premium,%,Bull,0.07629999999999999,0.0763,Base = mature market ERP + Vietnam CRP; Bull/Bear flex around base.,Damodaran country risk premiums,ERP tổng = mature ERP + Vietnam CRP. Bull giảm nhẹ vì risk perception tốt hơn; Bear tăng vì risk premium giãn ra.
-19_WACC,CAPM AND COST OF EQUITY,Equity risk premium,%,Base,0.0813,0.0813,Base = mature market ERP + Vietnam CRP; Bull/Bear flex around base.,Damodaran country risk premiums,ERP tổng = mature ERP + Vietnam CRP. Bull giảm nhẹ vì risk perception tốt hơn; Bear tăng vì risk premium giãn ra.
-19_WACC,CAPM AND COST OF EQUITY,Equity risk premium,%,Bear,0.09129999999999999,0.0913,Base = mature market ERP + Vietnam CRP; Bull/Bear flex around base.,Damodaran country risk premiums,ERP tổng = mature ERP + Vietnam CRP. Bull giảm nhẹ vì risk perception tốt hơn; Bear tăng vì risk premium giãn ra.
-19_WACC,CAPM AND COST OF EQUITY,Beta,x,Bull,0.9400000000000001,0.94,"2-year weekly beta from 18_Beta_Calculation: Cov(MWG return, VNINDEX return) / Var(VNINDEX return).",18_Beta_Calculation / vnstock Quote.history source=VCI,Beta base được link trực tiếp từ sheet 15A; Bull/Bear vẫn flex ±0.10 để sensitivity.
-19_WACC,CAPM AND COST OF EQUITY,Beta,x,Base,1.04,1.04,"2-year weekly beta from 18_Beta_Calculation: Cov(MWG return, VNINDEX return) / Var(VNINDEX return).",18_Beta_Calculation / vnstock Quote.history source=VCI,Beta base được link trực tiếp từ sheet 15A; Bull/Bear vẫn flex ±0.10 để sensitivity.
-19_WACC,CAPM AND COST OF EQUITY,Beta,x,Bear,1.1400000000000001,1.14,"2-year weekly beta from 18_Beta_Calculation: Cov(MWG return, VNINDEX return) / Var(VNINDEX return).",18_Beta_Calculation / vnstock Quote.history source=VCI,Beta base được link trực tiếp từ sheet 15A; Bull/Bear vẫn flex ±0.10 để sensitivity.
-19_WACC,CAPM AND COST OF EQUITY,Cost of Equity,%,Bull,0.11172199999999999,0.111722,Cost of Equity = Risk-free rate + Beta x ERP.,Formula,Đây là return mà cổ đông đòi hỏi. Vì equity rủi ro hơn debt nên thường cao hơn cost of debt.
-19_WACC,CAPM AND COST OF EQUITY,Cost of Equity,%,Base,0.129552,0.129552,Cost of Equity = Risk-free rate + Beta x ERP.,Formula,Đây là return mà cổ đông đòi hỏi. Vì equity rủi ro hơn debt nên thường cao hơn cost of debt.
-19_WACC,CAPM AND COST OF EQUITY,Cost of Equity,%,Bear,0.154082,0.154082,Cost of Equity = Risk-free rate + Beta x ERP.,Formula,Đây là return mà cổ đông đòi hỏi. Vì equity rủi ro hơn debt nên thường cao hơn cost of debt.
-19_WACC,CAPM AND COST OF EQUITY,Cost of equity > risk-free?,status,Bull,,OK,Should be OK.,Formula,Nếu cost of equity không cao hơn risk-free thì assumption sai logic.
-19_WACC,CAPM AND COST OF EQUITY,Cost of equity > risk-free?,status,Base,,OK,Should be OK.,Formula,Nếu cost of equity không cao hơn risk-free thì assumption sai logic.
-19_WACC,CAPM AND COST OF EQUITY,Cost of equity > risk-free?,status,Bear,,OK,Should be OK.,Formula,Nếu cost of equity không cao hơn risk-free thì assumption sai logic.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Pre-tax cost of debt,%,Bull,0.047,0.047,Base links to implied borrowing cost; Bull/Bear flex +/-50 bps.,08_P5_Assumptions row Interest Rate on Average Debt,Dùng implied borrowing cost từ model thay vì tra từng khoản vay vì lịch nợ chi tiết không public.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Pre-tax cost of debt,%,Base,0.052,0.052,Base links to implied borrowing cost; Bull/Bear flex +/-50 bps.,08_P5_Assumptions row Interest Rate on Average Debt,Dùng implied borrowing cost từ model thay vì tra từng khoản vay vì lịch nợ chi tiết không public.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Pre-tax cost of debt,%,Bear,0.056999999999999995,0.057,Base links to implied borrowing cost; Bull/Bear flex +/-50 bps.,08_P5_Assumptions row Interest Rate on Average Debt,Dùng implied borrowing cost từ model thay vì tra từng khoản vay vì lịch nợ chi tiết không public.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Effective tax rate,%,Bull,0.2,0.2,Linked to normalized 2026E tax rate in .,08_P5_Assumptions row Effective Tax Rate,Tax shield làm cost of debt sau thuế thấp hơn pre-tax cost of debt.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Effective tax rate,%,Base,0.2,0.2,Linked to normalized 2026E tax rate in .,08_P5_Assumptions row Effective Tax Rate,Tax shield làm cost of debt sau thuế thấp hơn pre-tax cost of debt.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Effective tax rate,%,Bear,0.2,0.2,Linked to normalized 2026E tax rate in .,08_P5_Assumptions row Effective Tax Rate,Tax shield làm cost of debt sau thuế thấp hơn pre-tax cost of debt.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",After-tax cost of debt,%,Bull,0.0376,0.0376,After-tax cost of debt = pre-tax cost of debt x (1 - tax rate).,Formula,"Vì lãi vay được trừ thuế, chi phí nợ thật sự với doanh nghiệp là sau thuế."
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",After-tax cost of debt,%,Base,0.0416,0.0416,After-tax cost of debt = pre-tax cost of debt x (1 - tax rate).,Formula,"Vì lãi vay được trừ thuế, chi phí nợ thật sự với doanh nghiệp là sau thuế."
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",After-tax cost of debt,%,Bear,0.0456,0.0456,After-tax cost of debt = pre-tax cost of debt x (1 - tax rate).,Formula,"Vì lãi vay được trừ thuế, chi phí nợ thật sự với doanh nghiệp là sau thuế."
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Market cap,VND bn,Bull,115271.2470265,115271.2470265,Current share price x shares outstanding.,100_Raw_Peer_Metrics MWG row,"Dùng market value of equity, không dùng book equity, vì WACC phản ánh chi phí vốn theo thị trường."
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Market cap,VND bn,Base,115271.2470265,115271.2470265,Current share price x shares outstanding.,100_Raw_Peer_Metrics MWG row,"Dùng market value of equity, không dùng book equity, vì WACC phản ánh chi phí vốn theo thị trường."
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Market cap,VND bn,Bear,115271.2470265,115271.2470265,Current share price x shares outstanding.,100_Raw_Peer_Metrics MWG row,"Dùng market value of equity, không dùng book equity, vì WACC phản ánh chi phí vốn theo thị trường."
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Gross debt,VND bn,Bull,28100.653169211,28100.653169211,Short-term borrowings + long-term borrowings.,100_Raw_Peer_Metrics MWG row,Dùng gross debt cho capital weight; net debt sẽ dùng ở equity value bridge trong DCF.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Gross debt,VND bn,Base,28100.653169211,28100.653169211,Short-term borrowings + long-term borrowings.,100_Raw_Peer_Metrics MWG row,Dùng gross debt cho capital weight; net debt sẽ dùng ở equity value bridge trong DCF.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Gross debt,VND bn,Bear,28100.653169211,28100.653169211,Short-term borrowings + long-term borrowings.,100_Raw_Peer_Metrics MWG row,Dùng gross debt cho capital weight; net debt sẽ dùng ở equity value bridge trong DCF.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Total capital,VND bn,Bull,143371.900195711,143371.900195711,Market cap + gross debt.,Formula,Mẫu số để tính trọng số equity/debt trong WACC.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Total capital,VND bn,Base,143371.900195711,143371.900195711,Market cap + gross debt.,Formula,Mẫu số để tính trọng số equity/debt trong WACC.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Total capital,VND bn,Bear,143371.900195711,143371.900195711,Market cap + gross debt.,Formula,Mẫu số để tính trọng số equity/debt trong WACC.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Equity weight,%,Bull,0.8040016688705948,0.804001668870595,Market cap / total capital.,Formula,Tỷ trọng vốn cổ phần theo market value.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Equity weight,%,Base,0.8040016688705948,0.804001668870595,Market cap / total capital.,Formula,Tỷ trọng vốn cổ phần theo market value.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Equity weight,%,Bear,0.8040016688705948,0.804001668870595,Market cap / total capital.,Formula,Tỷ trọng vốn cổ phần theo market value.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Debt weight,%,Bull,0.1959983311294052,0.195998331129405,Gross debt / total capital.,Formula,Tỷ trọng nợ vay theo market value/debt carrying value proxy.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Debt weight,%,Base,0.1959983311294052,0.195998331129405,Gross debt / total capital.,Formula,Tỷ trọng nợ vay theo market value/debt carrying value proxy.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Debt weight,%,Bear,0.1959983311294052,0.195998331129405,Gross debt / total capital.,Formula,Tỷ trọng nợ vay theo market value/debt carrying value proxy.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",WACC,%,Bull,0.0971942117000262,0.0971942117000262,WACC = Cost of Equity x Equity Weight + After-tax Cost of Debt x Debt Weight.,Formula,Đây là discount rate chính cho FCFF DCF vì FCFF thuộc cả debt holder và equity holder.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",WACC,%,Base,0.11231355478050656,0.112313554780507,WACC = Cost of Equity x Equity Weight + After-tax Cost of Debt x Debt Weight.,Formula,Đây là discount rate chính cho FCFF DCF vì FCFF thuộc cả debt holder và equity holder.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",WACC,%,Bear,0.13281970904241985,0.13281970904242,WACC = Cost of Equity x Equity Weight + After-tax Cost of Debt x Debt Weight.,Formula,Đây là discount rate chính cho FCFF DCF vì FCFF thuộc cả debt holder và equity holder.
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Rounded WACC for DCF,%,Bull,0.097,0.097,Rounded to nearest 10 bps for clean sensitivity tables.,Formula,"DCF nên dùng WACC làm tròn để sensitivity đọc gọn hơn, không tạo cảm giác chính xác giả."
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Rounded WACC for DCF,%,Base,0.112,0.112,Rounded to nearest 10 bps for clean sensitivity tables.,Formula,"DCF nên dùng WACC làm tròn để sensitivity đọc gọn hơn, không tạo cảm giác chính xác giả."
-19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Rounded WACC for DCF,%,Bear,0.133,0.133,Rounded to nearest 10 bps for clean sensitivity tables.,Formula,"DCF nên dùng WACC làm tròn để sensitivity đọc gọn hơn, không tạo cảm giác chính xác giả."
-19_WACC,BETA CALCULATION AUDIT,Stock,text,Base,,MWG,Target stock used for beta.,18_Beta_Calculation / vnstock Quote.history source=VCI,MWG được so với VNINDEX để đo systematic risk.
-19_WACC,BETA CALCULATION AUDIT,Market index,text,Base,,VNINDEX,Market index used as market proxy.,18_Beta_Calculation / vnstock Quote.history source=VCI,VNINDEX là proxy thị trường Việt Nam.
-19_WACC,BETA CALCULATION AUDIT,Frequency,text,Base,,Weekly Friday close,Weekly Friday close.,18_Beta_Calculation / vnstock Quote.history source=VCI,Weekly return giúp giảm nhiễu giao dịch ngày và giảm tác động outlier ngắn hạn.
-19_WACC,BETA CALCULATION AUDIT,Start date,date,Base,,2024-05-31,First weekly observation.,18_Beta_Calculation / vnstock Quote.history source=VCI,Khoảng 2 năm đủ mới nhưng vẫn có đủ mẫu.
-19_WACC,BETA CALCULATION AUDIT,End date,date,Base,,2026-06-26,Last weekly observation.,18_Beta_Calculation / vnstock Quote.history source=VCI,Khớp với ngày giá dùng trong trading comps.
-19_WACC,BETA CALCULATION AUDIT,Observations,count,Base,107.0,107.0,Number of weekly return observations.,18_Beta_Calculation / vnstock Quote.history source=VCI,Trên 100 quan sát là đủ ổn cho một project cá nhân.
-19_WACC,BETA CALCULATION AUDIT,Raw beta,x,Base,1.0381347090365216,1.03813470903652,Raw beta linked from 18_Beta_Calculation.,18_Beta_Calculation / vnstock Quote.history source=VCI,"Raw beta tính bằng COVARIANCE.S(MWG return, VNINDEX return) / VAR.S(VNINDEX return)."
-19_WACC,BETA CALCULATION AUDIT,R-squared,%,Base,0.3653242534965612,0.365324253496561,R-squared linked from 18_Beta_Calculation.,18_Beta_Calculation / vnstock Quote.history source=VCI,"R² tính bằng RSQ(MWG return, VNINDEX return), đo mức VNINDEX giải thích biến động MWG."
-19_WACC,SOURCE LOG,Vietnam 10Y government bond yield,%,Base,0.0452,0.0452,Used as risk-free anchor; model rounds base to 4.5%.,https://tradingeconomics.com/vietnam/government-bond-yield,Trading Economics ghi Vietnam 10Y = 4.52% ngày 26/06/2026.
-19_WACC,SOURCE LOG,Damodaran mature market ERP,%,Base,0.0423,0.0423,Mature market ERP input.,https://pages.stern.nyu.edu/~adamodar/pc/CompanyERP.xlsx,Mature ERP làm nền trước khi cộng country risk premium.
-19_WACC,SOURCE LOG,Damodaran Vietnam CRP,%,Base,0.039,0.039,Vietnam Ba2; CRP 3.90%; total ERP 8.13%.,https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html,"Damodaran đã có dòng Vietnam: default spread 2.56%, CRP 3.90%, ERP 8.13%, tax 20%."
-19_WACC,WACC CHECKS,Weight sum,%,Bull,1.0,1.0,Equity weight + debt weight should equal 100%.,Formula,Nếu weight không bằng 100% thì WACC sai cơ học.
-19_WACC,WACC CHECKS,Weight sum,%,Base,1.0,1.0,Equity weight + debt weight should equal 100%.,Formula,Nếu weight không bằng 100% thì WACC sai cơ học.
-19_WACC,WACC CHECKS,Weight sum,%,Bear,1.0,1.0,Equity weight + debt weight should equal 100%.,Formula,Nếu weight không bằng 100% thì WACC sai cơ học.
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2021A,122958.106103174,122958.106103174,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2022A,133404.777591,133404.777591,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2023A,118279.788455,118279.788455,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2024A,134341.152849,134341.152849,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2025A,155928.145619,155928.145619,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2026E,185000.0,185000.0,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2027E,210702.27006116117,210702.270061161,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2028E,232016.73569640506,232016.735696405,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2029E,250797.0728139098,250797.07281391,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue,VND bn,2030E,267230.44217471726,267230.442174717,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2022A,0.08496122637949721,0.0849612263794972,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2023A,-0.11337666768105603,-0.113376667681056,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2024A,0.1357912844095981,0.135791284409598,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2025A,0.16068786304271065,0.160687863042711,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2026E,0.18644391790584836,0.186443917905848,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2027E,0.13893118951979,0.13893118951979,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2028E,0.1011591646784673,0.101159164678467,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2029E,0.08094388993593493,0.0809438899359349,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Revenue Growth,%,2030E,0.06552456604228762,0.0655245660422876,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2021A,0.2247280221797489,0.224728022179749,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2022A,0.23134135863273664,0.231341358632737,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2023A,0.19040119582702883,0.190401195827029,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2024A,0.20469684451725095,0.204696844517251,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2025A,0.19882156153996097,0.198821561539961,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2026E,0.205,0.205,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2027E,0.208,0.208,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2028E,0.21,0.21,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2029E,0.211,0.211,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Gross Margin,%,2030E,0.212,0.212,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2021A,0.14569330864053193,0.145693308640532,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2022A,0.16743656765038475,0.167436567650385,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2023A,0.17684095506273112,0.176840955062731,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2024A,0.14775693962006783,0.147756939620068,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2025A,0.12397315096809892,0.123973150968099,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2026E,0.122,0.122,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2027E,0.12,0.12,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2028E,0.118,0.118,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2029E,0.116,0.116,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Selling Expenses / Revenue,%,2030E,0.115,0.115,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2021A,0.03109506315554989,0.0310950631555499,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2022A,0.014100151538552555,0.0141001515385526,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2023A,0.009871945818065423,0.00987194581806542,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2024A,0.026542630514775595,0.0265426305147756,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2025A,0.029475592714545588,0.0294755927145456,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2026E,0.028,0.028,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2027E,0.027,0.027,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2028E,0.026,0.026,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2029E,0.025,0.025,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",G&A Expenses / Revenue,%,2030E,0.025,0.025,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2021A,0.010474754914346823,0.0104747549143468,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2022A,0.009843255449410452,0.00984325544941045,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2023A,0.018320659373046052,0.0183206593730461,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2024A,0.017690056655023635,0.0176900566550236,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2025A,0.01992808111495534,0.0199280811149553,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2026E,0.017,0.017,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2027E,0.016,0.016,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2028E,0.015,0.015,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2029E,0.014,0.014,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Financial Income / Revenue,%,2030E,0.013,0.013,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2021A,0.027362955674913828,0.0273629556749138,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2022A,0.06606438089046521,0.0660643808904652,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2023A,0.06942963771170668,0.0694296377117067,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2024A,0.043394333338085116,0.0433943333380851,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2025A,0.05139419963555829,0.0513941996355583,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2026E,0.052,0.052,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2027E,0.052,0.052,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2028E,0.051,0.051,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2029E,0.05,0.05,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Interest Rate on Average Debt,%,2030E,0.05,0.05,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2021A,4.8608687758941635e-05,4.86086877589416e-05,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2022A,-0.0038854554863780918,-0.00388545548637809,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2023A,-0.003021445934830743,-0.00302144593483074,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2024A,-0.0029870401101220493,-0.00298704011012205,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2025A,-0.00019889229027181512,-0.000198892290271815,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2026E,0.0,0.0,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2027E,0.0,0.0,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2028E,0.0,0.0,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2029E,0.0,0.0,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Other Profit / Revenue,%,2030E,0.0,0.0,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2021A,0.2426233109509331,0.242623310950933,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2022A,0.32274211605733955,0.32274211605734,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2023A,0.7566608494064124,0.756660849406412,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2024A,0.22638384459763358,0.226383844597634,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2025A,0.18075205389018206,0.180752053890182,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2026E,0.2,0.2,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2027E,0.2,0.2,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2028E,0.2,0.2,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2029E,0.2,0.2,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Effective Tax Rate,%,2030E,0.2,0.2,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2021A,0.0005217655674873806,0.000521765567487381,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2022A,0.0004757517949338952,0.000475751794933895,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2023A,0.0009519323385737121,0.000951932338573712,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2024A,0.0030589084741144963,0.0030589084741145,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2025A,0.005498966455144319,0.00549896645514432,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2026E,0.006,0.006,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2027E,0.0065,0.0065,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2028E,0.007,0.007,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2029E,0.0075,0.0075,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Minority Interest / NPAT,%,2030E,0.008,0.008,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2021A,0.04889280106490802,0.048892801064908,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2022A,0.17851149204970868,0.178511492049709,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2023A,4.361440158610224,4.36144015861022,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2024A,0.1963953603924832,0.196395360392483,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2025A,0.2101952450761774,0.210195245076177,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2026E,0.2,0.2,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2027E,0.2,0.2,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2028E,0.2,0.2,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2029E,0.2,0.2,,,
+08_P5_Assumptions,"REVENUE, MARGIN AND CAPITAL ALLOCATION",Dividend Payout Ratio,%,2030E,0.2,0.2,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2021A,111.68036715009337,111.680367150093,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2022A,97.64274447233971,97.6427444723397,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2023A,90.56528694965716,90.5652869496572,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2024A,75.27546039279073,75.2754603927907,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2025A,72.32949517886831,72.3294951788683,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2026E,73.0,73.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2027E,72.0,72.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2028E,70.0,70.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2029E,69.0,69.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Inventory Days,days,2030E,68.0,68.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2021A,9.386729807471363,9.38672980747136,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2022A,8.431005753090242,8.43100575309024,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2023A,12.589977892093955,12.589977892094,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2024A,18.998026599609446,18.9980265996094,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2025A,22.24802721327809,22.2480272132781,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2026E,18.0,18.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2027E,17.0,17.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2028E,16.0,16.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2029E,15.0,15.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Receivable Days,days,2030E,15.0,15.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2021A,46.63595450556861,46.6359545055686,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2022A,37.24225202722244,37.2422520272224,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2023A,31.775583949752384,31.7755839497524,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2024A,29.220488924090155,29.2204889240902,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2025A,32.567772400057535,32.5677724000575,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2026E,33.0,33.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2027E,34.0,34.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2028E,34.0,34.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2029E,34.0,34.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Payable Days,days,2030E,34.0,34.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2021A,0.20045424461974337,0.200454244619743,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2022A,0.12435378200517451,0.124353782005175,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2023A,0.2123253021166388,0.212325302116639,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2024A,0.20321581394113528,0.203215813941135,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2025A,0.19195343369973925,0.191953433699739,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2026E,0.19,0.19,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2027E,0.18,0.18,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2028E,0.17,0.17,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2029E,0.16,0.16,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Total Debt / Revenue,%,2030E,0.15,0.15,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2021A,0.010143791632903198,0.0101437916329032,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2022A,0.005625299839715993,0.00562529983971599,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2023A,0.005618340121168084,0.00561834012116808,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2024A,0.004049963547741358,0.00404996354774136,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2025A,0.0056293044883940655,0.00562930448839407,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2026E,0.006,0.006,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2027E,0.006,0.006,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2028E,0.006,0.006,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2029E,0.006,0.006,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Assets / Revenue,%,2030E,0.006,0.006,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2021A,0.046893287049638105,0.0468932870496381,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2022A,0.049220861887955256,0.0492208618879553,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2023A,0.03136333820390072,0.0313633382039007,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2024A,0.04344399312666345,0.0434439931266635,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2025A,0.04953986704795868,0.0495398670479587,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2026E,0.05,0.05,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2027E,0.05,0.05,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2028E,0.048,0.048,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2029E,0.047,0.047,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Current Liabilities / Revenue,%,2030E,0.046,0.046,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2021A,0.0,0.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2022A,0.0017318333284008752,0.00173183332840088,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2023A,0.006312424656424365,0.00631242465642437,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2024A,0.0018016504463978303,0.00180165044639783,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2025A,0.020113851495825376,0.0201138514958254,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2026E,0.018,0.018,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2027E,0.017,0.017,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2028E,0.016,0.016,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2029E,0.015,0.015,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Long-term Investments / Revenue,%,2030E,0.015,0.015,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2021A,0.006562324990106294,0.00656232499010629,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2022A,0.005026732131407869,0.00502673213140787,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2023A,0.003822018426859047,0.00382201842685905,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2024A,0.0026682398237486034,0.0026682398237486,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2025A,0.0033011409964287964,0.0033011409964288,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2026E,0.003,0.003,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2027E,0.003,0.003,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2028E,0.003,0.003,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2029E,0.003,0.003,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other Long-term Assets / Revenue,%,2030E,0.003,0.003,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2021A,0.0,0.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2022A,0.0,0.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2023A,9.880732923736047e-06,9.88073292373605e-06,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2024A,0.0,0.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2025A,0.0,0.0,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2026E,0.001,0.001,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2027E,0.001,0.001,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2028E,0.001,0.001,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2029E,0.001,0.001,,,
+08_P5_Assumptions,WORKING CAPITAL AND BALANCE SHEET SUPPORT,Other LT Liabilities / Revenue,%,2030E,0.001,0.001,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2021A,0.04047619752568333,0.0404761975256833,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2022A,0.03347226092374409,0.0334722609237441,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2023A,0.00442495998544268,0.00442495998544268,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2024A,0.002261018463503985,0.00226101846350398,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2025A,0.0056978930036845135,0.00569789300368451,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2026E,0.012,0.012,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2027E,0.012,0.012,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2028E,0.011,0.011,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2029E,0.01,0.01,,,
+08_P5_Assumptions,CAPEX AND D&A,Capex / Revenue,%,2030E,0.01,0.01,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2021A,0.023753729631775824,0.0237537296317758,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2022A,0.026538215421745465,0.0265382154217455,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2023A,0.02833378645477558,0.0283337864547756,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2024A,0.02168672085369622,0.0216867208536962,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2025A,0.012126624744324506,0.0121266247443245,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2026E,0.0115,0.0115,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2027E,0.011,0.011,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2028E,0.0105,0.0105,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2029E,0.01,0.01,,,
+08_P5_Assumptions,CAPEX AND D&A,D&A / Revenue,%,2030E,0.0095,0.0095,,,
+19_WACC,CAPM AND COST OF EQUITY,Risk-free rate,%,Bull,0.04,0.04,"Vietnam 10Y government bond yield, rounded for model use.",Trading Economics Vietnam 10Y; ADB AsianBondsOnline cross-check,
+19_WACC,CAPM AND COST OF EQUITY,Risk-free rate,%,Base,0.045,0.045,"Vietnam 10Y government bond yield, rounded for model use.",Trading Economics Vietnam 10Y; ADB AsianBondsOnline cross-check,
+19_WACC,CAPM AND COST OF EQUITY,Risk-free rate,%,Bear,0.049999999999999996,0.05,"Vietnam 10Y government bond yield, rounded for model use.",Trading Economics Vietnam 10Y; ADB AsianBondsOnline cross-check,
+19_WACC,CAPM AND COST OF EQUITY,Mature market ERP,%,Bull,0.0423,0.0423,Damodaran mature market equity risk premium.,Damodaran CompanyERP,
+19_WACC,CAPM AND COST OF EQUITY,Mature market ERP,%,Base,0.0423,0.0423,Damodaran mature market equity risk premium.,Damodaran CompanyERP,
+19_WACC,CAPM AND COST OF EQUITY,Mature market ERP,%,Bear,0.0423,0.0423,Damodaran mature market equity risk premium.,Damodaran CompanyERP,
+19_WACC,CAPM AND COST OF EQUITY,Vietnam country risk premium,%,Bull,0.039,0.039,Damodaran Vietnam CRP based on sovereign rating/default spread.,Damodaran country risk premiums,
+19_WACC,CAPM AND COST OF EQUITY,Vietnam country risk premium,%,Base,0.039,0.039,Damodaran Vietnam CRP based on sovereign rating/default spread.,Damodaran country risk premiums,
+19_WACC,CAPM AND COST OF EQUITY,Vietnam country risk premium,%,Bear,0.039,0.039,Damodaran Vietnam CRP based on sovereign rating/default spread.,Damodaran country risk premiums,
+19_WACC,CAPM AND COST OF EQUITY,Equity risk premium,%,Bull,0.07629999999999999,0.0763,Base = mature market ERP + Vietnam CRP; Bull/Bear flex around base.,Damodaran country risk premiums,
+19_WACC,CAPM AND COST OF EQUITY,Equity risk premium,%,Base,0.0813,0.0813,Base = mature market ERP + Vietnam CRP; Bull/Bear flex around base.,Damodaran country risk premiums,
+19_WACC,CAPM AND COST OF EQUITY,Equity risk premium,%,Bear,0.09129999999999999,0.0913,Base = mature market ERP + Vietnam CRP; Bull/Bear flex around base.,Damodaran country risk premiums,
+19_WACC,CAPM AND COST OF EQUITY,Beta,x,Bull,0.9400000000000001,0.94,"2-year weekly beta from 18_Beta_Calculation: Cov(MWG return, VNINDEX return) / Var(VNINDEX return).",18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,CAPM AND COST OF EQUITY,Beta,x,Base,1.04,1.04,"2-year weekly beta from 18_Beta_Calculation: Cov(MWG return, VNINDEX return) / Var(VNINDEX return).",18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,CAPM AND COST OF EQUITY,Beta,x,Bear,1.1400000000000001,1.14,"2-year weekly beta from 18_Beta_Calculation: Cov(MWG return, VNINDEX return) / Var(VNINDEX return).",18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,CAPM AND COST OF EQUITY,Cost of Equity,%,Bull,0.11172199999999999,0.111722,Cost of Equity = Risk-free rate + Beta x ERP.,Formula,
+19_WACC,CAPM AND COST OF EQUITY,Cost of Equity,%,Base,0.129552,0.129552,Cost of Equity = Risk-free rate + Beta x ERP.,Formula,
+19_WACC,CAPM AND COST OF EQUITY,Cost of Equity,%,Bear,0.154082,0.154082,Cost of Equity = Risk-free rate + Beta x ERP.,Formula,
+19_WACC,CAPM AND COST OF EQUITY,Cost of equity > risk-free?,status,Bull,,OK,Should be OK.,Formula,
+19_WACC,CAPM AND COST OF EQUITY,Cost of equity > risk-free?,status,Base,,OK,Should be OK.,Formula,
+19_WACC,CAPM AND COST OF EQUITY,Cost of equity > risk-free?,status,Bear,,OK,Should be OK.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Pre-tax cost of debt,%,Bull,0.047,0.047,Base links to Phase 5 implied borrowing cost; Bull/Bear flex +/-50 bps.,08_P5_Assumptions row Interest Rate on Average Debt,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Pre-tax cost of debt,%,Base,0.052,0.052,Base links to Phase 5 implied borrowing cost; Bull/Bear flex +/-50 bps.,08_P5_Assumptions row Interest Rate on Average Debt,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Pre-tax cost of debt,%,Bear,0.056999999999999995,0.057,Base links to Phase 5 implied borrowing cost; Bull/Bear flex +/-50 bps.,08_P5_Assumptions row Interest Rate on Average Debt,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Effective tax rate,%,Bull,0.2,0.2,Linked to normalized 2026E tax rate in Phase 5.,08_P5_Assumptions row Effective Tax Rate,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Effective tax rate,%,Base,0.2,0.2,Linked to normalized 2026E tax rate in Phase 5.,08_P5_Assumptions row Effective Tax Rate,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Effective tax rate,%,Bear,0.2,0.2,Linked to normalized 2026E tax rate in Phase 5.,08_P5_Assumptions row Effective Tax Rate,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",After-tax cost of debt,%,Bull,0.0376,0.0376,After-tax cost of debt = pre-tax cost of debt x (1 - tax rate).,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",After-tax cost of debt,%,Base,0.0416,0.0416,After-tax cost of debt = pre-tax cost of debt x (1 - tax rate).,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",After-tax cost of debt,%,Bear,0.0456,0.0456,After-tax cost of debt = pre-tax cost of debt x (1 - tax rate).,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Market cap,VND bn,Bull,115271.2470265,115271.2470265,Current share price x shares outstanding.,100_Raw_Peer_Metrics MWG row,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Market cap,VND bn,Base,115271.2470265,115271.2470265,Current share price x shares outstanding.,100_Raw_Peer_Metrics MWG row,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Market cap,VND bn,Bear,115271.2470265,115271.2470265,Current share price x shares outstanding.,100_Raw_Peer_Metrics MWG row,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Gross debt,VND bn,Bull,28100.653169211,28100.653169211,Short-term borrowings + long-term borrowings.,100_Raw_Peer_Metrics MWG row,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Gross debt,VND bn,Base,28100.653169211,28100.653169211,Short-term borrowings + long-term borrowings.,100_Raw_Peer_Metrics MWG row,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Gross debt,VND bn,Bear,28100.653169211,28100.653169211,Short-term borrowings + long-term borrowings.,100_Raw_Peer_Metrics MWG row,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Total capital,VND bn,Bull,143371.900195711,143371.900195711,Market cap + gross debt.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Total capital,VND bn,Base,143371.900195711,143371.900195711,Market cap + gross debt.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Total capital,VND bn,Bear,143371.900195711,143371.900195711,Market cap + gross debt.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Equity weight,%,Bull,0.8040016688705948,0.804001668870595,Market cap / total capital.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Equity weight,%,Base,0.8040016688705948,0.804001668870595,Market cap / total capital.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Equity weight,%,Bear,0.8040016688705948,0.804001668870595,Market cap / total capital.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Debt weight,%,Bull,0.1959983311294052,0.195998331129405,Gross debt / total capital.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Debt weight,%,Base,0.1959983311294052,0.195998331129405,Gross debt / total capital.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Debt weight,%,Bear,0.1959983311294052,0.195998331129405,Gross debt / total capital.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",WACC,%,Bull,0.0971942117000262,0.0971942117000262,WACC = Cost of Equity x Equity Weight + After-tax Cost of Debt x Debt Weight.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",WACC,%,Base,0.11231355478050656,0.112313554780507,WACC = Cost of Equity x Equity Weight + After-tax Cost of Debt x Debt Weight.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",WACC,%,Bear,0.13281970904241985,0.13281970904242,WACC = Cost of Equity x Equity Weight + After-tax Cost of Debt x Debt Weight.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Rounded WACC for DCF,%,Bull,0.097,0.097,Rounded to nearest 10 bps for clean sensitivity tables.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Rounded WACC for DCF,%,Base,0.112,0.112,Rounded to nearest 10 bps for clean sensitivity tables.,Formula,
+19_WACC,"DEBT, TAX AND CAPITAL STRUCTURE",Rounded WACC for DCF,%,Bear,0.133,0.133,Rounded to nearest 10 bps for clean sensitivity tables.,Formula,
+19_WACC,BETA CALCULATION AUDIT,Stock,text,Base,,MWG,Target stock used for beta.,18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,BETA CALCULATION AUDIT,Market index,text,Base,,VNINDEX,Market index used as market proxy.,18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,BETA CALCULATION AUDIT,Frequency,text,Base,,Weekly Friday close,Weekly Friday close.,18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,BETA CALCULATION AUDIT,Start date,date,Base,,2024-05-31,First weekly observation.,18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,BETA CALCULATION AUDIT,End date,date,Base,,2026-06-26,Last weekly observation.,18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,BETA CALCULATION AUDIT,Observations,count,Base,107.0,107.0,Number of weekly return observations.,18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,BETA CALCULATION AUDIT,Raw beta,x,Base,1.0381347090365216,1.03813470903652,Raw beta linked from 18_Beta_Calculation.,18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,BETA CALCULATION AUDIT,R-squared,%,Base,0.3653242534965612,0.365324253496561,R-squared linked from 18_Beta_Calculation.,18_Beta_Calculation / vnstock Quote.history source=VCI,
+19_WACC,SOURCE LOG,Vietnam 10Y government bond yield,%,Base,0.0452,0.0452,Used as risk-free anchor; model rounds base to 4.5%.,https://tradingeconomics.com/vietnam/government-bond-yield,
+19_WACC,SOURCE LOG,Damodaran mature market ERP,%,Base,0.0423,0.0423,Mature market ERP input.,https://pages.stern.nyu.edu/~adamodar/pc/CompanyERP.xlsx,
+19_WACC,SOURCE LOG,Damodaran Vietnam CRP,%,Base,0.039,0.039,Vietnam Ba2; CRP 3.90%; total ERP 8.13%.,https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html,
+19_WACC,WACC CHECKS,Weight sum,%,Bull,1.0,1.0,Equity weight + debt weight should equal 100%.,Formula,Nếu weight không bằng 100% thì WACC vô lý.
+19_WACC,WACC CHECKS,Weight sum,%,Base,1.0,1.0,Equity weight + debt weight should equal 100%.,Formula,Nếu weight không bằng 100% thì WACC vô lý.
+19_WACC,WACC CHECKS,Weight sum,%,Bear,1.0,1.0,Equity weight + debt weight should equal 100%.,Formula,Nếu weight không bằng 100% thì WACC vô lý.
 19_WACC,WACC CHECKS,WACC positive?,status,Bull,,OK,WACC must be positive.,Formula,Discount rate âm là không hợp lý với case này.
 19_WACC,WACC CHECKS,WACC positive?,status,Base,,OK,WACC must be positive.,Formula,Discount rate âm là không hợp lý với case này.
 19_WACC,WACC CHECKS,WACC positive?,status,Bear,,OK,WACC must be positive.,Formula,Discount rate âm là không hợp lý với case này.

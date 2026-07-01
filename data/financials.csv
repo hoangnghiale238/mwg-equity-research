@@ -1,319 +1,319 @@
 ﻿source_sheet,section,line_item,unit,period,value,source,note
-03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2021A,124141.525689948,90_Raw_IS_vnstock,Gross revenue; not used as model revenue
-03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2022A,134722.248888,90_Raw_IS_vnstock,Gross revenue; not used as model revenue
-03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2023A,119234.184825,90_Raw_IS_vnstock,Gross revenue; not used as model revenue
-03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2024A,135225.101299,90_Raw_IS_vnstock,Gross revenue; not used as model revenue
-03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2025A,156836.115055,90_Raw_IS_vnstock,Gross revenue; not used as model revenue
-03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2021A,122958.106103174,90_Raw_IS_vnstock,Use this net revenue line for modeling
-03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2022A,133404.777591,90_Raw_IS_vnstock,Use this net revenue line for modeling
-03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2023A,118279.788455,90_Raw_IS_vnstock,Use this net revenue line for modeling
-03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2024A,134341.152849,90_Raw_IS_vnstock,Use this net revenue line for modeling
-03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2025A,155928.145619,90_Raw_IS_vnstock,Use this net revenue line for modeling
-03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2021A,95325.97410764,90_Raw_IS_vnstock,4. Giá vốn hàng bán
-03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2022A,102542.735094,90_Raw_IS_vnstock,4. Giá vốn hàng bán
-03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2023A,95759.175292,90_Raw_IS_vnstock,4. Giá vốn hàng bán
-03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2024A,106841.942772,90_Raw_IS_vnstock,4. Giá vốn hàng bán
-03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2025A,124926.26822,90_Raw_IS_vnstock,4. Giá vốn hàng bán
-03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2021A,27632.131995534,90_Raw_IS_vnstock,5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ
-03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2022A,30862.042496,90_Raw_IS_vnstock,5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ
-03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2023A,22520.613164,90_Raw_IS_vnstock,5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ
-03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2024A,27499.210077,90_Raw_IS_vnstock,5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ
-03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2025A,31001.8774,90_Raw_IS_vnstock,5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ
-03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2021A,0.2247280221797489,Formula,Gross Profit / Revenue
-03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2022A,0.23134135863273664,Formula,Gross Profit / Revenue
-03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2023A,0.19040119582702883,Formula,Gross Profit / Revenue
-03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2024A,0.20469684451725095,Formula,Gross Profit / Revenue
-03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2025A,0.19882156153996097,Formula,Gross Profit / Revenue
-03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2021A,1287.956026163,90_Raw_IS_vnstock,7. Doanh thu hoạt động tài chính
-03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2022A,1313.137304,90_Raw_IS_vnstock,7. Doanh thu hoạt động tài chính
-03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2023A,2166.963715,90_Raw_IS_vnstock,7. Doanh thu hoạt động tài chính
-03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2024A,2376.502605,90_Raw_IS_vnstock,7. Doanh thu hoạt động tài chính
-03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2025A,3107.348734,90_Raw_IS_vnstock,7. Doanh thu hoạt động tài chính
-03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2021A,714.707225745,90_Raw_IS_vnstock,8. Chi phí tài chính
-03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2022A,1382.620455,90_Raw_IS_vnstock,8. Chi phí tài chính
-03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2023A,1556.146107,90_Raw_IS_vnstock,8. Chi phí tài chính
-03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2024A,1188.46561,90_Raw_IS_vnstock,8. Chi phí tài chính
-03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2025A,1542.518673,90_Raw_IS_vnstock,8. Chi phí tài chính
-03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2021A,674.427746189,90_Raw_IS_vnstock,Trong đó: Chi phí đi vay
-03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2022A,1362.143909,90_Raw_IS_vnstock,Trong đó: Chi phí đi vay
-03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2023A,1447.718355,90_Raw_IS_vnstock,Trong đó: Chi phí đi vay
-03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2024A,1137.23613,90_Raw_IS_vnstock,Trong đó: Chi phí đi vay
-03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2025A,1470.675594,90_Raw_IS_vnstock,Trong đó: Chi phí đi vay
-03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2021A,17914.173302345,90_Raw_IS_vnstock,9. Chi phí bán hàng
-03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2022A,22336.838068,90_Raw_IS_vnstock,9. Chi phí bán hàng
-03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2023A,20916.710755,90_Raw_IS_vnstock,9. Chi phí bán hàng
-03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2024A,19849.83761,90_Raw_IS_vnstock,9. Chi phí bán hàng
-03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2025A,19330.903537,90_Raw_IS_vnstock,9. Chi phí bán hàng
-03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2021A,3823.390074765,90_Raw_IS_vnstock,10. Chi phí quản lý doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2022A,1881.02758,90_Raw_IS_vnstock,10. Chi phí quản lý doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2023A,1167.651663,90_Raw_IS_vnstock,10. Chi phí quản lý doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2024A,3565.767583,90_Raw_IS_vnstock,10. Chi phí quản lý doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2025A,4596.074513,90_Raw_IS_vnstock,10. Chi phí quản lý doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2021A,21737.56337711,Formula,Selling Expenses + G&A Expenses
-03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2022A,24217.865648,Formula,Selling Expenses + G&A Expenses
-03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2023A,22084.362418,Formula,Selling Expenses + G&A Expenses
-03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2024A,23415.605193,Formula,Selling Expenses + G&A Expenses
-03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2025A,23926.978049999998,Formula,Selling Expenses + G&A Expenses
-03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2021A,6465.606918356,90_Raw_IS_vnstock,11. Lợi nhuận thuần từ hoạt động kinh doanh
-03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2022A,6574.693699,90_Raw_IS_vnstock,11. Lợi nhuận thuần từ hoạt động kinh doanh
-03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2023A,1047.068354,90_Raw_IS_vnstock,11. Lợi nhuận thuần từ hoạt động kinh doanh
-03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2024A,5227.045425,90_Raw_IS_vnstock,11. Lợi nhuận thuần từ hoạt động kinh doanh
-03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2025A,8664.080489,90_Raw_IS_vnstock,11. Lợi nhuận thuần từ hoạt động kinh doanh
-03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2021A,0.05258381999581806,Formula,EBIT / Revenue
-03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2022A,0.04928379491143168,Formula,EBIT / Revenue
-03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2023A,0.008852470634899395,Formula,EBIT / Revenue
-03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2024A,0.03890874325661937,Formula,EBIT / Revenue
-03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2025A,0.055564570813085294,Formula,EBIT / Revenue
-03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2021A,5.976832187,90_Raw_IS_vnstock,14. Lợi nhuận khác
-03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2022A,-518.338325,90_Raw_IS_vnstock,14. Lợi nhuận khác
-03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2023A,-357.375986,90_Raw_IS_vnstock,14. Lợi nhuận khác
-03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2024A,-401.282412,90_Raw_IS_vnstock,14. Lợi nhuận khác
-03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2025A,-31.012906,90_Raw_IS_vnstock,14. Lợi nhuận khác
-03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2021A,6471.583750543,90_Raw_IS_vnstock,15. Tổng lợi nhuận kế toán trước thuế
-03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2022A,6056.355374,90_Raw_IS_vnstock,15. Tổng lợi nhuận kế toán trước thuế
-03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2023A,689.692368,90_Raw_IS_vnstock,15. Tổng lợi nhuận kế toán trước thuế
-03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2024A,4825.763013,90_Raw_IS_vnstock,15. Tổng lợi nhuận kế toán trước thuế
-03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2025A,8633.067583,90_Raw_IS_vnstock,15. Tổng lợi nhuận kế toán trước thuế
-03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2021A,1632.975695694,90_Raw_IS_vnstock,16. Chi phí thuế TNDN hiện hành
-03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2022A,1792.99881,90_Raw_IS_vnstock,16. Chi phí thuế TNDN hiện hành
-03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2023A,433.257177,90_Raw_IS_vnstock,16. Chi phí thuế TNDN hiện hành
-03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2024A,1282.537117,90_Raw_IS_vnstock,16. Chi phí thuế TNDN hiện hành
-03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2025A,1721.559523,90_Raw_IS_vnstock,16. Chi phí thuế TNDN hiện hành
-03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2021A,-62.818619041,90_Raw_IS_vnstock,17. Chi phí thuế TNDN hoãn lại
-03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2022A,161.642139,90_Raw_IS_vnstock,17. Chi phí thuế TNDN hoãn lại
-03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2023A,88.606036,90_Raw_IS_vnstock,17. Chi phí thuế TNDN hoãn lại
-03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2024A,-190.062333,90_Raw_IS_vnstock,17. Chi phí thuế TNDN hoãn lại
-03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2025A,-161.114826,90_Raw_IS_vnstock,17. Chi phí thuế TNDN hoãn lại
-03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2021A,1570.157076653,Formula,Current Tax + Deferred Tax
-03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2022A,1954.640949,Formula,Current Tax + Deferred Tax
-03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2023A,521.863213,Formula,Current Tax + Deferred Tax
-03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2024A,1092.474784,Formula,Current Tax + Deferred Tax
-03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2025A,1560.444697,Formula,Current Tax + Deferred Tax
-03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2021A,4901.42667389,90_Raw_IS_vnstock,18. Lợi nhuận sau thuế thu nhập doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2022A,4101.714425,90_Raw_IS_vnstock,18. Lợi nhuận sau thuế thu nhập doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2023A,167.829155,90_Raw_IS_vnstock,18. Lợi nhuận sau thuế thu nhập doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2024A,3733.288229,90_Raw_IS_vnstock,18. Lợi nhuận sau thuế thu nhập doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2025A,7072.622886,90_Raw_IS_vnstock,18. Lợi nhuận sau thuế thu nhập doanh nghiệp
-03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2021A,2.55739567,90_Raw_IS_vnstock,Lợi ích của cổ đông thiểu số
-03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2022A,1.951398,90_Raw_IS_vnstock,Lợi ích của cổ đông thiểu số
-03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2023A,0.159762,90_Raw_IS_vnstock,Lợi ích của cổ đông thiểu số
-03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2024A,11.419787,90_Raw_IS_vnstock,Lợi ích của cổ đông thiểu số
-03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2025A,38.892116,90_Raw_IS_vnstock,Lợi ích của cổ đông thiểu số
-03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2021A,4898.86927822,90_Raw_IS_vnstock,Lợi nhuận sau thuế của cổ đông của Công ty mẹ
-03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2022A,4099.763027,90_Raw_IS_vnstock,Lợi nhuận sau thuế của cổ đông của Công ty mẹ
-03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2023A,167.669393,90_Raw_IS_vnstock,Lợi nhuận sau thuế của cổ đông của Công ty mẹ
-03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2024A,3721.868442,90_Raw_IS_vnstock,Lợi nhuận sau thuế của cổ đông của Công ty mẹ
-03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2025A,7033.73077,90_Raw_IS_vnstock,Lợi nhuận sau thuế của cổ đông của Công ty mẹ
-03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2021A,0.03984177565413511,Formula,NPATMI / Revenue
-03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2022A,0.03073175564648283,Formula,NPATMI / Revenue
-03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2023A,0.0014175658850099353,Formula,NPATMI / Revenue
-03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2024A,0.02770460401053276,Formula,NPATMI / Revenue
-03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2025A,0.045108795093263356,Formula,NPATMI / Revenue
-03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2021A,4142.015762555,91_Raw_BS_vnstock,I. Tiền và các khoản tương đương tiền
-03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2022A,5061.020547,91_Raw_BS_vnstock,I. Tiền và các khoản tương đương tiền
-03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2023A,5365.704857,91_Raw_BS_vnstock,I. Tiền và các khoản tương đương tiền
-03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2024A,4897.331541,91_Raw_BS_vnstock,I. Tiền và các khoản tương đương tiền
-03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2025A,4999.925717,91_Raw_BS_vnstock,I. Tiền và các khoản tương đương tiền
-03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2021A,14236.626334707,91_Raw_BS_vnstock,II. Đầu tư tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2022A,10069.249606,91_Raw_BS_vnstock,II. Đầu tư tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2023A,18937.008074,91_Raw_BS_vnstock,II. Đầu tư tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2024A,29324.441756,91_Raw_BS_vnstock,II. Đầu tư tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2025A,33874.270103,91_Raw_BS_vnstock,II. Đầu tư tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2021A,3162.121971586,91_Raw_BS_vnstock,III. Các khoản phải thu ngắn hạn
-03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2022A,3000.817466,91_Raw_BS_vnstock,III. Các khoản phải thu ngắn hạn
-03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2023A,5158.853338,91_Raw_BS_vnstock,III. Các khoản phải thu ngắn hạn
-03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2024A,8825.896225,91_Raw_BS_vnstock,III. Các khoản phải thu ngắn hạn
-03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2025A,10182.835978,91_Raw_BS_vnstock,III. Các khoản phải thu ngắn hạn
-03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2021A,29167.232293922,91_Raw_BS_vnstock,IV. Hàng tồn kho
-03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2022A,25696.077735,91_Raw_BS_vnstock,IV. Hàng tồn kho
-03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2023A,21824.235626,91_Raw_BS_vnstock,IV. Hàng tồn kho
-03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2024A,22244.676327,91_Raw_BS_vnstock,IV. Hàng tồn kho
-03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2025A,27266.851974,91_Raw_BS_vnstock,IV. Hàng tồn kho
-03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2021A,1247.261407887,91_Raw_BS_vnstock,VI. Tài sản ngắn hạn khác
-03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2022A,750.441874,91_Raw_BS_vnstock,VI. Tài sản ngắn hạn khác
-03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2023A,664.536081,91_Raw_BS_vnstock,VI. Tài sản ngắn hạn khác
-03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2024A,544.076772,91_Raw_BS_vnstock,VI. Tài sản ngắn hạn khác
-03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2025A,877.76701,91_Raw_BS_vnstock,VI. Tài sản ngắn hạn khác
-03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2021A,51955.257770657,91_Raw_BS_vnstock,A. TÀI SẢN NGẮN HẠN
-03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2022A,44577.607228,91_Raw_BS_vnstock,A. TÀI SẢN NGẮN HẠN
-03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2023A,51950.337976,91_Raw_BS_vnstock,A. TÀI SẢN NGẮN HẠN
-03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2024A,65836.42262,91_Raw_BS_vnstock,A. TÀI SẢN NGẮN HẠN
-03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2025A,77201.650783,91_Raw_BS_vnstock,A. TÀI SẢN NGẮN HẠN
-03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2021A,9647.168873232,91_Raw_BS_vnstock,II. Tài sản cố định
-03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2022A,9727.502911,91_Raw_BS_vnstock,II. Tài sản cố định
-03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2023A,6500.135609,91_Raw_BS_vnstock,II. Tài sản cố định
-03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2024A,3586.628664,91_Raw_BS_vnstock,II. Tài sản cố định
-03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2025A,2598.189218,91_Raw_BS_vnstock,II. Tài sản cố định
-03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2021A,0.0,91_Raw_BS_vnstock,VI. Đầu tư tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2022A,231.03484,91_Raw_BS_vnstock,VI. Đầu tư tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2023A,746.632253,91_Raw_BS_vnstock,VI. Đầu tư tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2024A,242.035798,91_Raw_BS_vnstock,VI. Đầu tư tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2025A,3136.315565,91_Raw_BS_vnstock,VI. Đầu tư tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2021A,806.891052417,91_Raw_BS_vnstock,VII. Tài sản dài hạn khác
-03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2022A,670.590082,91_Raw_BS_vnstock,VII. Tài sản dài hạn khác
-03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2023A,452.067531,91_Raw_BS_vnstock,VII. Tài sản dài hạn khác
-03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2024A,358.454414,91_Raw_BS_vnstock,VII. Tài sản dài hạn khác
-03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2025A,514.740794,91_Raw_BS_vnstock,VII. Tài sản dài hạn khác
-03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2021A,62971.404814942,91_Raw_BS_vnstock,TỔNG CỘNG TÀI SẢN
-03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2022A,55834.095614,91_Raw_BS_vnstock,TỔNG CỘNG TÀI SẢN
-03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2023A,60111.237213,91_Raw_BS_vnstock,TỔNG CỘNG TÀI SẢN
-03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2024A,70437.775722,91_Raw_BS_vnstock,TỔNG CỘNG TÀI SẢN
-03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2025A,83945.619612,91_Raw_BS_vnstock,TỔNG CỘNG TÀI SẢN
-03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2021A,12179.774771734,91_Raw_BS_vnstock,1. Phải trả người bán ngắn hạn
-03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2022A,8745.827332,91_Raw_BS_vnstock,1. Phải trả người bán ngắn hạn
-03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2023A,7927.069728,91_Raw_BS_vnstock,1. Phải trả người bán ngắn hạn
-03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2024A,9179.636055,91_Raw_BS_vnstock,1. Phải trả người bán ngắn hạn
-03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2025A,13113.899672,91_Raw_BS_vnstock,1. Phải trả người bán ngắn hạn
-03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2021A,24647.474278786,91_Raw_BS_vnstock,11. Vay và nợ thuê tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2022A,10688.138631,91_Raw_BS_vnstock,11. Vay và nợ thuê tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2023A,19128.541818,91_Raw_BS_vnstock,11. Vay và nợ thuê tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2024A,27300.246722,91_Raw_BS_vnstock,11. Vay và nợ thuê tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2025A,29930.942962,91_Raw_BS_vnstock,11. Vay và nợ thuê tài chính ngắn hạn
-03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2021A,42593.158815096,91_Raw_BS_vnstock,I. Nợ ngắn hạn
-03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2022A,26000.264096,91_Raw_BS_vnstock,I. Nợ ngắn hạn
-03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2023A,30765.260554,91_Raw_BS_vnstock,I. Nợ ngắn hạn
-03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2024A,42316.198898,91_Raw_BS_vnstock,I. Nợ ngắn hạn
-03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2025A,50769.502237,91_Raw_BS_vnstock,I. Nợ ngắn hạn
-03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2021A,0.0,91_Raw_BS_vnstock,9. Vay và nợ thuê tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2022A,5901.25,91_Raw_BS_vnstock,9. Vay và nợ thuê tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2023A,5985.25,91_Raw_BS_vnstock,9. Vay và nợ thuê tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2024A,0.0,91_Raw_BS_vnstock,9. Vay và nợ thuê tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2025A,0.0,91_Raw_BS_vnstock,9. Vay và nợ thuê tài chính dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2021A,0.0,91_Raw_BS_vnstock,II. Nợ dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2022A,5901.25,91_Raw_BS_vnstock,II. Nợ dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2023A,5986.418691,91_Raw_BS_vnstock,II. Nợ dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2024A,0.0,91_Raw_BS_vnstock,II. Nợ dài hạn
-03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2025A,0.0,91_Raw_BS_vnstock,II. Nợ dài hạn
-03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2021A,42593.158815096,91_Raw_BS_vnstock,C. NỢ PHẢI TRẢ
-03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2022A,31901.514096,91_Raw_BS_vnstock,C. NỢ PHẢI TRẢ
-03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2023A,36751.679245,91_Raw_BS_vnstock,C. NỢ PHẢI TRẢ
-03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2024A,42316.198898,91_Raw_BS_vnstock,C. NỢ PHẢI TRẢ
-03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2025A,50769.502237,91_Raw_BS_vnstock,C. NỢ PHẢI TRẢ
-03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2021A,7130.65495,91_Raw_BS_vnstock,1. Vốn góp của chủ sở hữu
-03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2022A,14638.7928,91_Raw_BS_vnstock,1. Vốn góp của chủ sở hữu
-03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2023A,14633.76716,91_Raw_BS_vnstock,1. Vốn góp của chủ sở hữu
-03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2024A,14622.44177,91_Raw_BS_vnstock,1. Vốn góp của chủ sở hữu
-03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2025A,14696.93177,91_Raw_BS_vnstock,1. Vốn góp của chủ sở hữu
-03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2021A,12674.574164065,91_Raw_BS_vnstock,10. Lợi nhuận sau thuế chưa phân phối
-03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2022A,8723.934226,91_Raw_BS_vnstock,10. Lợi nhuận sau thuế chưa phân phối
-03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2023A,8160.323596,91_Raw_BS_vnstock,10. Lợi nhuận sau thuế chưa phân phối
-03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2024A,12582.145267,91_Raw_BS_vnstock,10. Lợi nhuận sau thuế chưa phân phối
-03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2025A,18068.194576,91_Raw_BS_vnstock,10. Lợi nhuận sau thuế chưa phân phối
-03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2021A,11.838029496,91_Raw_BS_vnstock,13. Lợi ích cổ đông không kiểm soát
-03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2022A,14.508097,91_Raw_BS_vnstock,13. Lợi ích cổ đông không kiểm soát
-03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2023A,13.40103,91_Raw_BS_vnstock,13. Lợi ích cổ đông không kiểm soát
-03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2024A,364.020651,91_Raw_BS_vnstock,13. Lợi ích cổ đông không kiểm soát
-03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2025A,576.350988,91_Raw_BS_vnstock,13. Lợi ích cổ đông không kiểm soát
-03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2021A,20378.245999846,91_Raw_BS_vnstock,D. VỐN CHỦ SỞ HỮU
-03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2022A,23932.581518,91_Raw_BS_vnstock,D. VỐN CHỦ SỞ HỮU
-03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2023A,23359.557967,91_Raw_BS_vnstock,D. VỐN CHỦ SỞ HỮU
-03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2024A,28121.576824,91_Raw_BS_vnstock,D. VỐN CHỦ SỞ HỮU
-03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2025A,33176.117375,91_Raw_BS_vnstock,D. VỐN CHỦ SỞ HỮU
-03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2021A,62971.404814942,91_Raw_BS_vnstock,TỔNG CỘNG NGUỒN VỐN
-03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2022A,55834.095614,91_Raw_BS_vnstock,TỔNG CỘNG NGUỒN VỐN
-03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2023A,60111.237213,91_Raw_BS_vnstock,TỔNG CỘNG NGUỒN VỐN
-03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2024A,70437.775722,91_Raw_BS_vnstock,TỔNG CỘNG NGUỒN VỐN
-03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2025A,83945.619612,91_Raw_BS_vnstock,TỔNG CỘNG NGUỒN VỐN
-03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2021A,24647.474278786,Formula,Short-term Debt + Long-term Debt
-03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2022A,16589.388631,Formula,Short-term Debt + Long-term Debt
-03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2023A,25113.791818,Formula,Short-term Debt + Long-term Debt
-03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2024A,27300.246722,Formula,Short-term Debt + Long-term Debt
-03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2025A,29930.942962,Formula,Short-term Debt + Long-term Debt
-03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2021A,6268.832181524003,Formula,Total Debt - Cash - Short-term Financial Investments
-03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2022A,1459.1184780000021,Formula,Total Debt - Cash - Short-term Financial Investments
-03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2023A,811.0788869999997,Formula,Total Debt - Cash - Short-term Financial Investments
-03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2024A,-6921.526575,Formula,Total Debt - Cash - Short-term Financial Investments
-03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2025A,-8943.252858,Formula,Total Debt - Cash - Short-term Financial Investments
-03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2021A,20149.579493774,Formula,Receivables + Inventory - Trade Payables
-03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2022A,19951.067869,Formula,Receivables + Inventory - Trade Payables
-03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2023A,19056.019236,Formula,Receivables + Inventory - Trade Payables
-03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2024A,21890.936497000002,Formula,Receivables + Inventory - Trade Payables
-03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2025A,24335.78828,Formula,Receivables + Inventory - Trade Payables
-03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2021A,6471.583750543,92_Raw_CF_vnstock,1. Lợi nhuận trước thuế
-03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2022A,6056.355374,92_Raw_CF_vnstock,1. Lợi nhuận trước thuế
-03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2023A,689.692368,92_Raw_CF_vnstock,1. Lợi nhuận trước thuế
-03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2024A,4825.763013,92_Raw_CF_vnstock,1. Lợi nhuận trước thuế
-03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2025A,8633.067583,92_Raw_CF_vnstock,1. Lợi nhuận trước thuế
-03_Historical_FS,CASH FLOW,D&A,VND bn,2021A,2920.71360841,92_Raw_CF_vnstock,Khấu hao TSCĐ và BĐSĐT
-03_Historical_FS,CASH FLOW,D&A,VND bn,2022A,3540.324726,92_Raw_CF_vnstock,Khấu hao TSCĐ và BĐSĐT
-03_Historical_FS,CASH FLOW,D&A,VND bn,2023A,3351.314268,92_Raw_CF_vnstock,Khấu hao TSCĐ và BĐSĐT
-03_Historical_FS,CASH FLOW,D&A,VND bn,2024A,2913.419081,92_Raw_CF_vnstock,Khấu hao TSCĐ và BĐSĐT
-03_Historical_FS,CASH FLOW,D&A,VND bn,2025A,1890.882109,92_Raw_CF_vnstock,Khấu hao TSCĐ và BĐSĐT
-03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2021A,-585.136035219,92_Raw_CF_vnstock,Chi phí đi vay đã trả
-03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2022A,-1322.381109,92_Raw_CF_vnstock,Chi phí đi vay đã trả
-03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2023A,-1435.731871,92_Raw_CF_vnstock,Chi phí đi vay đã trả
-03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2024A,-1141.521541,92_Raw_CF_vnstock,Chi phí đi vay đã trả
-03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2025A,-1396.460328,92_Raw_CF_vnstock,Chi phí đi vay đã trả
-03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2021A,-1533.102122807,92_Raw_CF_vnstock,Thuế thu nhập doanh nghiệp đã nộp
-03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2022A,-1805.340844,92_Raw_CF_vnstock,Thuế thu nhập doanh nghiệp đã nộp
-03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2023A,-860.429603,92_Raw_CF_vnstock,Thuế thu nhập doanh nghiệp đã nộp
-03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2024A,-958.914978,92_Raw_CF_vnstock,Thuế thu nhập doanh nghiệp đã nộp
-03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2025A,-1546.459474,92_Raw_CF_vnstock,Thuế thu nhập doanh nghiệp đã nộp
-03_Historical_FS,CASH FLOW,CFO,VND bn,2021A,171.390435922,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động kinh doanh
-03_Historical_FS,CASH FLOW,CFO,VND bn,2022A,7976.298802,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động kinh doanh
-03_Historical_FS,CASH FLOW,CFO,VND bn,2023A,3435.827176,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động kinh doanh
-03_Historical_FS,CASH FLOW,CFO,VND bn,2024A,8517.332707,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động kinh doanh
-03_Historical_FS,CASH FLOW,CFO,VND bn,2025A,6096.14069,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động kinh doanh
-03_Historical_FS,CASH FLOW,Capex,VND bn,2021A,-4976.876590016,92_Raw_CF_vnstock,Cash outflow; negative number
-03_Historical_FS,CASH FLOW,Capex,VND bn,2022A,-4465.359524,92_Raw_CF_vnstock,Cash outflow; negative number
-03_Historical_FS,CASH FLOW,Capex,VND bn,2023A,-523.383331,92_Raw_CF_vnstock,Cash outflow; negative number
-03_Historical_FS,CASH FLOW,Capex,VND bn,2024A,-303.747827,92_Raw_CF_vnstock,Cash outflow; negative number
-03_Historical_FS,CASH FLOW,Capex,VND bn,2025A,-888.46189,92_Raw_CF_vnstock,Cash outflow; negative number
-03_Historical_FS,CASH FLOW,CFI,VND bn,2021A,-11254.869604436,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động đầu tư
-03_Historical_FS,CASH FLOW,CFI,VND bn,2022A,1549.111423,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động đầu tư
-03_Historical_FS,CASH FLOW,CFI,VND bn,2023A,-10831.294697,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động đầu tư
-03_Historical_FS,CASH FLOW,CFI,VND bn,2024A,-11743.28567,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động đầu tư
-03_Historical_FS,CASH FLOW,CFI,VND bn,2025A,-6660.775392,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động đầu tư
-03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2021A,63936.20824795,92_Raw_CF_vnstock,3. Tiền thu từ đi vay
-03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2022A,65251.647851,92_Raw_CF_vnstock,3. Tiền thu từ đi vay
-03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2023A,70373.733044,92_Raw_CF_vnstock,3. Tiền thu từ đi vay
-03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2024A,74756.27908,92_Raw_CF_vnstock,3. Tiền thu từ đi vay
-03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2025A,98550.109185,92_Raw_CF_vnstock,3. Tiền thu từ đi vay
-03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2021A,-56045.130957737,92_Raw_CF_vnstock,4. Tiền trả nợ gốc vay
-03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2022A,-73313.739287,92_Raw_CF_vnstock,4. Tiền trả nợ gốc vay
-03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2023A,-61933.329857,92_Raw_CF_vnstock,4. Tiền trả nợ gốc vay
-03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2024A,-73030.33842,92_Raw_CF_vnstock,4. Tiền trả nợ gốc vay
-03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2025A,-95872.137945,92_Raw_CF_vnstock,4. Tiền trả nợ gốc vay
-03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2021A,-239.519441063,92_Raw_CF_vnstock,"6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu"
-03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2022A,-731.854815,92_Raw_CF_vnstock,"6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu"
-03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2023A,-731.280024,92_Raw_CF_vnstock,"6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu"
-03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2024A,-730.957694,92_Raw_CF_vnstock,"6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu"
-03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2025A,-1478.456763,92_Raw_CF_vnstock,"6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu"
-03_Historical_FS,CASH FLOW,CFF,VND bn,2021A,7877.49087915,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động tài chính
-03_Historical_FS,CASH FLOW,CFF,VND bn,2022A,-8606.343521,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động tài chính
-03_Historical_FS,CASH FLOW,CFF,VND bn,2023A,7699.783103,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động tài chính
-03_Historical_FS,CASH FLOW,CFF,VND bn,2024A,2757.475514,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động tài chính
-03_Historical_FS,CASH FLOW,CFF,VND bn,2025A,667.171746,92_Raw_CF_vnstock,Lưu chuyển tiền thuần từ hoạt động tài chính
-03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2021A,-3205.988289364,92_Raw_CF_vnstock,Lưu chuyển tiền thuần trong kỳ
-03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2022A,919.066704,92_Raw_CF_vnstock,Lưu chuyển tiền thuần trong kỳ
-03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2023A,304.315582,92_Raw_CF_vnstock,Lưu chuyển tiền thuần trong kỳ
-03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2024A,-468.47745,92_Raw_CF_vnstock,Lưu chuyển tiền thuần trong kỳ
-03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2025A,102.537044,92_Raw_CF_vnstock,Lưu chuyển tiền thuần trong kỳ
-03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2021A,7347.857397925,92_Raw_CF_vnstock,Tiền và tương đương tiền đầu kỳ
-03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2022A,4142.015763,92_Raw_CF_vnstock,Tiền và tương đương tiền đầu kỳ
-03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2023A,5061.020547,92_Raw_CF_vnstock,Tiền và tương đương tiền đầu kỳ
-03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2024A,5365.704857,92_Raw_CF_vnstock,Tiền và tương đương tiền đầu kỳ
-03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2025A,4897.331541,92_Raw_CF_vnstock,Tiền và tương đương tiền đầu kỳ
-03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2021A,0.146653994,92_Raw_CF_vnstock,Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ
-03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2022A,-0.061919,92_Raw_CF_vnstock,Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ
-03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2023A,0.368728,92_Raw_CF_vnstock,Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ
-03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2024A,0.104134,92_Raw_CF_vnstock,Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ
-03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2025A,0.057132,92_Raw_CF_vnstock,Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ
-03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2021A,4142.015762555,92_Raw_CF_vnstock,Tiền và tương đương tiền cuối kỳ
-03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2022A,5061.020547,92_Raw_CF_vnstock,Tiền và tương đương tiền cuối kỳ
-03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2023A,5365.704857,92_Raw_CF_vnstock,Tiền và tương đương tiền cuối kỳ
-03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2024A,4897.331541,92_Raw_CF_vnstock,Tiền và tương đương tiền cuối kỳ
-03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2025A,4999.925717,92_Raw_CF_vnstock,Tiền và tương đương tiền cuối kỳ
-03_Historical_FS,CASH FLOW,EBITDA,VND bn,2021A,9386.320526766,Formula,EBIT + D&A
-03_Historical_FS,CASH FLOW,EBITDA,VND bn,2022A,10115.018425,Formula,EBIT + D&A
-03_Historical_FS,CASH FLOW,EBITDA,VND bn,2023A,4398.382622,Formula,EBIT + D&A
-03_Historical_FS,CASH FLOW,EBITDA,VND bn,2024A,8140.464506,Formula,EBIT + D&A
-03_Historical_FS,CASH FLOW,EBITDA,VND bn,2025A,10554.962598,Formula,EBIT + D&A
-03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2021A,-5019.582906033787,Formula,EBIT x (1-tax rate) + D&A + Capex - Change in NWC
-03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2022A,3527.728344155882,Formula,EBIT x (1-tax rate) + D&A + Capex - Change in NWC
-03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2023A,3977.7722938757843,Formula,EBIT x (1-tax rate) + D&A + Capex - Change in NWC
-03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2024A,3818.480778802026,Formula,EBIT x (1-tax rate) + D&A + Capex - Change in NWC
-03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2025A,5655.598581543398,Formula,EBIT x (1-tax rate) + D&A + Capex - Change in NWC
+03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2021A,124141.525689948,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2022A,134722.248888,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2023A,119234.184825,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2024A,135225.101299,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Revenue,VND bn,2025A,156836.115055,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2021A,122958.106103174,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2022A,133404.777591,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2023A,118279.788455,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2024A,134341.152849,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Revenue,VND bn,2025A,155928.145619,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2021A,95325.97410764,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2022A,102542.735094,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2023A,95759.175292,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2024A,106841.942772,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,COGS,VND bn,2025A,124926.26822,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2021A,27632.131995534,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2022A,30862.042496,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2023A,22520.613164,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2024A,27499.210077,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Profit,VND bn,2025A,31001.8774,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2021A,0.2247280221797489,Formula,
+03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2022A,0.23134135863273664,Formula,
+03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2023A,0.19040119582702883,Formula,
+03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2024A,0.20469684451725095,Formula,
+03_Historical_FS,INCOME STATEMENT,Gross Margin,%,2025A,0.19882156153996097,Formula,
+03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2021A,1287.956026163,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2022A,1313.137304,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2023A,2166.963715,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2024A,2376.502605,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Financial Income,VND bn,2025A,3107.348734,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2021A,714.707225745,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2022A,1382.620455,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2023A,1556.146107,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2024A,1188.46561,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Finance Expenses,VND bn,2025A,1542.518673,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2021A,674.427746189,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2022A,1362.143909,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2023A,1447.718355,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2024A,1137.23613,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Interest Expense,VND bn,2025A,1470.675594,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2021A,17914.173302345,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2022A,22336.838068,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2023A,20916.710755,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2024A,19849.83761,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Selling Expenses,VND bn,2025A,19330.903537,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2021A,3823.390074765,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2022A,1881.02758,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2023A,1167.651663,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2024A,3565.767583,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,G&A Expenses,VND bn,2025A,4596.074513,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2021A,21737.56337711,Formula,
+03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2022A,24217.865648,Formula,
+03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2023A,22084.362418,Formula,
+03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2024A,23415.605193,Formula,
+03_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,2025A,23926.978049999998,Formula,
+03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2021A,6465.606918356,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2022A,6574.693699,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2023A,1047.068354,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2024A,5227.045425,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,EBIT,VND bn,2025A,8664.080489,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2021A,0.05258381999581806,Formula,
+03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2022A,0.04928379491143168,Formula,
+03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2023A,0.008852470634899395,Formula,
+03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2024A,0.03890874325661937,Formula,
+03_Historical_FS,INCOME STATEMENT,EBIT Margin,%,2025A,0.055564570813085294,Formula,
+03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2021A,5.976832187,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2022A,-518.338325,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2023A,-357.375986,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2024A,-401.282412,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Other Profit,VND bn,2025A,-31.012906,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2021A,6471.583750543,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2022A,6056.355374,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2023A,689.692368,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2024A,4825.763013,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Profit Before Tax,VND bn,2025A,8633.067583,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2021A,1632.975695694,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2022A,1792.99881,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2023A,433.257177,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2024A,1282.537117,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Current Tax Expense,VND bn,2025A,1721.559523,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2021A,-62.818619041,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2022A,161.642139,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2023A,88.606036,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2024A,-190.062333,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Deferred Tax Expense,VND bn,2025A,-161.114826,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2021A,1570.157076653,Formula,
+03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2022A,1954.640949,Formula,
+03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2023A,521.863213,Formula,
+03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2024A,1092.474784,Formula,
+03_Historical_FS,INCOME STATEMENT,Total Tax Expense,VND bn,2025A,1560.444697,Formula,
+03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2021A,4901.42667389,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2022A,4101.714425,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2023A,167.829155,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2024A,3733.288229,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPAT,VND bn,2025A,7072.622886,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2021A,2.55739567,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2022A,1.951398,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2023A,0.159762,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2024A,11.419787,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,Minority Interest - IS,VND bn,2025A,38.892116,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2021A,4898.86927822,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2022A,4099.763027,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2023A,167.669393,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2024A,3721.868442,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPATMI,VND bn,2025A,7033.73077,90_Raw_IS_vnstock,
+03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2021A,0.03984177565413511,Formula,
+03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2022A,0.03073175564648283,Formula,
+03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2023A,0.0014175658850099353,Formula,
+03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2024A,0.02770460401053276,Formula,
+03_Historical_FS,INCOME STATEMENT,NPATMI Margin,%,2025A,0.045108795093263356,Formula,
+03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2021A,4142.015762555,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2022A,5061.020547,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2023A,5365.704857,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2024A,4897.331541,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Cash & Cash Equivalents,VND bn,2025A,4999.925717,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2021A,14236.626334707,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2022A,10069.249606,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2023A,18937.008074,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2024A,29324.441756,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Financial Investments,VND bn,2025A,33874.270103,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2021A,3162.121971586,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2022A,3000.817466,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2023A,5158.853338,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2024A,8825.896225,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Receivables,VND bn,2025A,10182.835978,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2021A,29167.232293922,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2022A,25696.077735,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2023A,21824.235626,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2024A,22244.676327,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Inventory,VND bn,2025A,27266.851974,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2021A,1247.261407887,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2022A,750.441874,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2023A,664.536081,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2024A,544.076772,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Current Assets,VND bn,2025A,877.76701,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2021A,51955.257770657,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2022A,44577.607228,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2023A,51950.337976,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2024A,65836.42262,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Current Assets,VND bn,2025A,77201.650783,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2021A,9647.168873232,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2022A,9727.502911,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2023A,6500.135609,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2024A,3586.628664,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Fixed Assets,VND bn,2025A,2598.189218,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2021A,0.0,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2022A,231.03484,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2023A,746.632253,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2024A,242.035798,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Financial Investments,VND bn,2025A,3136.315565,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2021A,806.891052417,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2022A,670.590082,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2023A,452.067531,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2024A,358.454414,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Other Long-term Assets,VND bn,2025A,514.740794,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2021A,62971.404814942,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2022A,55834.095614,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2023A,60111.237213,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2024A,70437.775722,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Assets,VND bn,2025A,83945.619612,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2021A,12179.774771734,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2022A,8745.827332,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2023A,7927.069728,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2024A,9179.636055,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Trade Payables,VND bn,2025A,13113.899672,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2021A,24647.474278786,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2022A,10688.138631,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2023A,19128.541818,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2024A,27300.246722,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Short-term Debt,VND bn,2025A,29930.942962,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2021A,42593.158815096,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2022A,26000.264096,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2023A,30765.260554,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2024A,42316.198898,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Current Liabilities,VND bn,2025A,50769.502237,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2021A,0.0,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2022A,5901.25,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2023A,5985.25,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2024A,0.0,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Debt,VND bn,2025A,0.0,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2021A,0.0,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2022A,5901.25,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2023A,5986.418691,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2024A,0.0,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Long-term Liabilities,VND bn,2025A,0.0,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2021A,42593.158815096,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2022A,31901.514096,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2023A,36751.679245,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2024A,42316.198898,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities,VND bn,2025A,50769.502237,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2021A,7130.65495,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2022A,14638.7928,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2023A,14633.76716,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2024A,14622.44177,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Share Capital,VND bn,2025A,14696.93177,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2021A,12674.574164065,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2022A,8723.934226,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2023A,8160.323596,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2024A,12582.145267,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Retained Earnings,VND bn,2025A,18068.194576,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2021A,11.838029496,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2022A,14.508097,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2023A,13.40103,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2024A,364.020651,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Minority Interest - BS,VND bn,2025A,576.350988,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2021A,20378.245999846,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2022A,23932.581518,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2023A,23359.557967,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2024A,28121.576824,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Equity,VND bn,2025A,33176.117375,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2021A,62971.404814942,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2022A,55834.095614,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2023A,60111.237213,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2024A,70437.775722,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Liabilities + Equity,VND bn,2025A,83945.619612,91_Raw_BS_vnstock,
+03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2021A,24647.474278786,Formula,
+03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2022A,16589.388631,Formula,
+03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2023A,25113.791818,Formula,
+03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2024A,27300.246722,Formula,
+03_Historical_FS,BALANCE SHEET,Total Debt,VND bn,2025A,29930.942962,Formula,
+03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2021A,6268.832181524003,Formula,
+03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2022A,1459.1184780000021,Formula,
+03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2023A,811.0788869999997,Formula,
+03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2024A,-6921.526575,Formula,
+03_Historical_FS,BALANCE SHEET,Net Debt,VND bn,2025A,-8943.252858,Formula,
+03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2021A,20149.579493774,Formula,
+03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2022A,19951.067869,Formula,
+03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2023A,19056.019236,Formula,
+03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2024A,21890.936497000002,Formula,
+03_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,2025A,24335.78828,Formula,
+03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2021A,6471.583750543,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2022A,6056.355374,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2023A,689.692368,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2024A,4825.763013,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,2025A,8633.067583,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,D&A,VND bn,2021A,2920.71360841,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,D&A,VND bn,2022A,3540.324726,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,D&A,VND bn,2023A,3351.314268,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,D&A,VND bn,2024A,2913.419081,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,D&A,VND bn,2025A,1890.882109,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2021A,-585.136035219,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2022A,-1322.381109,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2023A,-1435.731871,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2024A,-1141.521541,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Interest Paid,VND bn,2025A,-1396.460328,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2021A,-1533.102122807,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2022A,-1805.340844,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2023A,-860.429603,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2024A,-958.914978,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Tax Paid,VND bn,2025A,-1546.459474,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFO,VND bn,2021A,171.390435922,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFO,VND bn,2022A,7976.298802,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFO,VND bn,2023A,3435.827176,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFO,VND bn,2024A,8517.332707,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFO,VND bn,2025A,6096.14069,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Capex,VND bn,2021A,-4976.876590016,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Capex,VND bn,2022A,-4465.359524,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Capex,VND bn,2023A,-523.383331,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Capex,VND bn,2024A,-303.747827,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Capex,VND bn,2025A,-888.46189,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFI,VND bn,2021A,-11254.869604436,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFI,VND bn,2022A,1549.111423,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFI,VND bn,2023A,-10831.294697,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFI,VND bn,2024A,-11743.28567,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFI,VND bn,2025A,-6660.775392,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2021A,63936.20824795,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2022A,65251.647851,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2023A,70373.733044,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2024A,74756.27908,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Proceeds,VND bn,2025A,98550.109185,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2021A,-56045.130957737,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2022A,-73313.739287,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2023A,-61933.329857,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2024A,-73030.33842,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Debt Repayments,VND bn,2025A,-95872.137945,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2021A,-239.519441063,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2022A,-731.854815,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2023A,-731.280024,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2024A,-730.957694,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Dividends Paid,VND bn,2025A,-1478.456763,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFF,VND bn,2021A,7877.49087915,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFF,VND bn,2022A,-8606.343521,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFF,VND bn,2023A,7699.783103,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFF,VND bn,2024A,2757.475514,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,CFF,VND bn,2025A,667.171746,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2021A,-3205.988289364,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2022A,919.066704,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2023A,304.315582,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2024A,-468.47745,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Net Change in Cash,VND bn,2025A,102.537044,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2021A,7347.857397925,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2022A,4142.015763,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2023A,5061.020547,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2024A,5365.704857,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Beginning Cash,VND bn,2025A,4897.331541,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2021A,0.146653994,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2022A,-0.061919,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2023A,0.368728,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2024A,0.104134,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,FX Effect on Cash,VND bn,2025A,0.057132,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2021A,4142.015762555,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2022A,5061.020547,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2023A,5365.704857,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2024A,4897.331541,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,Ending Cash,VND bn,2025A,4999.925717,92_Raw_CF_vnstock,
+03_Historical_FS,CASH FLOW,EBITDA,VND bn,2021A,9386.320526766,Formula,
+03_Historical_FS,CASH FLOW,EBITDA,VND bn,2022A,10115.018425,Formula,
+03_Historical_FS,CASH FLOW,EBITDA,VND bn,2023A,4398.382622,Formula,
+03_Historical_FS,CASH FLOW,EBITDA,VND bn,2024A,8140.464506,Formula,
+03_Historical_FS,CASH FLOW,EBITDA,VND bn,2025A,10554.962598,Formula,
+03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2021A,-5019.582906033787,Formula,
+03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2022A,3527.728344155882,Formula,
+03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2023A,3977.7722938757843,Formula,
+03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2024A,3818.480778802026,Formula,
+03_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,2025A,5655.598581543398,Formula,
 03_Historical_FS,MODEL CHECKS,Gross Profit Check,VND bn,2021A,0.0,Formula,Revenue - COGS - Gross Profit; should be 0
 03_Historical_FS,MODEL CHECKS,Gross Profit Check,VND bn,2022A,9.999894245993346e-07,Formula,Revenue - COGS - Gross Profit; should be 0
 03_Historical_FS,MODEL CHECKS,Gross Profit Check,VND bn,2023A,-9.999967005569488e-07,Formula,Revenue - COGS - Gross Profit; should be 0
@@ -367,9 +367,9 @@
 04_Q1_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,Q1 2025A,5617.606130366001,Formula,
 04_Q1_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,Q1 2026A,6808.088992618001,Formula,
 04_Q1_Historical_FS,INCOME STATEMENT,Operating Expenses,VND bn,LTM Mar-26 / Q1 BS,25117.460912251998,Formula,
-04_Q1_Historical_FS,INCOME STATEMENT,EBIT,VND bn,Q1 2025A,1940.204764365,Raw_IS_Q_vnstock:ebit,Operating profit includes share of associates/JV result.
-04_Q1_Historical_FS,INCOME STATEMENT,EBIT,VND bn,Q1 2026A,3347.123417867,Raw_IS_Q_vnstock:ebit,Operating profit includes share of associates/JV result.
-04_Q1_Historical_FS,INCOME STATEMENT,EBIT,VND bn,LTM Mar-26 / Q1 BS,10070.999142502,Raw_IS_Q_vnstock:ebit,Operating profit includes share of associates/JV result.
+04_Q1_Historical_FS,INCOME STATEMENT,EBIT,VND bn,Q1 2025A,1940.204764365,Raw_IS_Q_vnstock:ebit,
+04_Q1_Historical_FS,INCOME STATEMENT,EBIT,VND bn,Q1 2026A,3347.123417867,Raw_IS_Q_vnstock:ebit,
+04_Q1_Historical_FS,INCOME STATEMENT,EBIT,VND bn,LTM Mar-26 / Q1 BS,10070.999142502,Raw_IS_Q_vnstock:ebit,
 04_Q1_Historical_FS,INCOME STATEMENT,EBIT Margin,%,Q1 2025A,0.053693288972689095,Formula,
 04_Q1_Historical_FS,INCOME STATEMENT,EBIT Margin,%,Q1 2026A,0.07204009456895549,Formula,
 04_Q1_Historical_FS,INCOME STATEMENT,EBIT Margin,%,LTM Mar-26 / Q1 BS,0.06057556590005427,Formula,
@@ -469,9 +469,9 @@
 04_Q1_Historical_FS,BALANCE SHEET,Net Debt,VND bn,Q1 2025A,-8826.547122102002,Formula,
 04_Q1_Historical_FS,BALANCE SHEET,Net Debt,VND bn,Q1 2026A,-18284.153128744998,Formula,
 04_Q1_Historical_FS,BALANCE SHEET,Net Debt,VND bn,LTM Mar-26 / Q1 BS,-18284.153128744998,Formula,
-04_Q1_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,Q1 2025A,21362.051675257,Formula,Defined consistent with annual sheet: Receivables + Inventory - Trade Payables.
-04_Q1_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,Q1 2026A,17829.202174800004,Formula,Defined consistent with annual sheet: Receivables + Inventory - Trade Payables.
-04_Q1_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,LTM Mar-26 / Q1 BS,17829.202174800004,Formula,Defined consistent with annual sheet: Receivables + Inventory - Trade Payables.
+04_Q1_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,Q1 2025A,21362.051675257,Formula,
+04_Q1_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,Q1 2026A,17829.202174800004,Formula,
+04_Q1_Historical_FS,BALANCE SHEET,Net Working Capital,VND bn,LTM Mar-26 / Q1 BS,17829.202174800004,Formula,
 04_Q1_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,Q1 2025A,1934.66138722,Raw_CF_Q_vnstock:pbt,
 04_Q1_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,Q1 2026A,3327.584299891,Raw_CF_Q_vnstock:pbt,
 04_Q1_Historical_FS,CASH FLOW,CF Profit Before Tax,VND bn,LTM Mar-26 / Q1 BS,10025.990495671,Raw_CF_Q_vnstock:pbt,
@@ -520,9 +520,9 @@
 04_Q1_Historical_FS,CASH FLOW,EBITDA,VND bn,Q1 2025A,2449.124231115,Formula,
 04_Q1_Historical_FS,CASH FLOW,EBITDA,VND bn,Q1 2026A,3741.053393132,Formula,
 04_Q1_Historical_FS,CASH FLOW,EBITDA,VND bn,LTM Mar-26 / Q1 BS,11846.891760016999,Formula,
-04_Q1_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,Q1 2025A,2586.8765151522884,Formula,Proxy: CFO + Capex + after-tax interest paid add-back.
-04_Q1_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,Q1 2026A,1206.5156564699942,Formula,Proxy: CFO + Capex + after-tax interest paid add-back.
-04_Q1_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,LTM Mar-26 / Q1 BS,4971.298919078523,Formula,Proxy: CFO + Capex + after-tax interest paid add-back.
+04_Q1_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,Q1 2025A,2586.8765151522884,Formula,
+04_Q1_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,Q1 2026A,1206.5156564699942,Formula,
+04_Q1_Historical_FS,CASH FLOW,FCFF Proxy,VND bn,LTM Mar-26 / Q1 BS,4971.298919078523,Formula,
 04_Q1_Historical_FS,MODEL CHECKS,Gross Profit Check,VND bn,Q1 2025A,0.0,Formula,
 04_Q1_Historical_FS,MODEL CHECKS,Gross Profit Check,VND bn,Q1 2026A,0.0,Formula,
 04_Q1_Historical_FS,MODEL CHECKS,Gross Profit Check,VND bn,LTM Mar-26 / Q1 BS,-1.0000221664085984e-06,Formula,
