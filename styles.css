@@ -345,6 +345,8 @@ main {
 
 .control-strip,
 .investment-summary,
+.methodology-box,
+.simulator,
 .snapshot,
 .thesis-band,
 .section-head,
@@ -491,7 +493,7 @@ select {
 
 .summary-range {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   margin-top: 12px;
 }
@@ -568,6 +570,310 @@ select {
 
 .clean-list strong {
   margin-bottom: 5px;
+}
+
+.methodology-box {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  background:
+    linear-gradient(135deg, rgba(255, 210, 0, 0.14), rgba(255, 255, 255, 0) 38%),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.methodology-head {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+}
+
+.methodology-head p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.methodology-grid article,
+.talking-points article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: #fbfaf6;
+}
+
+.methodology-grid span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.methodology-grid strong {
+  display: block;
+  margin: 8px 0 6px;
+  color: var(--black);
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.methodology-grid small,
+.talking-points p {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.talking-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.talking-points b {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--black);
+  font-size: 16px;
+}
+
+.talking-points article:first-child {
+  border-color: rgba(255, 210, 0, 0.75);
+  background: #fff6c7;
+}
+
+.simulator {
+  margin-top: 16px;
+  overflow: hidden;
+  padding: 0;
+  background:
+    linear-gradient(135deg, rgba(255, 210, 0, 0.14), transparent 44%),
+    #ffffff;
+}
+
+.simulator-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid var(--line);
+  padding: 22px;
+}
+
+.simulator-head h3 {
+  margin: 4px 0 8px;
+  font-size: clamp(24px, 2.4vw, 34px);
+  line-height: 1.05;
+}
+
+.simulator-head p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.reset-sim {
+  flex: 0 0 auto;
+  color: var(--black);
+  background: var(--yellow);
+}
+
+.simulator-grid {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.92fr) minmax(420px, 1.08fr);
+  gap: 0;
+}
+
+.simulator-controls {
+  display: grid;
+  gap: 10px;
+  border-right: 1px solid var(--line);
+  padding: 18px;
+  background: #fbfaf6;
+}
+
+.control-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: #ffffff;
+}
+
+.control-card > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.control-card span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.control-card strong {
+  color: var(--black);
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.control-card small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.control-card input[type="range"] {
+  width: 100%;
+  accent-color: var(--yellow);
+  cursor: pointer;
+}
+
+.simulator-output {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+}
+
+.sim-scorecard {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.sim-scorecard article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: #fbfaf6;
+}
+
+.sim-scorecard article.accent {
+  border-color: rgba(255, 210, 0, 0.75);
+  background: linear-gradient(145deg, #fff4b0, #ffffff 68%);
+}
+
+.sim-scorecard span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sim-scorecard strong {
+  display: block;
+  margin: 8px 0 5px;
+  font-size: clamp(22px, 2.4vw, 31px);
+  line-height: 1;
+}
+
+.sim-scorecard strong.buy {
+  color: var(--green);
+}
+
+.sim-scorecard strong.hold {
+  color: var(--yellow-2);
+}
+
+.sim-scorecard strong.sell {
+  color: var(--red);
+}
+
+.sim-scorecard small {
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.sim-bridge {
+  display: grid;
+  gap: 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: #ffffff;
+}
+
+.sim-bridge-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.82fr) minmax(220px, 1fr) 110px;
+  align-items: center;
+  gap: 12px;
+}
+
+.sim-bridge-row b,
+.sim-bridge-row span {
+  display: block;
+}
+
+.sim-bridge-row span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.sim-bridge-row strong {
+  text-align: right;
+  font-size: 13px;
+}
+
+.sim-bar-track {
+  height: 13px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #ebe5d6;
+}
+
+.sim-bar-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.sim-bar-track.positive i {
+  background: linear-gradient(90deg, var(--yellow), var(--yellow-2));
+}
+
+.sim-bar-track.negative i {
+  background: linear-gradient(90deg, #e66a60, var(--red));
+}
+
+.sim-takeaway {
+  border-left: 5px solid var(--yellow);
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #111111;
+  color: #ffffff;
+}
+
+.sim-takeaway b {
+  color: var(--yellow);
+}
+
+.sim-takeaway p {
+  margin: 7px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.55;
 }
 
 .driver-controls {
@@ -987,18 +1293,32 @@ td.num {
 
   .hero,
   .investment-summary,
+  .methodology-head,
+  .simulator-grid,
   .dashboard-grid,
   .workflow,
   .download-section {
     grid-template-columns: 1fr;
   }
 
+  .simulator-controls {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
   .snapshot,
   .thesis-band,
   .summary-lists,
+  .methodology-grid,
+  .talking-points,
+  .sim-scorecard,
   .workflow-steps,
   .download-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sim-bridge-row {
+    grid-template-columns: minmax(150px, 0.8fr) minmax(180px, 1fr) 100px;
   }
 }
 
@@ -1010,6 +1330,7 @@ td.num {
   }
 
   .control-strip,
+  .simulator-head,
   .panel-head {
     align-items: stretch;
     flex-direction: column;
@@ -1020,9 +1341,23 @@ td.num {
   .summary-lists,
   .recommendation-line,
   .summary-range,
+  .methodology-grid,
+  .talking-points,
+  .sim-scorecard,
+  .sim-bridge-row,
   .workflow-steps,
   .download-grid {
     grid-template-columns: 1fr;
+  }
+
+  .simulator-head,
+  .simulator-controls,
+  .simulator-output {
+    padding: 14px;
+  }
+
+  .sim-bridge-row strong {
+    text-align: left;
   }
 
   .scenario-tabs {

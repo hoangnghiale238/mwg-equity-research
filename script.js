@@ -6,6 +6,7 @@ const state = {
   ratios: [],
   peers: [],
   valuation: [],
+  valuationDetails: [],
   segments: [],
   storeDrivers: [],
   fpa: [],
@@ -101,6 +102,11 @@ function moneyShort(value) {
   return fmt0.format(n);
 }
 
+function vndTnFromBn(value) {
+  const n = num(value);
+  return n == null ? "NM" : `VND ${fmt1.format(n / 1000)}tn`;
+}
+
 function pct(value, decimals = 1) {
   const n = num(value);
   if (n == null) return "NM";
@@ -118,6 +124,20 @@ function scenarioValue(row) {
 
 function byLine(method, lineItem) {
   return state.valuation.find((row) => row.method === method && row.line_item === lineItem);
+}
+
+function valuationDetail(method, section, lineItem, scenario = "Base") {
+  return state.valuationDetails.find(
+    (row) =>
+      row.method === method &&
+      row.section === section &&
+      row.line_item === lineItem &&
+      row.scenario === scenario,
+  );
+}
+
+function valuationDetailNum(method, section, lineItem, scenario = "Base") {
+  return num(valuationDetail(method, section, lineItem, scenario)?.value_num);
 }
 
 function currentPrice() {
@@ -250,15 +270,15 @@ function renderInvestmentSummary() {
 
   setText(
     "#summaryCoreEvidence",
-    `Core ICT/CE 2026E revenue: ${moneyShort(core2026)} VND bn, the largest scale anchor in the model.`,
+    `Core ICT/CE 2026E revenue: ${moneyShort(core2026)} VND bn; DMX remains the main profit and valuation anchor.`,
   );
   setText(
     "#summaryBhxEvidence",
-    `BHX 2026E revenue: ${moneyShort(bhxRevenue2026)} VND bn with ${money(bhxStores2026)} ending stores.`,
+    `BHX 2026E revenue: ${moneyShort(bhxRevenue2026)} VND bn with ${money(bhxStores2026)} ending stores; RPSM is the key execution check.`,
   );
   setText(
     "#summarySotpEvidence",
-    `SOTP target range: ${money(sotpTarget?.bear)}-${money(sotpTarget?.bull)} VND/share; DCF base cross-check: ${money(dcfBase)}.`,
+    `SOTP target range: ${money(sotpTarget?.bear)}-${money(sotpTarget?.bull)} VND/share; DCF base is a cross-check at ${money(dcfBase)}.`,
   );
 }
 
@@ -748,9 +768,221 @@ function renderSensitivity() {
   });
 }
 
+function simulatorBase() {
+  const bhxMultiple = valuationDetailNum("SOTP", "BHX", "BHX EV/Sales multiple") ?? 0.8;
+  const bhxValue = valuationDetailNum("SOTP", "Segment Value", "BHX value") ?? 44400;
+  const netDebt = valuationDetailNum("SOTP", "Equity Bridge", "Net Debt / (Net Cash)") ?? -18284.153128745;
+
+  return {
+    current: currentPrice() ?? 78500,
+    shares:
+      valuationDetailNum("SOTP", "Market Data", "Diluted Shares Outstanding") ??
+      valuationDetailNum("DCF", "Market Data", "Diluted Shares Outstanding") ??
+      1468423529,
+    dmxValue: valuationDetailNum("SOTP", "DMX IPO Anchor", "DMX 100% post-money equity value") ?? 102460,
+    dmxOwnership:
+      valuationDetailNum("SOTP", "DMX IPO Anchor", "Implied MWG ownership after planned IPO") ?? 0.8598510283,
+    bhxRevenue: bhxMultiple ? bhxValue / bhxMultiple : (segmentRevenue("2026E", "BHX Revenue") ?? 55500),
+    bhxMultiple,
+    anKhangValue: valuationDetailNum("SOTP", "Segment Value", "An Khang value") ?? 858,
+    avaKidsValue: valuationDetailNum("SOTP", "Segment Value", "AVAKids value") ?? 840,
+    otherValue: valuationDetailNum("SOTP", "Segment Value", "Other / unallocated value") ?? 0,
+    holdingDiscount: valuationDetailNum("SOTP", "Holding Company", "Holding company discount") ?? 0.1,
+    netCash: Math.abs(netDebt),
+    netCashFactor: valuationDetailNum("SOTP", "Equity Bridge", "Consolidated net cash inclusion factor") ?? 0.5,
+    wacc: valuationDetailNum("DCF", "Discount Rate", "WACC") ?? 0.112,
+    terminalGrowth: valuationDetailNum("DCF", "Terminal Value", "Terminal Growth") ?? 0.03,
+  };
+}
+
+function simulatorInput(id) {
+  return num(document.querySelector(`#${id}`)?.value);
+}
+
+function setSimulatorInput(id, value) {
+  const input = document.querySelector(`#${id}`);
+  if (input && value != null) input.value = String(value);
+}
+
+function resetSimulatorInputs() {
+  const base = simulatorBase();
+  setSimulatorInput("simDmxValue", base.dmxValue);
+  setSimulatorInput("simBhxMultiple", base.bhxMultiple);
+  setSimulatorInput("simHoldingDiscount", base.holdingDiscount);
+  setSimulatorInput("simNetCash", base.netCashFactor);
+  setSimulatorInput("simWacc", base.wacc);
+  setSimulatorInput("simTerminalGrowth", base.terminalGrowth);
+  renderSimulator();
+}
+
+function bracket(values, selected) {
+  const ordered = [...new Set(values.filter((value) => value != null))].sort((a, b) => a - b);
+  if (!ordered.length || selected == null) return [null, null];
+  if (selected <= ordered[0]) return [ordered[0], ordered[0]];
+  if (selected >= ordered[ordered.length - 1]) return [ordered[ordered.length - 1], ordered[ordered.length - 1]];
+  for (let index = 0; index < ordered.length - 1; index += 1) {
+    if (selected >= ordered[index] && selected <= ordered[index + 1]) return [ordered[index], ordered[index + 1]];
+  }
+  return [ordered[0], ordered[0]];
+}
+
+function dcfSensitivityValue(wacc, terminalGrowth) {
+  const rows = state.sensitivities.filter((row) => row.table_id === "dcf_wacc_terminal_growth");
+  if (!rows.length) return scenarioValue(byLine("DCF", "Target Price"));
+
+  const xs = rows.map((row) => num(row.x_value));
+  const ys = rows.map((row) => num(row.y_value));
+  const [x0, x1] = bracket(xs, wacc);
+  const [y0, y1] = bracket(ys, terminalGrowth);
+
+  const findValue = (x, y) =>
+    num(rows.find((row) => Math.abs(num(row.x_value) - x) < 1e-9 && Math.abs(num(row.y_value) - y) < 1e-9)?.target_price);
+
+  const q00 = findValue(x0, y0);
+  const q10 = findValue(x1, y0);
+  const q01 = findValue(x0, y1);
+  const q11 = findValue(x1, y1);
+  if ([q00, q10, q01, q11].some((value) => value == null)) return scenarioValue(byLine("DCF", "Target Price"));
+
+  const tx = x0 === x1 ? 0 : (wacc - x0) / (x1 - x0);
+  const ty = y0 === y1 ? 0 : (terminalGrowth - y0) / (y1 - y0);
+  const bottom = q00 + (q10 - q00) * tx;
+  const top = q01 + (q11 - q01) * tx;
+  return bottom + (top - bottom) * ty;
+}
+
+function computeSimulator() {
+  const base = simulatorBase();
+  const dmxValue = simulatorInput("simDmxValue") ?? base.dmxValue;
+  const bhxMultiple = simulatorInput("simBhxMultiple") ?? base.bhxMultiple;
+  const holdingDiscount = simulatorInput("simHoldingDiscount") ?? base.holdingDiscount;
+  const netCashFactor = simulatorInput("simNetCash") ?? base.netCashFactor;
+  const wacc = simulatorInput("simWacc") ?? base.wacc;
+  const terminalGrowth = simulatorInput("simTerminalGrowth") ?? base.terminalGrowth;
+
+  const dmxAttributable = dmxValue * base.dmxOwnership;
+  const bhxValue = base.bhxRevenue * bhxMultiple;
+  const grossSegmentValue =
+    dmxAttributable + bhxValue + base.anKhangValue + base.avaKidsValue + base.otherValue;
+  const holdingDiscountValue = -grossSegmentValue * holdingDiscount;
+  const netCashValue = base.netCash * netCashFactor;
+  const sotpEquityValue = grossSegmentValue + holdingDiscountValue + netCashValue;
+  const sotpTarget = (sotpEquityValue * 1_000_000_000) / base.shares;
+  const sotpUpside = sotpTarget / base.current - 1;
+  const dcfTarget = dcfSensitivityValue(wacc, terminalGrowth);
+  const dcfUpside = dcfTarget / base.current - 1;
+
+  return {
+    ...base,
+    dmxValue,
+    bhxMultiple,
+    holdingDiscount,
+    netCashFactor,
+    wacc,
+    terminalGrowth,
+    dmxAttributable,
+    bhxValue,
+    grossSegmentValue,
+    holdingDiscountValue,
+    netCashValue,
+    sotpEquityValue,
+    sotpTarget,
+    sotpUpside,
+    dcfTarget,
+    dcfUpside,
+  };
+}
+
+function simulatorDriverLabel(result) {
+  const base = simulatorBase();
+  const dmxDelta = Math.abs((result.dmxValue - base.dmxValue) / base.dmxValue);
+  const bhxDelta = Math.abs((result.bhxMultiple - base.bhxMultiple) / base.bhxMultiple);
+  const discountDelta = Math.abs(result.holdingDiscount - base.holdingDiscount);
+  const netCashDelta = Math.abs(result.netCashFactor - base.netCashFactor);
+
+  const changes = [
+    ["DMX IPO anchor", dmxDelta],
+    ["BHX multiple", bhxDelta],
+    ["holding discount", discountDelta],
+    ["net cash credit", netCashDelta],
+  ].sort((a, b) => b[1] - a[1]);
+
+  return changes[0][1] > 0.001 ? changes[0][0] : "SOTP base assumptions";
+}
+
+function renderSimulatorBridge(result) {
+  const el = document.querySelector("#simBridgeChart");
+  if (!el) return;
+  const rows = [
+    ["DMX attributable", result.dmxAttributable, "Core anchor"],
+    ["BHX value", result.bhxValue, `${multiple(result.bhxMultiple)} EV/Sales`],
+    ["Other chains", result.anKhangValue + result.avaKidsValue + result.otherValue, "An Khang + AVAKids"],
+    ["Holding discount", result.holdingDiscountValue, pct(result.holdingDiscount)],
+    ["Net cash credited", result.netCashValue, pct(result.netCashFactor)],
+  ];
+  const maxAbs = Math.max(...rows.map(([, value]) => Math.abs(value)), 1);
+  el.innerHTML = rows
+    .map(([label, value, note]) => {
+      const width = clamp((Math.abs(value) / maxAbs) * 100, 3, 100);
+      const side = value < 0 ? "negative" : "positive";
+      return `
+        <div class="sim-bridge-row">
+          <div>
+            <b>${label}</b>
+            <span>${note}</span>
+          </div>
+          <div class="sim-bar-track ${side}">
+            <i style="width:${width}%"></i>
+          </div>
+          <strong>${vndTnFromBn(value)}</strong>
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function renderSimulator() {
+  const root = document.querySelector("#simulator");
+  if (!root) return;
+  const result = computeSimulator();
+  const primaryView = recommendation(result.sotpUpside);
+
+  setText("#simDmxValueLabel", vndTnFromBn(result.dmxValue));
+  setText("#simBhxMultipleLabel", multiple(result.bhxMultiple));
+  setText("#simHoldingDiscountLabel", pct(result.holdingDiscount));
+  setText("#simNetCashLabel", pct(result.netCashFactor));
+  setText("#simWaccLabel", pct(result.wacc));
+  setText("#simTerminalGrowthLabel", pct(result.terminalGrowth));
+
+  setText("#simSotpTarget", money(result.sotpTarget));
+  setText("#simSotpUpside", `${pct(result.sotpUpside)} vs current price`);
+  setText("#simDcfTarget", money(result.dcfTarget));
+  setText("#simDcfUpside", `${pct(result.dcfUpside)} vs current price`);
+  setText("#simBlendedTarget", money(result.sotpTarget));
+  setText("#simBlendedUpside", "SOTP remains the primary method; DCF is the cross-check.");
+
+  const rating = document.querySelector("#simRating");
+  if (rating) {
+    rating.textContent = primaryView.label;
+    rating.className = primaryView.className;
+  }
+
+  const spread = result.dcfTarget - result.sotpTarget;
+  const biggestDriver = simulatorDriverLabel(result);
+  setText(
+    "#simTakeaway",
+    `Current run gives ${money(result.sotpTarget)} VND/share from SOTP. DCF is ${money(
+      result.dcfTarget,
+    )}, or ${money(spread)} VND/share away from SOTP. The clean read is that ${biggestDriver} is doing most of the work, while net cash only supports the bridge if you choose to credit it.`,
+  );
+
+  renderSimulatorBridge(result);
+}
+
 function renderAll() {
   renderSnapshot();
   renderInvestmentSummary();
+  renderSimulator();
   renderValuationRange();
   renderPeerChart();
   renderSegmentChart();
@@ -782,6 +1014,10 @@ function wireControls() {
   });
   document.querySelector("#ratioSelect")?.addEventListener("change", renderRatioChart);
   document.querySelector("#fpaFilter")?.addEventListener("change", renderFpaTable);
+  ["simDmxValue", "simBhxMultiple", "simHoldingDiscount", "simNetCash", "simWacc", "simTerminalGrowth"].forEach(
+    (id) => document.querySelector(`#${id}`)?.addEventListener("input", renderSimulator),
+  );
+  document.querySelector("#simReset")?.addEventListener("click", resetSimulatorInputs);
   setupReportDownload();
 }
 
@@ -818,6 +1054,7 @@ async function boot() {
       ratios,
       peers,
       valuation,
+      valuationDetails,
       fpa,
       segments,
       storeDrivers,
@@ -829,6 +1066,7 @@ async function boot() {
       loadCSV("02_profitability_and_wc.csv"),
       loadCSV("03_peer_multiples.csv"),
       loadCSV("04_valuation_summary.csv"),
+      loadCSV("valuation.csv"),
       loadCSV("05_fpa_variance.csv"),
       loadCSV("06_segment_revenue_forecast.csv"),
       loadCSV("07_store_driver_chart.csv"),
@@ -842,6 +1080,7 @@ async function boot() {
       ratios,
       peers,
       valuation,
+      valuationDetails,
       fpa,
       segments,
       storeDrivers,
@@ -852,6 +1091,7 @@ async function boot() {
 
     fillSegmentSelector();
     wireControls();
+    resetSimulatorInputs();
     renderAll();
     window.MWG_DASHBOARD_READY = true;
   } catch (error) {

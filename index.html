@@ -8,7 +8,11 @@
       name="description"
       content="Interactive portfolio page for a personal MWG equity research and FP&A flagship project."
     />
-    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260701" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffd200'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-weight='800' font-size='19' fill='%230c0c0c'%3EMWG%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260702-method" />
   </head>
   <body>
     <header class="site-nav" aria-label="Main navigation">
@@ -18,7 +22,9 @@
       </a>
       <nav>
         <a href="#summary">Summary</a>
+        <a href="#methodology">Method</a>
         <a href="#valuation">Valuation</a>
+        <a href="#simulator">Simulator</a>
         <a href="#drivers">Drivers</a>
         <a href="#fpa">FP&A</a>
         <a href="#workflow">Workflow</a>
@@ -105,6 +111,10 @@
               <span>Current price</span>
               <b id="summaryCurrent">Loading</b>
             </div>
+            <div>
+              <span>Investment horizon</span>
+              <b>12 months</b>
+            </div>
           </div>
         </div>
 
@@ -116,15 +126,15 @@
             </div>
             <ol class="clean-list">
               <li>
-                <strong>DMX/TGDD remains the profit engine</strong>
+                <strong>DMX/TGDD anchors profit quality</strong>
                 <small id="summaryCoreEvidence">Core ICT/CE revenue is the main scale anchor.</small>
               </li>
               <li>
-                <strong>BHX is the main expansion lever</strong>
+                <strong>BHX is the execution swing factor</strong>
                 <small id="summaryBhxEvidence">Store rollout and revenue/store drive the forecast.</small>
               </li>
               <li>
-                <strong>SOTP better captures MWGâ€™s platform value</strong>
+                <strong>SOTP is the cleaner valuation lens</strong>
                 <small id="summarySotpEvidence">Different chains deserve different valuation lenses.</small>
               </li>
             </ol>
@@ -136,18 +146,80 @@
             </div>
             <ol class="clean-list risk-list">
               <li>
-                <strong>Consumer demand slows</strong>
-                <small>ICT/CE recovery depends on discretionary spending and replacement cycles.</small>
+                <strong>BHX RPSM dilution</strong>
+                <small>Fast rollout hurts the case if new-store productivity fails to recover.</small>
               </li>
               <li>
-                <strong>BHX execution pressure</strong>
-                <small>Fast expansion can dilute store productivity or logistics efficiency.</small>
+                <strong>Margin pressure</strong>
+                <small>Gross margin or EBIT margin reversal would weaken the recovery thesis.</small>
               </li>
               <li>
-                <strong>Margin and working-capital risk</strong>
-                <small>Inventory discipline and gross margin recovery need to hold.</small>
+                <strong>Inventory and valuation risk</strong>
+                <small>Higher inventory days or DMX/BHX multiple de-rating would pressure SOTP.</small>
               </li>
             </ol>
+          </article>
+        </div>
+      </section>
+
+      <section id="methodology" class="methodology-box" aria-label="Methodology and data cutoff">
+        <div class="methodology-head">
+          <div>
+            <p class="eyebrow">Methodology / Data Cutoff</p>
+            <h2>How to read the model</h2>
+          </div>
+          <p>
+            This portfolio uses public information and the Excel model output. SOTP is the
+            primary valuation method; DCF is kept as a cross-check, not the main target-price engine.
+          </p>
+        </div>
+        <div class="methodology-grid">
+          <article>
+            <span>Data cutoff</span>
+            <strong>26 Jun 2026</strong>
+            <small>Market data and current price cut at this date.</small>
+          </article>
+          <article>
+            <span>Current price</span>
+            <strong>78,500 VND/share</strong>
+            <small>Used to calculate expected return and recommendation.</small>
+          </article>
+          <article>
+            <span>Investment horizon</span>
+            <strong>12 months</strong>
+            <small>Target price is a 12-month view.</small>
+          </article>
+          <article>
+            <span>Primary valuation</span>
+            <strong>SOTP</strong>
+            <small>Best fit for a multi-format retail platform.</small>
+          </article>
+          <article>
+            <span>DCF role</span>
+            <strong>Cross-check</strong>
+            <small>Useful for FCFF discipline, but sensitive to terminal assumptions.</small>
+          </article>
+          <article>
+            <span>FP&amp;A scope</span>
+            <strong>External simulation</strong>
+            <small>Not MWG internal budget; built from public actuals and model assumptions.</small>
+          </article>
+        </div>
+        <div class="talking-points">
+          <article>
+            <b>Most important KPI to monitor</b>
+            <p>
+              BHX RPSM is the cleanest check. If store count rises but RPSM fails to recover,
+              revenue growth is less valuable because new-store dilution may be lasting.
+            </p>
+          </article>
+          <article>
+            <b>Why SOTP over DCF</b>
+            <p>
+              MWG mixes mature ICT/CE retail, grocery expansion, and smaller optionality chains.
+              SOTP separates those profiles, while DCF mainly tests whether the target still
+              makes sense under cash-flow and discount-rate assumptions.
+            </p>
           </article>
         </div>
       </section>
@@ -200,6 +272,113 @@
           The model treats SOTP as the primary valuation method, DCF as the
           cash-flow cross-check, and trading comps as the market sanity check.
         </p>
+      </section>
+
+      <section id="simulator" class="simulator panel" aria-label="Interactive valuation simulator">
+        <div class="simulator-head">
+          <div>
+            <p class="eyebrow">Interactive valuation simulator</p>
+            <h3>Adjust the assumptions and see the target price move</h3>
+            <p>
+              This simulator keeps the operating forecast fixed and changes only the
+              valuation assumptions. It helps show which inputs drive the SOTP target
+              and how the DCF cross-check reacts to discount-rate assumptions.
+            </p>
+          </div>
+          <button class="btn reset-sim" id="simReset" type="button">Reset base case</button>
+        </div>
+
+        <div class="simulator-grid">
+          <div class="simulator-controls" aria-label="Simulator controls">
+            <article class="control-card">
+              <div>
+                <span>DMX 100% equity value</span>
+                <strong id="simDmxValueLabel">Loading</strong>
+              </div>
+              <input id="simDmxValue" type="range" min="100000" max="115000" step="10" value="102460" />
+              <small>Value of the whole DMX Investment business before applying MWG ownership.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>BHX EV/Sales</span>
+                <strong id="simBhxMultipleLabel">Loading</strong>
+              </div>
+              <input id="simBhxMultiple" type="range" min="0.6" max="1.0" step="0.05" value="0.8" />
+              <small>Sales multiple used to value BHX. Higher multiple gives more credit for growth execution.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>Holding discount</span>
+                <strong id="simHoldingDiscountLabel">Loading</strong>
+              </div>
+              <input id="simHoldingDiscount" type="range" min="0.05" max="0.15" step="0.005" value="0.1" />
+              <small>Deduction applied to SOTP for holding-company complexity and limited segment disclosure.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>Net cash credited</span>
+                <strong id="simNetCashLabel">Loading</strong>
+              </div>
+              <input id="simNetCash" type="range" min="0" max="1" step="0.05" value="0.5" />
+              <small>Percentage of net cash added back to equity value; lower credit is more conservative.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>WACC</span>
+                <strong id="simWaccLabel">Loading</strong>
+              </div>
+              <input id="simWacc" type="range" min="0.097" max="0.127" step="0.001" value="0.112" />
+              <small>Discount rate used in the DCF sensitivity table. Higher WACC lowers DCF value.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>Terminal growth</span>
+                <strong id="simTerminalGrowthLabel">Loading</strong>
+              </div>
+              <input id="simTerminalGrowth" type="range" min="0.025" max="0.035" step="0.001" value="0.03" />
+              <small>Long-term growth rate used for terminal value in the DCF cross-check.</small>
+            </article>
+          </div>
+
+          <div class="simulator-output" aria-label="Simulator outputs">
+            <div class="sim-scorecard">
+              <article>
+                <span>SOTP target</span>
+                <strong id="simSotpTarget">Loading</strong>
+                <small id="simSotpUpside">Loading</small>
+              </article>
+              <article>
+                <span>DCF cross-check</span>
+                <strong id="simDcfTarget">Loading</strong>
+                <small id="simDcfUpside">Loading</small>
+              </article>
+              <article class="accent">
+                <span>Primary read</span>
+                <strong id="simBlendedTarget">Loading</strong>
+                <small id="simBlendedUpside">Loading</small>
+              </article>
+              <article>
+                <span>Implied rating</span>
+                <strong id="simRating">Loading</strong>
+                <small>BUY if upside is 15% or more.</small>
+              </article>
+            </div>
+
+            <div id="simBridgeChart" class="sim-bridge" aria-label="SOTP value bridge"></div>
+
+            <div class="sim-takeaway">
+              <b>Analyst read-through</b>
+              <p id="simTakeaway">
+                Change the assumptions to see which variables matter most for the investment case.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="dashboard-grid">
@@ -413,7 +592,7 @@
 
     <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
 
-    <script src="./script.js?v=cv-ready-20260701"></script>
+    <script src="./script.js?v=cv-ready-20260702-method"></script>
   </body>
 </html>
 
