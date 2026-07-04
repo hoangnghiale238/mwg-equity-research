@@ -754,14 +754,14 @@ function renderSensitivity() {
   });
   renderHeatmap("#sotpSensitivity", "dmx_value_platform_discount", {
     title: "DMX IPO anchor sensitivity",
-    xHeader: "Platform discount adjustment",
+    xHeader: "Holding discount",
     yHeader: "DMX value",
     formatX: (value) => pct(value),
     formatY: (value) => moneyShort(value),
   });
   renderHeatmap("#bhxSensitivity", "bhx_ev_sales_platform_discount", {
     title: "BHX multiple sensitivity",
-    xHeader: "Platform discount adjustment",
+    xHeader: "Holding discount",
     yHeader: "BHX EV/Sales",
     formatX: (value) => pct(value),
     formatY: (value) => multiple(value),
