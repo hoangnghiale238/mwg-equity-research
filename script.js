@@ -167,6 +167,13 @@ function storeDriver(period, chain, field) {
   return num(state.storeDrivers.find((row) => row.period === period && row.chain === chain)?.[field]);
 }
 
+function sourceNumber(dataPoint, period) {
+  const row = state.sources.find(
+    (item) => item.data_point?.toLowerCase() === dataPoint.toLowerCase() && item.period === period,
+  );
+  return num(row?.value);
+}
+
 function recommendation(upside) {
   const n = num(upside);
   if (n == null) return { label: "Review", className: "hold" };
@@ -222,7 +229,7 @@ function renderSnapshot() {
   const sotpUpside = byLine("SOTP", "Upside / Downside");
   const dcfTarget = byLine("DCF", "Target Price");
   const dcfUpside = byLine("DCF", "Upside / Downside");
-  const revenue2026 = totalSegmentRevenue("2026E");
+  const revenue2026 = sourceNumber("Group revenue target", "2026E") ?? totalSegmentRevenue("2026E");
 
   setText("#heroTarget", money(scenarioValue(sotpTarget)));
   setText("#heroUpside", `${scenarioLabel[state.scenario]}: ${pct(scenarioValue(sotpUpside))}`);
