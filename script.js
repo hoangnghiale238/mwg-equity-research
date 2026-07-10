@@ -1,4 +1,5 @@
 const DATA_ROOT = "./data/";
+const DATA_VERSION = "20260710-dcf-timing";
 
 const state = {
   scenario: "base",
@@ -75,7 +76,7 @@ function parseCSV(text) {
 }
 
 async function loadCSV(name) {
-  const response = await fetch(`${DATA_ROOT}${name}`);
+  const response = await fetch(`${DATA_ROOT}${name}?v=${DATA_VERSION}`);
   if (!response.ok) throw new Error(`Cannot load ${name}`);
   return parseCSV(await response.text());
 }
