@@ -1,5 +1,5 @@
 const DATA_ROOT = "./data/";
-const DATA_VERSION = "20260711-share-price-performance";
+const DATA_VERSION = "20260712-research-flow";
 
 const state = {
   scenario: "base",
@@ -13,6 +13,7 @@ const state = {
   fpa: [],
   monthly: [],
   sources: [],
+  modelChecks: [],
   sensitivities: [],
   pricePerformance: [],
   performanceMode: "price",
@@ -185,6 +186,10 @@ function sourceLabel(row) {
 function sourceType(row) {
   if (row?.source_id?.startsWith("KQKD5M26")) return "Public actual";
   if (row?.source?.toLowerCase().includes("business directions")) return "Company guidance";
+  if (row?.source_id?.startsWith("ASSUMP") || row?.source?.toLowerCase() === "analyst assumption") return "Analyst assumption";
+  if (row?.source_id?.startsWith("COMPS")) return "Market data";
+  if (row?.source_id?.startsWith("SOTP")) return "Valuation benchmark";
+  if (row?.source_id?.startsWith("FPA")) return "Analyst methodology";
   return "Public disclosure";
 }
 
@@ -248,7 +253,7 @@ function renderSnapshot() {
   setText("#heroTarget", money(scenarioValue(sotpTarget)));
   setText("#heroUpside", `${scenarioLabel[state.scenario]}: ${pct(scenarioValue(sotpUpside))}`);
   setText("#heroCurrent", money(marketPrice));
-  setText("#heroDcf", money(scenarioValue(dcfTarget)));
+  setText("#heroMeta", `${scenarioLabel[state.scenario]} · 12-month horizon · Market data as of 26 Jun 2026`);
 
   setText("#currentPrice", money(marketPrice));
   setText("#sotpTarget", money(scenarioValue(sotpTarget)));
@@ -756,19 +761,174 @@ function renderAnchors() {
   el.replaceChildren(
     ...rows.map((row) => {
       const item = document.createElement("div");
+      const type = sourceType(row);
       item.className = "anchor-item";
       item.innerHTML = `
         <div>
           <b>${row.data_point}</b>
           <span>${row.period}</span>
           <span class="source-meta">Source: ${sourceLabel(row)}</span>
-          <span class="source-meta">Type: ${sourceType(row)}</span>
+          <span class="source-type ${sourceTypeClass(type)}">${type}</span>
         </div>
         <strong>${row.value}</strong>
       `;
       return item;
     }),
   );
+}
+
+function sourceTypeClass(type) {
+  if (type === "Public actual") return "public";
+  if (type === "Company guidance") return "guidance";
+  if (type === "Analyst assumption") return "analyst";
+  if (type === "Market data") return "market";
+  if (type === "Valuation benchmark") return "benchmark";
+  return "disclosure";
+}
+
+function sourceById(sourceId) {
+  return state.sources.find((row) => row.source_id === sourceId);
+}
+
+function renderSourceRegister() {
+  const el = document.querySelector("#sourceRegister");
+  if (!el) return;
+  const ids = ["COMPS-001", "BD2026-001", "KQKD5M26-008", "SOTP-001", "SOTP-004"];
+  const rows = ids.map(sourceById).filter(Boolean);
+
+  el.innerHTML = rows
+    .map((row) => {
+      const type = sourceType(row);
+      const displayValue = row.source_id === "COMPS-001" ? `${money(currentPrice())} VND/share` : row.value;
+      return `
+        <article class="source-register-row">
+          <div>
+            <span class="source-type ${sourceTypeClass(type)}">${type}</span>
+            <b>${row.data_point}</b>
+            <small>${row.period}</small>
+          </div>
+          <div>
+            <strong>${displayValue}</strong>
+            <small>Source: ${sourceLabel(row)}</small>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
+function renderModelChecks() {
+  const el = document.querySelector("#modelChecks");
+  if (!el) return;
+
+  const baseDcf = num(byLine("DCF", "Target Price")?.base);
+  const sensitivityBase = state.sensitivities.find(
+    (row) =>
+      row.table_id === "dcf_wacc_terminal_growth" &&
+      Math.abs(num(row.x_value) - 0.112) < 0.000001 &&
+      Math.abs(num(row.y_value) - 0.03) < 0.000001,
+  );
+  const sensitivityMatches =
+    baseDcf != null && sensitivityBase && Math.abs(baseDcf - num(sensitivityBase.target_price)) < 1;
+  const checks = [
+    ...state.modelChecks,
+    {
+      label: "DCF base matches sensitivity",
+      status: sensitivityMatches ? "OK" : "REVIEW",
+      detail: sensitivityMatches
+        ? `Base matches at 11.2% WACC / 3.0% terminal growth (${money(baseDcf)} VND/share).`
+        : "Base DCF and sensitivity require review.",
+      scope: "Valuation",
+    },
+  ];
+
+  el.innerHTML = checks
+    .map(
+      (check) => `
+        <div class="model-check ${check.status === "OK" ? "ok" : "review"}">
+          <span>${check.status === "OK" ? "✓" : "!"}</span>
+          <div>
+            <b>${check.label}</b>
+            <small>${check.detail}</small>
+          </div>
+        </div>
+      `,
+    )
+    .join("");
+}
+
+function renderThesisMonitor() {
+  const el = document.querySelector("#thesisMonitorGrid");
+  if (!el) return;
+  const findFpa = (metric, period) => state.fpa.find((row) => row.metric === metric && row.actual_period === period);
+  const bhxRevenue = findFpa("BHX revenue", "5M2026");
+  const bhxStores = findFpa("BHX new stores", "5M2026");
+  const cards = [
+    {
+      label: "BHX revenue",
+      value: bhxRevenue ? vndTnFromBn(bhxRevenue.actual) : "Loading",
+      comparison: bhxRevenue ? `${pct(bhxRevenue.variance_pct_or_ppt)} vs simulated plan` : "Loading",
+      status: "On track",
+      statusClass: "on-track",
+      source: "5M2026 public update; model-calculated actual vs external plan",
+      consequence: "If it misses: lower BHX revenue and SOTP value.",
+    },
+    {
+      label: "BHX new stores",
+      value: bhxStores ? `${fmt0.format(num(bhxStores.actual))} stores` : "Loading",
+      comparison: bhxStores ? `${pct(bhxStores.variance_pct_or_ppt)} vs phased plan` : "Loading",
+      status: "Ahead",
+      statusClass: "ahead",
+      source: "Public actual; the plan is a model phasing of 2026 guidance.",
+      consequence: "If rollout slows: revisit store count and BHX revenue assumptions.",
+    },
+    {
+      label: "BHX RPSM",
+      value: "Validate / watch",
+      comparison: "Productivity needs confirmation after the store rollout.",
+      status: "Watch",
+      statusClass: "watch",
+      source: "Forecast driver; not treated as a clean pass in the current export.",
+      consequence: "If RPSM weakens: lower revenue/store and BHX SOTP value.",
+    },
+  ];
+
+  el.innerHTML = cards
+    .map(
+      (card) => `
+        <article class="monitor-card">
+          <div class="monitor-card-head">
+            <div>
+              <span>${card.label}</span>
+              <strong>${card.value}</strong>
+            </div>
+            <b class="monitor-status ${card.statusClass}">${card.status}</b>
+          </div>
+          <p class="monitor-comparison">${card.comparison}</p>
+          <small>${card.source}</small>
+          <p class="monitor-consequence"><b>${card.consequence}</b></p>
+        </article>
+      `,
+    )
+    .join("");
+}
+
+function renderValuationLineage() {
+  const actual = sourceById("KQKD5M26-008");
+  const newStores = sourceById("KQKD5M26-010");
+  const groupGuidance = sourceById("BD2026-001");
+  const bhxMix = sourceById("BD2026-004");
+  const scenario = state.scenario.charAt(0).toUpperCase() + state.scenario.slice(1);
+  const bhxMultiple = valuationDetailNum("SOTP", "BHX", "BHX EV/Sales multiple", scenario);
+  const holdingDiscount = valuationDetailNum("SOTP", "Holding Company", "Holding company discount", scenario);
+  const bhxValue = valuationDetailNum("SOTP", "Segment Value", "BHX value", scenario);
+  const sotpTarget = scenarioValue(byLine("SOTP", "SOTP Target Price"));
+
+  setText("#lineageActual", `${actual?.value ?? "NM"} revenue · ${newStores?.value ?? "NM"}`);
+  setText("#lineageGuidance", `${groupGuidance?.value ?? "NM"} group revenue · ${bhxMix?.value ?? "NM"} BHX mix`);
+  setText("#lineageAssumption", `${multiple(bhxMultiple)} BHX EV/Sales · ${pct(holdingDiscount)} holding discount`);
+  setText("#lineageOutput", `${vndTnFromBn(bhxValue)} BHX value`);
+  setText("#lineageOutputNote", `${scenarioLabel[state.scenario]} SOTP target: ${money(sotpTarget)} VND/share.`);
 }
 
 function fpaValue(metric, value) {
@@ -789,6 +949,19 @@ function fpaVariance(metric, value) {
   return money(n);
 }
 
+function fpaVarianceSummary(row) {
+  const relative = row.metric.toLowerCase().includes("margin")
+    ? `${fmt1.format(num(row.variance_pct_or_ppt))} ppt`
+    : pct(row.variance_pct_or_ppt);
+  return `${fpaVariance(row.metric, row.variance)} · ${relative}`;
+}
+
+function fpaStatusClass(status) {
+  if (status === "Favorable") return "favorable";
+  if (status === "Ahead of plan") return "ahead";
+  return "watch";
+}
+
 function renderFpaTable() {
   const el = document.querySelector("#fpaTable");
   if (!el) return;
@@ -796,15 +969,14 @@ function renderFpaTable() {
   const rows = state.fpa.filter((row) => filter === "all" || row.status === filter);
 
   el.innerHTML = `
-    <table>
+    <table class="fpa-table">
+      <caption class="sr-only">External FP&A simulation: budget versus actual variance</caption>
       <thead>
         <tr>
           <th>Metric</th>
-          <th>Period</th>
           <th>Actual</th>
-          <th>Budget</th>
+          <th>Plan</th>
           <th>Variance</th>
-          <th>Variance % / ppt</th>
           <th>Status</th>
         </tr>
       </thead>
@@ -814,13 +986,11 @@ function renderFpaTable() {
             const favorable = row.status === "Favorable" || row.status === "Ahead of plan";
             return `
               <tr>
-                <td>${row.metric}</td>
-                <td>${row.actual_period}</td>
-                <td class="num">${fpaValue(row.metric, row.actual)}</td>
-                <td class="num">${fpaValue(row.metric, row.budget)}</td>
-                <td class="num ${favorable ? "positive" : "negative"}">${fpaVariance(row.metric, row.variance)}</td>
-                <td class="num ${favorable ? "positive" : "negative"}">${row.metric.toLowerCase().includes("margin") ? `${fmt1.format(num(row.variance_pct_or_ppt))} ppt` : pct(row.variance_pct_or_ppt)}</td>
-                <td>${row.status}</td>
+                <td data-label="Metric"><b>${row.metric}</b><small>${row.actual_period}</small></td>
+                <td class="num" data-label="Actual">${fpaValue(row.metric, row.actual)}</td>
+                <td class="num" data-label="Plan">${fpaValue(row.metric, row.budget)}</td>
+                <td class="num ${favorable ? "positive" : "negative"}" data-label="Variance">${fpaVarianceSummary(row)}</td>
+                <td data-label="Status"><span class="fpa-status ${fpaStatusClass(row.status)}">${row.status}</span></td>
               </tr>
             `;
           })
@@ -1154,6 +1324,10 @@ function renderSimulator() {
 function renderAll() {
   renderSnapshot();
   renderInvestmentSummary();
+  renderThesisMonitor();
+  renderSourceRegister();
+  renderModelChecks();
+  renderValuationLineage();
   renderSimulator();
   renderSharePriceChart();
   renderValuationRange();
@@ -1166,11 +1340,18 @@ function renderAll() {
   renderSensitivity();
 }
 
+function setPressedGroup(selector, activeButton) {
+  document.querySelectorAll(selector).forEach((item) => {
+    const isActive = item === activeButton;
+    item.classList.toggle("active", isActive);
+    item.setAttribute("aria-pressed", String(isActive));
+  });
+}
+
 function wireControls() {
   document.querySelectorAll(".scenario").forEach((button) => {
     button.addEventListener("click", () => {
-      document.querySelectorAll(".scenario").forEach((item) => item.classList.remove("active"));
-      button.classList.add("active");
+      setPressedGroup(".scenario", button);
       state.scenario = button.dataset.scenario;
       renderAll();
     });
@@ -1179,8 +1360,7 @@ function wireControls() {
   document.querySelector("#segmentSelect")?.addEventListener("change", renderSegmentChart);
   document.querySelectorAll(".driver-metric").forEach((button) => {
     button.addEventListener("click", () => {
-      document.querySelectorAll(".driver-metric").forEach((item) => item.classList.remove("active"));
-      button.classList.add("active");
+      setPressedGroup(".driver-metric", button);
       state.driverMetric = button.dataset.driverMetric;
       renderSegmentChart();
     });
@@ -1188,8 +1368,7 @@ function wireControls() {
   document.querySelector("#ratioSelect")?.addEventListener("change", renderRatioChart);
   document.querySelectorAll(".performance-mode").forEach((button) => {
     button.addEventListener("click", () => {
-      document.querySelectorAll(".performance-mode").forEach((item) => item.classList.remove("active"));
-      button.classList.add("active");
+      setPressedGroup(".performance-mode", button);
       state.performanceMode = button.dataset.performanceMode;
       renderSharePriceChart();
     });
@@ -1241,6 +1420,7 @@ async function boot() {
       storeDrivers,
       monthly,
       sources,
+      modelChecks,
       sensitivities,
       pricePerformance,
     ] = await Promise.all([
@@ -1254,6 +1434,7 @@ async function boot() {
       loadCSV("07_store_driver_chart.csv"),
       loadCSV("fpa_monthly.csv"),
       loadCSV("source_audit.csv"),
+      loadCSV("model_checks.csv"),
       loadCSV("sensitivity_tables.csv"),
       loadCSV("share_price_performance.csv"),
     ]);
@@ -1269,6 +1450,7 @@ async function boot() {
       storeDrivers,
       monthly,
       sources,
+      modelChecks,
       sensitivities,
       pricePerformance,
     });

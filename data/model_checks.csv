@@ -1,0 +1,6 @@
+check_id,label,status,detail,scope
+forecast_status,Forecast model status,OK,0 forecast years with CHECK,2026E-2030E
+revenue_gp,Revenue and gross profit ties,OK,Forecast checks equal zero,2026E-2030E
+balance_sheet,Balance sheet balances,OK,Assets less liabilities less equity equals zero,2026E-2030E
+cash_flow,Ending cash ties,OK,Cash flow tie check equals zero,2026E-2030E
+fcff,FCFF ties to cash flow,OK,FCFF tie check equals zero in Bull Base and Bear,Valuation

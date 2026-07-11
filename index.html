@@ -21,14 +21,10 @@
         <span>Equity Research Project</span>
       </a>
       <nav>
-        <a href="#summary">Summary</a>
-        <a href="#methodology">Method</a>
-        <a href="#performance">Performance</a>
+        <a href="#summary">Investment case</a>
         <a href="#valuation">Valuation</a>
-        <a href="#simulator">Simulator</a>
-        <a href="#drivers">Drivers</a>
-        <a href="#fpa">FP&A</a>
-        <a href="#workflow">Workflow</a>
+        <a href="#drivers">Forecasts</a>
+        <a href="#thesis-monitor">Tracking</a>
         <a class="download-pill" href="#downloads">Downloads</a>
       </nav>
     </header>
@@ -40,18 +36,13 @@
           <p class="kicker">Personal Equity Research Project</p>
           <h1>MWG Equity Research: Forecast &amp; Valuation</h1>
           <p class="hero-copy">
-            Initiation-style valuation model for Mobile World Investment Corporation,
-            combining a driver-based forecast, 3-statement model, DCF, SOTP,
-            trading comps, external FP&A simulation, and SQL/Python reporting workflow.
+            A SOTP-led 12-month view on MWG: core ICT/CE recovery supports earnings
+            quality, while BHX execution remains the upside swing factor.
           </p>
+          <p class="hero-meta" id="heroMeta">Base case · 12-month horizon · Market data as of 26 Jun 2026</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#valuation">Explore valuation</a>
-            <a class="btn" href="./downloads/MWG_Equity_Research_Model_Main.xlsx" download>
-              Download Excel model
-            </a>
-            <a class="btn" href="./downloads/MWG_Initiation_Report.pdf" download>
-              Download PDF report
-            </a>
+            <a class="btn primary" href="#summary">Read investment case</a>
+            <a class="btn" href="#valuation">Open valuation lab</a>
           </div>
         </div>
         <aside class="hero-card" aria-label="Live valuation snapshot">
@@ -64,23 +55,11 @@
               <b id="heroCurrent">Loading</b>
             </div>
             <div>
-              <span>DCF</span>
-              <b id="heroDcf">Loading</b>
+              <span>Horizon</span>
+              <b>12 months</b>
             </div>
           </div>
         </aside>
-      </section>
-
-      <section class="control-strip" aria-label="Scenario controls">
-        <div>
-          <p class="eyebrow">Scenario</p>
-          <h2>Switch the investment case</h2>
-        </div>
-        <div class="scenario-tabs" role="tablist" aria-label="Valuation scenario">
-          <button class="scenario active" data-scenario="base" type="button">Base</button>
-          <button class="scenario" data-scenario="bull" type="button">Bull</button>
-          <button class="scenario" data-scenario="bear" type="button">Bear</button>
-        </div>
       </section>
 
       <section id="summary" class="investment-summary" aria-label="Investment summary">
@@ -166,6 +145,43 @@
         </div>
       </section>
 
+      <section id="market-view" class="market-view" aria-label="Variant investment view">
+        <div class="section-head compact-head">
+          <p class="eyebrow">Variant view</p>
+          <h2>What the market may be missing</h2>
+          <p>These are the debates the model is designed to test, not claims about a single market consensus.</p>
+        </div>
+        <div class="market-view-grid">
+          <article>
+            <span>Market debate</span>
+            <h3>BHX rollout can dilute productivity</h3>
+            <p><b>My view:</b> Expansion only creates value if revenue per store remains resilient.</p>
+            <small><b>What proves or disproves it:</b> BHX RPSM, revenue growth, and new-store rollout.</small>
+          </article>
+          <article>
+            <span>Market debate</span>
+            <h3>Core recovery is only cyclical</h3>
+            <p><b>My view:</b> Core SSSG and margin quality can make the recovery more durable.</p>
+            <small><b>What proves or disproves it:</b> Core SSSG, EBIT margin, and inventory days.</small>
+          </article>
+          <article>
+            <span>Valuation debate</span>
+            <h3>One multiple can value the whole group</h3>
+            <p><b>My view:</b> Mature ICT/CE, BHX growth, and optionality chains need separate lenses.</p>
+            <small><b>What proves or disproves it:</b> SOTP bridge, DCF cross-check, and segment execution.</small>
+          </article>
+        </div>
+      </section>
+
+      <section id="thesis-monitor" class="thesis-monitor" aria-label="Thesis monitor">
+        <div class="section-head compact-head">
+          <p class="eyebrow">Thesis monitor</p>
+          <h2>What to watch after publication</h2>
+          <p>Each KPI is linked to a specific forecast or valuation consequence; green does not automatically mean the thesis is complete.</p>
+        </div>
+        <div id="thesisMonitorGrid" class="thesis-monitor-grid" aria-live="polite"></div>
+      </section>
+
       <section id="methodology" class="methodology-box" aria-label="Methodology and data cutoff">
         <div class="methodology-head">
           <div>
@@ -226,6 +242,44 @@
             </p>
           </article>
         </div>
+        <div class="methodology-evidence">
+          <details class="source-register">
+            <summary>
+              <span>
+                <b>Sources &amp; key valuation inputs</b>
+                <small>Trace the public actuals, management guidance, and external benchmarks behind the case.</small>
+              </span>
+              <span class="details-action">Open source register</span>
+            </summary>
+            <div id="sourceRegister" class="source-register-list"></div>
+            <p class="details-footnote">The full source register, locations, and model links are included in the downloadable Excel model.</p>
+          </details>
+
+          <article class="model-integrity" aria-label="Model integrity checks">
+            <div>
+              <p class="eyebrow">Model integrity</p>
+              <h3>Checks tied to the current Excel export</h3>
+            </div>
+            <div id="modelChecks" class="model-check-grid" aria-live="polite"></div>
+            <p class="model-integrity-note">Forecast-model checks are shown here; BHX productivity and rollout are deliberately tracked separately above.</p>
+          </article>
+
+          <details class="data-definitions">
+            <summary>
+              <span>
+                <b>Data definitions</b>
+                <small>Short definitions and source labels used throughout this portfolio.</small>
+              </span>
+              <span class="details-action">Open glossary</span>
+            </summary>
+            <div class="definitions-grid">
+              <article><b>RPSM</b><span>Revenue per store per month; the clearest productivity read for store rollout.</span></article>
+              <article><b>SSSG</b><span>Same-store sales growth; growth from the comparable store base rather than new openings.</span></article>
+              <article><b>Holding discount</b><span>A deduction for group complexity and limited segment disclosure in an SOTP framework.</span></article>
+              <article><b>Source labels</b><span><i class="source-type public">Public actual</i><i class="source-type guidance">Company guidance</i><i class="source-type analyst">Analyst assumption</i></span></article>
+            </div>
+          </details>
+        </div>
       </section>
 
       <section id="performance" class="performance-section" aria-label="MWG share price performance">
@@ -236,8 +290,8 @@
               <h3>MWG share price vs VNINDEX</h3>
             </div>
             <div class="performance-controls" role="group" aria-label="Chart view">
-              <button class="performance-mode active" data-performance-mode="price" type="button">Price levels</button>
-              <button class="performance-mode" data-performance-mode="rebased" type="button">Rebased to 100</button>
+              <button class="performance-mode active" data-performance-mode="price" type="button" aria-pressed="true">Price levels</button>
+              <button class="performance-mode" data-performance-mode="rebased" type="button" aria-pressed="false">Rebased to 100</button>
             </div>
           </div>
           <div id="sharePriceChart" class="chart price-performance-chart" aria-label="Weekly MWG share price and VNINDEX performance"></div>
@@ -297,6 +351,55 @@
           cash-flow cross-check, and trading comps as the market sanity check.
         </p>
       </section>
+
+      <section class="valuation-scenario" aria-label="Scenario controls">
+        <div>
+          <p class="eyebrow">Scenario</p>
+          <h3>Switch the valuation case</h3>
+          <small>Updates the headline valuation snapshot, range chart, and selected target price.</small>
+        </div>
+        <div class="scenario-tabs" role="group" aria-label="Valuation scenario">
+          <button class="scenario active" data-scenario="base" type="button" aria-pressed="true">Base</button>
+          <button class="scenario" data-scenario="bull" type="button" aria-pressed="false">Bull</button>
+          <button class="scenario" data-scenario="bear" type="button" aria-pressed="false">Bear</button>
+        </div>
+      </section>
+
+      <details id="valuation-lineage" class="valuation-lineage">
+        <summary>
+          <span>
+            <b>Trace the target: source → assumption → valuation</b>
+            <small>Follow the core BHX value bridge used in the selected scenario.</small>
+          </span>
+          <span class="details-action">Open valuation lineage</span>
+        </summary>
+        <div class="lineage-grid">
+          <article>
+            <span class="source-type public">Public actual</span>
+            <b>BHX 5M2026 execution</b>
+            <strong id="lineageActual">Loading</strong>
+            <small>Latest revenue and new-store rollout anchor.</small>
+          </article>
+          <article>
+            <span class="source-type guidance">Company guidance</span>
+            <b>2026 group and BHX plan</b>
+            <strong id="lineageGuidance">Loading</strong>
+            <small>Management guidance anchors the first forecast year.</small>
+          </article>
+          <article>
+            <span class="source-type analyst">Analyst valuation inputs</span>
+            <b>BHX multiple and platform discount</b>
+            <strong id="lineageAssumption">Loading</strong>
+            <small>Scenario inputs translate operating execution into value.</small>
+          </article>
+          <article class="lineage-output">
+            <span>Model output</span>
+            <b>BHX contribution and SOTP target</b>
+            <strong id="lineageOutput">Loading</strong>
+            <small id="lineageOutputNote">Loading</small>
+          </article>
+        </div>
+      </details>
 
       <section id="simulator" class="simulator panel" aria-label="Interactive valuation simulator">
         <div class="simulator-head">
@@ -479,10 +582,10 @@
               <h3>Store count, revenue, and productivity by chain</h3>
             </div>
             <div class="driver-controls">
-              <div class="mini-tabs" id="driverMetricTabs" role="tablist" aria-label="Driver metric">
-                <button class="driver-metric" data-driver-metric="revenue_vnd_bn" type="button">Revenue</button>
-                <button class="driver-metric active" data-driver-metric="ending_stores" type="button">Store Count</button>
-                <button class="driver-metric" data-driver-metric="revenue_per_store_month_vnd_bn" type="button">Rev / Store</button>
+              <div class="mini-tabs" id="driverMetricTabs" role="group" aria-label="Driver metric">
+                <button class="driver-metric" data-driver-metric="revenue_vnd_bn" type="button" aria-pressed="false">Revenue</button>
+                <button class="driver-metric active" data-driver-metric="ending_stores" type="button" aria-pressed="true">Store Count</button>
+                <button class="driver-metric" data-driver-metric="revenue_per_store_month_vnd_bn" type="button" aria-pressed="false">Rev / Store</button>
               </div>
               <select id="segmentSelect" aria-label="Choose segment">
                 <option value="all">All key segments</option>
@@ -543,6 +646,7 @@
             </select>
           </div>
           <div id="fpaTable" class="table-wrap"></div>
+          <p class="fpa-table-note">External simulation only; periods are shown below each metric. On smaller screens, each metric is shown as a compact card.</p>
         </article>
 
         <article class="panel">
@@ -588,6 +692,10 @@
             <p>This front end reads the clean exports and visualizes the project.</p>
           </li>
         </ol>
+        <aside class="ownership-note">
+          <b>Research ownership</b>
+          <p>Model architecture, forecast assumptions, valuation, and investment interpretation by Hoang Nghia. Data preparation was AI-assisted where noted; outputs were manually reviewed against the Excel model.</p>
+        </aside>
       </section>
 
       <section id="downloads" class="download-section">
@@ -599,24 +707,30 @@
           <a class="download-card ready" href="./downloads/MWG_Equity_Research_Model_Main.xlsx" download>
             <span>Excel model</span>
             <strong>Download Excel model</strong>
-            <small>3-statement model, DCF, SOTP, comps, FP&A module</small>
+            <small>3-statement model, DCF, SOTP, comps, sensitivities, and integrity checks.</small>
           </a>
           <a class="download-card ready" href="./downloads/MWG_Initiation_Report.pdf" download>
             <span>PDF report</span>
             <strong>Download PDF report</strong>
-            <small>12-page MWG initiation-style report</small>
+            <small>12-page MWG initiation-style report aligned to the research case.</small>
           </a>
         </div>
+        <p class="download-disclaimer">Personal research project using public information and analyst assumptions. Not affiliated with MWG. Not investment advice.</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>Built by Hoang Nghia · Equity Research Portfolio</span>
+      <div>
+        <strong>Hoang Nghia</strong>
+        <span>Equity Research Portfolio</span>
+      </div>
+      <a href="https://github.com/hoangnghiale238/mwg-equity-research" target="_blank" rel="noreferrer">Contact via GitHub</a>
+      <p>Personal research project using public information and analyst assumptions. Not affiliated with MWG. Not investment advice.</p>
     </footer>
 
     <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
 
-    <script src="./script.js?v=cv-ready-20260711-polish"></script>
+    <script src="./script.js?v=cv-ready-20260712-research-flow"></script>
   </body>
 </html>
 
