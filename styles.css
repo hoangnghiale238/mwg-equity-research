@@ -112,11 +112,10 @@ select {
   overflow: hidden;
   color: #ffffff;
   background-image:
-    radial-gradient(circle at 78% 28%, rgba(255, 210, 0, 0.18), rgba(255, 210, 0, 0) 22%),
-    linear-gradient(90deg, rgba(12, 12, 12, 0.96), rgba(12, 12, 12, 0.72) 38%, rgba(12, 12, 12, 0.2) 78%),
-    url("./assets/hero-background.png");
+    linear-gradient(90deg, rgba(12, 12, 12, 0.96), rgba(12, 12, 12, 0.74) 40%, rgba(12, 12, 12, 0.18) 74%, rgba(12, 12, 12, 0.08)),
+    url("./assets/hero-mwg-brand.png");
   background-size: cover;
-  background-position: center right;
+  background-position: center;
 }
 
 .hero::after {
