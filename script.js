@@ -1,5 +1,5 @@
 const DATA_ROOT = "./data/";
-const DATA_VERSION = "20260710-dcf-timing";
+const DATA_VERSION = "20260711-share-price-performance";
 
 const state = {
   scenario: "base",
@@ -14,6 +14,8 @@ const state = {
   monthly: [],
   sources: [],
   sensitivities: [],
+  pricePerformance: [],
+  performanceMode: "price",
   driverMetric: "ending_stores",
 };
 
@@ -362,6 +364,155 @@ function renderValuationRange() {
 
   svg.appendChild(svgEl("text", { x: pad.left, y: height - 4, class: "chart-note" }, "Range = bear to bull. Triangle = selected scenario. Red dashed line = market price."));
   el.replaceChildren(svg);
+}
+
+function renderSharePriceChart() {
+  const el = document.querySelector("#sharePriceChart");
+  if (!el) return;
+
+  const rows = state.pricePerformance
+    .map((row) => ({
+      date: row.date,
+      timestamp: new Date(`${row.date}T12:00:00`).getTime(),
+      mwg: num(row.mwg_price_vnd),
+      index: num(row.vnindex),
+    }))
+    .filter((row) => Number.isFinite(row.timestamp) && row.mwg != null && row.index != null);
+  if (rows.length < 2) return clear(el, "No share-price data");
+
+  const rebased = state.performanceMode === "rebased";
+  const first = rows[0];
+  const plotRows = rows.map((row) => ({
+    ...row,
+    mwgValue: rebased ? (row.mwg / first.mwg) * 100 : row.mwg,
+    indexValue: rebased ? (row.index / first.index) * 100 : row.index,
+  }));
+  const range = (values) => {
+    const rawMin = Math.min(...values);
+    const rawMax = Math.max(...values);
+    const padding = Math.max((rawMax - rawMin) * 0.1, rebased ? 3 : rawMax * 0.04);
+    return { min: rawMin - padding, max: rawMax + padding };
+  };
+
+  const indexRange = range(plotRows.map((row) => row.indexValue));
+  const mwgRange = rebased ? indexRange : range(plotRows.map((row) => row.mwgValue));
+  const width = 1100;
+  const height = 385;
+  const pad = { left: 78, right: 84, top: 42, bottom: 66 };
+  const plotWidth = width - pad.left - pad.right;
+  const plotHeight = height - pad.top - pad.bottom;
+  const x = (timestamp) => pad.left + ((timestamp - first.timestamp) / (plotRows.at(-1).timestamp - first.timestamp)) * plotWidth;
+  const y = (value, axisRange) => pad.top + ((axisRange.max - value) / (axisRange.max - axisRange.min)) * plotHeight;
+  const linePath = (field, axisRange) => plotRows
+    .map((row, index) => `${index === 0 ? "M" : "L"} ${x(row.timestamp).toFixed(1)} ${y(row[field], axisRange).toFixed(1)}`)
+    .join(" ");
+  const dateFmt = new Intl.DateTimeFormat("en-GB", { day: "2-digit", month: "short", year: "numeric" });
+
+  const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}`, role: "img" });
+  const horizontalTicks = 5;
+  for (let index = 0; index < horizontalTicks; index += 1) {
+    const ratio = index / (horizontalTicks - 1);
+    const gridY = pad.top + ratio * plotHeight;
+    const indexTick = indexRange.max - ratio * (indexRange.max - indexRange.min);
+    const mwgTick = mwgRange.max - ratio * (mwgRange.max - mwgRange.min);
+    svg.appendChild(svgEl("line", {
+      x1: pad.left,
+      y1: gridY,
+      x2: width - pad.right,
+      y2: gridY,
+      stroke: "rgba(255,255,255,0.2)",
+      "stroke-dasharray": "4 5",
+    }));
+    svg.appendChild(svgEl("text", { x: pad.left - 12, y: gridY + 4, "text-anchor": "end", class: "axis" }, rebased ? fmt0.format(indexTick) : fmt0.format(indexTick)));
+    if (!rebased) {
+      svg.appendChild(svgEl("text", { x: width - pad.right + 12, y: gridY + 4, class: "axis" }, moneyShort(mwgTick)));
+    }
+  }
+
+  const dateTicks = [0, 0.25, 0.5, 0.75, 1];
+  dateTicks.forEach((ratio) => {
+    const target = first.timestamp + ratio * (plotRows.at(-1).timestamp - first.timestamp);
+    const nearest = plotRows.reduce((best, row) => (
+      Math.abs(row.timestamp - target) < Math.abs(best.timestamp - target) ? row : best
+    ));
+    const tickX = x(nearest.timestamp);
+    svg.appendChild(svgEl("line", { x1: tickX, y1: height - pad.bottom, x2: tickX, y2: height - pad.bottom + 6, stroke: "rgba(255,255,255,0.55)" }));
+    svg.appendChild(svgEl("text", { x: tickX, y: height - 24, "text-anchor": "middle", class: "axis" }, dateFmt.format(new Date(nearest.timestamp))));
+  });
+
+  svg.appendChild(svgEl("text", {
+    x: 18,
+    y: pad.top + plotHeight / 2,
+    transform: `rotate(-90 18 ${pad.top + plotHeight / 2})`,
+    "text-anchor": "middle",
+    class: "axis",
+  }, rebased ? "Rebased performance" : "VNINDEX"));
+  if (!rebased) {
+    svg.appendChild(svgEl("text", {
+      x: width - 18,
+      y: pad.top + plotHeight / 2,
+      transform: `rotate(90 ${width - 18} ${pad.top + plotHeight / 2})`,
+      "text-anchor": "middle",
+      class: "axis",
+    }, "MWG price (VND)"));
+  }
+
+  const legend = [
+    { label: rebased ? "VNINDEX (rebased)" : "VNINDEX", color: "#20d8ff", x: pad.left },
+    { label: rebased ? "MWG (rebased)" : "MWG", color: "#ffd200", x: pad.left + 178 },
+  ];
+  legend.forEach((item) => {
+    svg.appendChild(svgEl("line", { x1: item.x, y1: 18, x2: item.x + 28, y2: 18, stroke: item.color, "stroke-width": 4, "stroke-linecap": "round" }));
+    svg.appendChild(svgEl("text", { x: item.x + 38, y: 22, class: "value-label" }, item.label));
+  });
+
+  svg.appendChild(svgEl("path", { d: linePath("indexValue", indexRange), fill: "none", stroke: "#20d8ff", "stroke-width": 3.5, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+  svg.appendChild(svgEl("path", { d: linePath("mwgValue", mwgRange), fill: "none", stroke: "#ffd200", "stroke-width": 3.5, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+
+  const hoverLine = svgEl("line", { y1: pad.top, y2: height - pad.bottom, stroke: "rgba(255,255,255,0.68)", "stroke-dasharray": "4 4", visibility: "hidden" });
+  const indexDot = svgEl("circle", { r: 5, fill: "#20d8ff", stroke: "#ffffff", "stroke-width": 2, visibility: "hidden" });
+  const mwgDot = svgEl("circle", { r: 5, fill: "#ffd200", stroke: "#ffffff", "stroke-width": 2, visibility: "hidden" });
+  svg.append(hoverLine, indexDot, mwgDot);
+
+  const overlay = svgEl("rect", { x: pad.left, y: pad.top, width: plotWidth, height: plotHeight, fill: "transparent", style: "cursor: crosshair" });
+  const showPoint = (event) => {
+    const pointer = event.touches?.[0] ?? event;
+    const bounds = svg.getBoundingClientRect();
+    const localX = ((pointer.clientX - bounds.left) / bounds.width) * width;
+    const targetTime = first.timestamp + clamp((localX - pad.left) / plotWidth, 0, 1) * (plotRows.at(-1).timestamp - first.timestamp);
+    const row = plotRows.reduce((best, item) => (
+      Math.abs(item.timestamp - targetTime) < Math.abs(best.timestamp - targetTime) ? item : best
+    ));
+    const pointX = x(row.timestamp);
+    hoverLine.setAttribute("x1", pointX);
+    hoverLine.setAttribute("x2", pointX);
+    hoverLine.setAttribute("visibility", "visible");
+    indexDot.setAttribute("cx", pointX);
+    indexDot.setAttribute("cy", y(row.indexValue, indexRange));
+    indexDot.setAttribute("visibility", "visible");
+    mwgDot.setAttribute("cx", pointX);
+    mwgDot.setAttribute("cy", y(row.mwgValue, mwgRange));
+    mwgDot.setAttribute("visibility", "visible");
+    const mwgText = rebased ? `${row.mwgValue.toFixed(1)} (index)` : `${money(row.mwg)} VND`;
+    const indexText = rebased ? `${row.indexValue.toFixed(1)} (index)` : fmt0.format(row.index);
+    showTooltip(pointer, `<b>${dateFmt.format(new Date(row.timestamp))}</b><br><span style="color:#20d8ff">VNINDEX: ${indexText}</span><br><span style="color:#ffd200">MWG: ${mwgText}</span>`);
+  };
+  const hidePoint = () => {
+    hoverLine.setAttribute("visibility", "hidden");
+    indexDot.setAttribute("visibility", "hidden");
+    mwgDot.setAttribute("visibility", "hidden");
+    hideTooltip();
+  };
+  overlay.addEventListener("mousemove", showPoint);
+  overlay.addEventListener("touchmove", showPoint, { passive: true });
+  overlay.addEventListener("mouseleave", hidePoint);
+  overlay.addEventListener("touchend", hidePoint);
+  svg.appendChild(overlay);
+  el.replaceChildren(svg);
+
+  const mwgReturn = plotRows.at(-1).mwg / first.mwg - 1;
+  const indexReturn = plotRows.at(-1).index / first.index - 1;
+  setText("#sharePriceMeta", `Weekly Friday close · ${dateFmt.format(new Date(first.timestamp))} to ${dateFmt.format(new Date(plotRows.at(-1).timestamp))} · MWG ${pct(mwgReturn)} vs VNINDEX ${pct(indexReturn)}`);
 }
 
 function renderPeerChart() {
@@ -991,6 +1142,7 @@ function renderAll() {
   renderSnapshot();
   renderInvestmentSummary();
   renderSimulator();
+  renderSharePriceChart();
   renderValuationRange();
   renderPeerChart();
   renderSegmentChart();
@@ -1021,6 +1173,14 @@ function wireControls() {
     });
   });
   document.querySelector("#ratioSelect")?.addEventListener("change", renderRatioChart);
+  document.querySelectorAll(".performance-mode").forEach((button) => {
+    button.addEventListener("click", () => {
+      document.querySelectorAll(".performance-mode").forEach((item) => item.classList.remove("active"));
+      button.classList.add("active");
+      state.performanceMode = button.dataset.performanceMode;
+      renderSharePriceChart();
+    });
+  });
   document.querySelector("#fpaFilter")?.addEventListener("change", renderFpaTable);
   ["simDmxValue", "simBhxMultiple", "simHoldingDiscount", "simNetCash", "simWacc", "simTerminalGrowth"].forEach(
     (id) => document.querySelector(`#${id}`)?.addEventListener("input", renderSimulator),
@@ -1069,6 +1229,7 @@ async function boot() {
       monthly,
       sources,
       sensitivities,
+      pricePerformance,
     ] = await Promise.all([
       loadCSV("01_revenue_growth.csv"),
       loadCSV("02_profitability_and_wc.csv"),
@@ -1081,6 +1242,7 @@ async function boot() {
       loadCSV("fpa_monthly.csv"),
       loadCSV("source_audit.csv"),
       loadCSV("sensitivity_tables.csv"),
+      loadCSV("share_price_performance.csv"),
     ]);
 
     Object.assign(state, {
@@ -1095,6 +1257,7 @@ async function boot() {
       monthly,
       sources,
       sensitivities,
+      pricePerformance,
     });
 
     fillSegmentSelector();

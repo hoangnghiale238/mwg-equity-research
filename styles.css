@@ -346,6 +346,7 @@ main {
 .control-strip,
 .investment-summary,
 .methodology-box,
+.performance-section,
 .simulator,
 .snapshot,
 .thesis-band,
@@ -1050,6 +1051,81 @@ select {
   min-height: 330px;
 }
 
+.performance-section {
+  margin-top: 18px;
+}
+
+.performance-panel {
+  min-height: 430px;
+  color: #ffffff;
+  border-color: #171717;
+  background:
+    radial-gradient(circle at 78% 15%, rgba(0, 214, 255, 0.12), transparent 31%),
+    linear-gradient(135deg, #151515, #080808);
+}
+
+.performance-panel h3,
+.performance-panel .eyebrow {
+  color: #ffffff;
+}
+
+.performance-panel .eyebrow {
+  opacity: 0.68;
+}
+
+.performance-controls {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.performance-mode {
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: rgba(255, 255, 255, 0.68);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.performance-mode.active {
+  color: var(--black);
+  background: var(--yellow);
+}
+
+.price-performance-chart {
+  min-height: 345px;
+}
+
+.performance-panel .chart-note,
+.performance-panel .axis {
+  fill: rgba(255, 255, 255, 0.62);
+}
+
+.performance-panel .value-label,
+.performance-panel .bar-label {
+  fill: #ffffff;
+}
+
+.performance-footnote {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.performance-footnote span:last-child {
+  text-align: right;
+}
+
 svg {
   display: block;
   width: 100%;
@@ -1299,6 +1375,15 @@ td.num {
   .workflow,
   .download-section {
     grid-template-columns: 1fr;
+  }
+
+  .performance-footnote {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .performance-footnote span:last-child {
+    text-align: left;
   }
 
   .simulator-controls {

@@ -12,7 +12,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffd200'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-weight='800' font-size='19' fill='%230c0c0c'%3EMWG%3C/text%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260702-method" />
+    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260711-performance" />
   </head>
   <body>
     <header class="site-nav" aria-label="Main navigation">
@@ -23,6 +23,7 @@
       <nav>
         <a href="#summary">Summary</a>
         <a href="#methodology">Method</a>
+        <a href="#performance">Performance</a>
         <a href="#valuation">Valuation</a>
         <a href="#simulator">Simulator</a>
         <a href="#drivers">Drivers</a>
@@ -225,6 +226,26 @@
             </p>
           </article>
         </div>
+      </section>
+
+      <section id="performance" class="performance-section" aria-label="MWG share price performance">
+        <article class="panel performance-panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Market performance</p>
+              <h3>MWG share price vs VNINDEX</h3>
+            </div>
+            <div class="performance-controls" role="group" aria-label="Chart view">
+              <button class="performance-mode active" data-performance-mode="price" type="button">Price levels</button>
+              <button class="performance-mode" data-performance-mode="rebased" type="button">Rebased to 100</button>
+            </div>
+          </div>
+          <div id="sharePriceChart" class="chart price-performance-chart" aria-label="Weekly MWG share price and VNINDEX performance"></div>
+          <div class="performance-footnote">
+            <span id="sharePriceMeta">Loading weekly market data</span>
+            <span>Hover across the chart to inspect a weekly Friday close.</span>
+          </div>
+        </article>
       </section>
 
       <section class="snapshot" aria-label="Executive snapshot">
@@ -591,7 +612,7 @@
 
     <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
 
-    <script src="./script.js?v=cv-ready-20260710-dcf"></script>
+    <script src="./script.js?v=cv-ready-20260711-performance"></script>
   </body>
 </html>
 
