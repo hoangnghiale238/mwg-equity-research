@@ -177,6 +177,17 @@ function sourceNumber(dataPoint, period) {
   return num(row?.value);
 }
 
+function sourceLabel(row) {
+  if (row?.source === "kqkd 5t 2026.pdf") return "MWG 5M2026 Business Update";
+  return row?.source ?? "Public disclosure";
+}
+
+function sourceType(row) {
+  if (row?.source_id?.startsWith("KQKD5M26")) return "Public actual";
+  if (row?.source?.toLowerCase().includes("business directions")) return "Company guidance";
+  return "Public disclosure";
+}
+
 function recommendation(upside) {
   const n = num(upside);
   if (n == null) return { label: "Review", className: "hold" };
@@ -749,7 +760,9 @@ function renderAnchors() {
       item.innerHTML = `
         <div>
           <b>${row.data_point}</b>
-          <span>${row.period} | ${row.source}</span>
+          <span>${row.period}</span>
+          <span class="source-meta">Source: ${sourceLabel(row)}</span>
+          <span class="source-meta">Type: ${sourceType(row)}</span>
         </div>
         <strong>${row.value}</strong>
       `;
