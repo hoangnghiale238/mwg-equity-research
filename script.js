@@ -17,6 +17,7 @@ const state = {
   sensitivities: [],
   pricePerformance: [],
   performanceMode: "price",
+  performanceRange: "1y",
   driverMetric: "ending_stores",
 };
 
@@ -382,22 +383,70 @@ function renderValuationRange() {
   el.replaceChildren(svg);
 }
 
-function renderSharePriceChart() {
-  const el = document.querySelector("#sharePriceChart");
-  if (!el) return;
+const performanceRangeLabels = {
+  "3m": "3M",
+  "6m": "6M",
+  ytd: "YTD",
+  "1y": "1Y",
+  since: "Since initiation",
+};
 
-  const rows = state.pricePerformance
+function pricePerformanceRows() {
+  return state.pricePerformance
     .map((row) => ({
       date: row.date,
       timestamp: new Date(`${row.date}T12:00:00`).getTime(),
       mwg: num(row.mwg_price_vnd),
       index: num(row.vnindex),
     }))
-    .filter((row) => Number.isFinite(row.timestamp) && row.mwg != null && row.index != null);
+    .filter((row) => Number.isFinite(row.timestamp) && row.mwg != null && row.index != null)
+    .sort((a, b) => a.timestamp - b.timestamp);
+}
+
+function performanceRowsForSelectedRange(rows) {
+  if (state.performanceRange === "since") return rows;
+  const cutoff = new Date(rows.at(-1).timestamp);
+  if (state.performanceRange === "3m") cutoff.setMonth(cutoff.getMonth() - 3);
+  if (state.performanceRange === "6m") cutoff.setMonth(cutoff.getMonth() - 6);
+  if (state.performanceRange === "1y") cutoff.setFullYear(cutoff.getFullYear() - 1);
+  if (state.performanceRange === "ytd") cutoff.setMonth(0, 1);
+  const filtered = rows.filter((row) => row.timestamp >= cutoff.getTime());
+  return filtered.length >= 2 ? filtered : rows;
+}
+
+function signedPct(value) {
+  const n = num(value);
+  if (n == null) return "NM";
+  return `${n >= 0 ? "+" : ""}${pct(n)}`;
+}
+
+function signedPercentagePoints(value) {
+  const n = num(value);
+  if (n == null) return "NM";
+  return `${n >= 0 ? "+" : ""}${(n * 100).toFixed(1)} percentage points`;
+}
+
+function renderPerformanceSummary(first, last) {
+  const mwgReturn = last.mwg / first.mwg - 1;
+  const indexReturn = last.index / first.index - 1;
+  const relative = mwgReturn - indexReturn;
+  setText("#performanceMwgReturn", signedPct(mwgReturn));
+  setText("#performanceIndexReturn", signedPct(indexReturn));
+  setText("#performanceRelative", signedPercentagePoints(relative));
+  return { mwgReturn, indexReturn, relative };
+}
+
+function renderSharePriceChart() {
+  const el = document.querySelector("#sharePriceChart");
+  if (!el) return;
+
+  const rows = performanceRowsForSelectedRange(pricePerformanceRows());
   if (rows.length < 2) return clear(el, "No share-price data");
 
   const rebased = state.performanceMode === "rebased";
   const first = rows[0];
+  const last = rows.at(-1);
+  const performance = renderPerformanceSummary(first, last);
   const plotRows = rows.map((row) => ({
     ...row,
     mwgValue: rebased ? (row.mwg / first.mwg) * 100 : row.mwg,
@@ -413,11 +462,11 @@ function renderSharePriceChart() {
   const indexRange = range(plotRows.map((row) => row.indexValue));
   const mwgRange = rebased ? indexRange : range(plotRows.map((row) => row.mwgValue));
   const width = 1100;
-  const height = 385;
-  const pad = { left: 78, right: 84, top: 42, bottom: 66 };
+  const height = 360;
+  const pad = { left: 78, right: 84, top: 16, bottom: 66 };
   const plotWidth = width - pad.left - pad.right;
   const plotHeight = height - pad.top - pad.bottom;
-  const x = (timestamp) => pad.left + ((timestamp - first.timestamp) / (plotRows.at(-1).timestamp - first.timestamp)) * plotWidth;
+  const x = (timestamp) => pad.left + ((timestamp - first.timestamp) / (last.timestamp - first.timestamp)) * plotWidth;
   const y = (value, axisRange) => pad.top + ((axisRange.max - value) / (axisRange.max - axisRange.min)) * plotHeight;
   const linePath = (field, axisRange) => plotRows
     .map((row, index) => `${index === 0 ? "M" : "L"} ${x(row.timestamp).toFixed(1)} ${y(row[field], axisRange).toFixed(1)}`)
@@ -425,6 +474,8 @@ function renderSharePriceChart() {
   const dateFmt = new Intl.DateTimeFormat("en-GB", { day: "2-digit", month: "short", year: "numeric" });
 
   const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}`, role: "img" });
+  svg.appendChild(svgEl("title", {}, "MWG share price and VN-Index performance"));
+  svg.appendChild(svgEl("desc", {}, `${performanceRangeLabels[state.performanceRange]} return: MWG ${signedPct(performance.mwgReturn)}, VN-Index ${signedPct(performance.indexReturn)}, relative ${signedPercentagePoints(performance.relative)}.`));
   const horizontalTicks = 5;
   for (let index = 0; index < horizontalTicks; index += 1) {
     const ratio = index / (horizontalTicks - 1);
@@ -436,8 +487,7 @@ function renderSharePriceChart() {
       y1: gridY,
       x2: width - pad.right,
       y2: gridY,
-      stroke: "rgba(255,255,255,0.2)",
-      "stroke-dasharray": "4 5",
+      stroke: "rgba(255,255,255,0.13)",
     }));
     svg.appendChild(svgEl("text", { x: pad.left - 12, y: gridY + 4, "text-anchor": "end", class: "axis" }, rebased ? fmt0.format(indexTick) : fmt0.format(indexTick)));
     if (!rebased) {
@@ -445,9 +495,9 @@ function renderSharePriceChart() {
     }
   }
 
-  const dateTicks = [0, 0.25, 0.5, 0.75, 1];
+  const dateTicks = plotRows.length > 20 ? [0, 0.25, 0.5, 0.75, 1] : [0, 0.33, 0.67, 1];
   dateTicks.forEach((ratio) => {
-    const target = first.timestamp + ratio * (plotRows.at(-1).timestamp - first.timestamp);
+    const target = first.timestamp + ratio * (last.timestamp - first.timestamp);
     const nearest = plotRows.reduce((best, row) => (
       Math.abs(row.timestamp - target) < Math.abs(best.timestamp - target) ? row : best
     ));
@@ -462,7 +512,7 @@ function renderSharePriceChart() {
     transform: `rotate(-90 18 ${pad.top + plotHeight / 2})`,
     "text-anchor": "middle",
     class: "axis",
-  }, rebased ? "Rebased performance" : "VNINDEX"));
+  }, rebased ? "Rebased performance" : "VN-Index"));
   if (!rebased) {
     svg.appendChild(svgEl("text", {
       x: width - 18,
@@ -473,21 +523,12 @@ function renderSharePriceChart() {
     }, "MWG price (VND)"));
   }
 
-  const legend = [
-    { label: rebased ? "VNINDEX (rebased)" : "VNINDEX", color: "#20d8ff", x: pad.left },
-    { label: rebased ? "MWG (rebased)" : "MWG", color: "#ffd200", x: pad.left + 178 },
-  ];
-  legend.forEach((item) => {
-    svg.appendChild(svgEl("line", { x1: item.x, y1: 18, x2: item.x + 28, y2: 18, stroke: item.color, "stroke-width": 4, "stroke-linecap": "round" }));
-    svg.appendChild(svgEl("text", { x: item.x + 38, y: 22, class: "value-label" }, item.label));
-  });
-
-  svg.appendChild(svgEl("path", { d: linePath("indexValue", indexRange), fill: "none", stroke: "#20d8ff", "stroke-width": 3.5, "stroke-linecap": "round", "stroke-linejoin": "round" }));
-  svg.appendChild(svgEl("path", { d: linePath("mwgValue", mwgRange), fill: "none", stroke: "#ffd200", "stroke-width": 3.5, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+  svg.appendChild(svgEl("path", { d: linePath("indexValue", indexRange), fill: "none", stroke: "#aeb3bd", "stroke-width": 2.2, "stroke-linecap": "round", "stroke-linejoin": "round", opacity: 0.78 }));
+  svg.appendChild(svgEl("path", { d: linePath("mwgValue", mwgRange), fill: "none", stroke: "#ffd200", "stroke-width": 4, "stroke-linecap": "round", "stroke-linejoin": "round" }));
 
   const hoverLine = svgEl("line", { y1: pad.top, y2: height - pad.bottom, stroke: "rgba(255,255,255,0.68)", "stroke-dasharray": "4 4", visibility: "hidden" });
-  const indexDot = svgEl("circle", { r: 5, fill: "#20d8ff", stroke: "#ffffff", "stroke-width": 2, visibility: "hidden" });
-  const mwgDot = svgEl("circle", { r: 5, fill: "#ffd200", stroke: "#ffffff", "stroke-width": 2, visibility: "hidden" });
+  const indexDot = svgEl("circle", { r: 5, fill: "#aeb3bd", stroke: "#ffffff", "stroke-width": 2, visibility: "hidden" });
+  const mwgDot = svgEl("circle", { r: 5.5, fill: "#ffd200", stroke: "#ffffff", "stroke-width": 2, visibility: "hidden" });
   svg.append(hoverLine, indexDot, mwgDot);
 
   const overlay = svgEl("rect", { x: pad.left, y: pad.top, width: plotWidth, height: plotHeight, fill: "transparent", style: "cursor: crosshair" });
@@ -495,7 +536,7 @@ function renderSharePriceChart() {
     const pointer = event.touches?.[0] ?? event;
     const bounds = svg.getBoundingClientRect();
     const localX = ((pointer.clientX - bounds.left) / bounds.width) * width;
-    const targetTime = first.timestamp + clamp((localX - pad.left) / plotWidth, 0, 1) * (plotRows.at(-1).timestamp - first.timestamp);
+    const targetTime = first.timestamp + clamp((localX - pad.left) / plotWidth, 0, 1) * (last.timestamp - first.timestamp);
     const row = plotRows.reduce((best, item) => (
       Math.abs(item.timestamp - targetTime) < Math.abs(best.timestamp - targetTime) ? item : best
     ));
@@ -511,7 +552,7 @@ function renderSharePriceChart() {
     mwgDot.setAttribute("visibility", "visible");
     const mwgText = rebased ? `${row.mwgValue.toFixed(1)} (index)` : `${money(row.mwg)} VND`;
     const indexText = rebased ? `${row.indexValue.toFixed(1)} (index)` : fmt0.format(row.index);
-    showTooltip(pointer, `<b>${dateFmt.format(new Date(row.timestamp))}</b><br><span style="color:#20d8ff">VNINDEX: ${indexText}</span><br><span style="color:#ffd200">MWG: ${mwgText}</span>`);
+    showTooltip(pointer, `<b>${dateFmt.format(new Date(row.timestamp))}</b><br><span style="color:#aeb3bd">VN-Index: ${indexText}</span><br><span style="color:#ffd200">MWG: ${mwgText}</span>`);
   };
   const hidePoint = () => {
     hoverLine.setAttribute("visibility", "hidden");
@@ -526,9 +567,10 @@ function renderSharePriceChart() {
   svg.appendChild(overlay);
   el.replaceChildren(svg);
 
-  const mwgReturn = plotRows.at(-1).mwg / first.mwg - 1;
-  const indexReturn = plotRows.at(-1).index / first.index - 1;
-  setText("#sharePriceMeta", `Weekly Friday close · ${dateFmt.format(new Date(first.timestamp))} to ${dateFmt.format(new Date(plotRows.at(-1).timestamp))} · MWG ${pct(mwgReturn)} vs VNINDEX ${pct(indexReturn)}`);
+  setText(
+    "#sharePriceMeta",
+    `${performanceRangeLabels[state.performanceRange]} | Weekly Friday close | ${dateFmt.format(new Date(first.timestamp))} to ${dateFmt.format(new Date(last.timestamp))} | Relative performance = MWG return - VN-Index return (percentage points).`,
+  );
 }
 
 function renderPeerChart() {
@@ -786,10 +828,6 @@ function sourceTypeClass(type) {
   return "disclosure";
 }
 
-function sourceById(sourceId) {
-  return state.sources.find((row) => row.source_id === sourceId);
-}
-
 function renderModelChecks() {
   const el = document.querySelector("#modelChecks");
   if (!el) return;
@@ -884,24 +922,6 @@ function renderThesisMonitor() {
       `,
     )
     .join("");
-}
-
-function renderValuationLineage() {
-  const actual = sourceById("KQKD5M26-008");
-  const newStores = sourceById("KQKD5M26-010");
-  const groupGuidance = sourceById("BD2026-001");
-  const bhxMix = sourceById("BD2026-004");
-  const scenario = state.scenario.charAt(0).toUpperCase() + state.scenario.slice(1);
-  const bhxMultiple = valuationDetailNum("SOTP", "BHX", "BHX EV/Sales multiple", scenario);
-  const holdingDiscount = valuationDetailNum("SOTP", "Holding Company", "Holding company discount", scenario);
-  const bhxValue = valuationDetailNum("SOTP", "Segment Value", "BHX value", scenario);
-  const sotpTarget = scenarioValue(byLine("SOTP", "SOTP Target Price"));
-
-  setText("#lineageActual", `${actual?.value ?? "NM"} revenue · ${newStores?.value ?? "NM"}`);
-  setText("#lineageGuidance", `${groupGuidance?.value ?? "NM"} group revenue · ${bhxMix?.value ?? "NM"} BHX mix`);
-  setText("#lineageAssumption", `${multiple(bhxMultiple)} BHX EV/Sales · ${pct(holdingDiscount)} holding discount`);
-  setText("#lineageOutput", `${vndTnFromBn(bhxValue)} BHX value`);
-  setText("#lineageOutputNote", `${scenarioLabel[state.scenario]} SOTP target: ${money(sotpTarget)} VND/share.`);
 }
 
 function fpaValue(metric, value) {
@@ -1321,7 +1341,6 @@ function renderAll() {
   renderInvestmentSummary();
   renderThesisMonitor();
   renderModelChecks();
-  renderValuationLineage();
   renderSimulator();
   renderSharePriceChart();
   renderValuationRange();
@@ -1365,6 +1384,13 @@ function wireControls() {
     button.addEventListener("click", () => {
       setPressedGroup(".performance-mode", button);
       state.performanceMode = button.dataset.performanceMode;
+      renderSharePriceChart();
+    });
+  });
+  document.querySelectorAll(".performance-range").forEach((button) => {
+    button.addEventListener("click", () => {
+      setPressedGroup(".performance-range", button);
+      state.performanceRange = button.dataset.performanceRange;
       renderSharePriceChart();
     });
   });

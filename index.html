@@ -12,7 +12,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffd200'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-weight='800' font-size='19' fill='%230c0c0c'%3EMWG%3C/text%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260712-old-colors" />
+    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260712-performance-ranges" />
   </head>
   <body>
     <header class="site-nav" aria-label="Main navigation">
@@ -266,14 +266,41 @@
           <div class="panel-head">
             <div>
               <p class="eyebrow">Market performance</p>
-              <h3>MWG share price vs VNINDEX</h3>
+              <h3>MWG share price vs VN-Index</h3>
             </div>
-            <div class="performance-controls" role="group" aria-label="Chart view">
-              <button class="performance-mode active" data-performance-mode="price" type="button" aria-pressed="true">Price levels</button>
-              <button class="performance-mode" data-performance-mode="rebased" type="button" aria-pressed="false">Rebased to 100</button>
+            <div class="performance-control-stack">
+              <div class="performance-range-controls" role="group" aria-label="Performance period">
+                <button class="performance-range" data-performance-range="3m" type="button" aria-pressed="false">3M</button>
+                <button class="performance-range" data-performance-range="6m" type="button" aria-pressed="false">6M</button>
+                <button class="performance-range" data-performance-range="ytd" type="button" aria-pressed="false">YTD</button>
+                <button class="performance-range active" data-performance-range="1y" type="button" aria-pressed="true">1Y</button>
+                <button class="performance-range" data-performance-range="since" type="button" aria-pressed="false">Since initiation</button>
+              </div>
+              <div class="performance-controls" role="group" aria-label="Chart view">
+                <button class="performance-mode active" data-performance-mode="price" type="button" aria-pressed="true">Price levels</button>
+                <button class="performance-mode" data-performance-mode="rebased" type="button" aria-pressed="false">Rebased to 100</button>
+              </div>
             </div>
           </div>
-          <div id="sharePriceChart" class="chart price-performance-chart" aria-label="Weekly MWG share price and VNINDEX performance"></div>
+          <div class="performance-summary" aria-live="polite">
+            <article>
+              <span>MWG return</span>
+              <strong id="performanceMwgReturn">Loading</strong>
+            </article>
+            <article>
+              <span>VN-Index return</span>
+              <strong id="performanceIndexReturn">Loading</strong>
+            </article>
+            <article>
+              <span>Relative performance</span>
+              <strong id="performanceRelative">Loading</strong>
+            </article>
+          </div>
+          <div class="performance-legend" aria-label="Chart legend">
+            <span><i class="legend-line mwg"></i>MWG</span>
+            <span><i class="legend-line vnindex"></i>VN-Index</span>
+          </div>
+          <div id="sharePriceChart" class="chart price-performance-chart" aria-label="Weekly MWG share price and VN-Index performance"></div>
           <div class="performance-footnote">
             <span id="sharePriceMeta">Loading weekly market data</span>
             <span>Hover across the chart to inspect a weekly Friday close.</span>
@@ -341,41 +368,6 @@
           <button class="scenario active" data-scenario="base" type="button" aria-pressed="true">Base</button>
           <button class="scenario" data-scenario="bull" type="button" aria-pressed="false">Bull</button>
           <button class="scenario" data-scenario="bear" type="button" aria-pressed="false">Bear</button>
-        </div>
-      </section>
-
-      <section id="valuation-lineage" class="valuation-lineage" aria-labelledby="lineageTitle">
-        <div class="lineage-head">
-          <span>
-            <b id="lineageTitle">Trace the target: source → assumption → valuation</b>
-            <small>Follow the core BHX value bridge used in the selected scenario.</small>
-          </span>
-        </div>
-        <div class="lineage-grid">
-          <article>
-            <span class="source-type public">Public actual</span>
-            <b>BHX 5M2026 execution</b>
-            <strong id="lineageActual">Loading</strong>
-            <small>Latest revenue and new-store rollout anchor.</small>
-          </article>
-          <article>
-            <span class="source-type guidance">Company guidance</span>
-            <b>2026 group and BHX plan</b>
-            <strong id="lineageGuidance">Loading</strong>
-            <small>Management guidance anchors the first forecast year.</small>
-          </article>
-          <article>
-            <span class="source-type analyst">Analyst valuation inputs</span>
-            <b>BHX multiple and platform discount</b>
-            <strong id="lineageAssumption">Loading</strong>
-            <small>Scenario inputs translate operating execution into value.</small>
-          </article>
-          <article class="lineage-output">
-            <span>Model output</span>
-            <b>BHX contribution and SOTP target</b>
-            <strong id="lineageOutput">Loading</strong>
-            <small id="lineageOutputNote">Loading</small>
-          </article>
         </div>
       </section>
 
@@ -707,7 +699,7 @@
 
     <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
 
-    <script src="./script.js?v=cv-ready-20260712-scenario-sync"></script>
+    <script src="./script.js?v=cv-ready-20260712-performance-ranges"></script>
   </body>
 </html>
 

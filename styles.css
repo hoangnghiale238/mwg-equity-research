@@ -351,7 +351,6 @@ main {
 .market-view,
 .thesis-monitor,
 .valuation-scenario,
-.valuation-lineage,
 .simulator,
 .snapshot,
 .thesis-band,
@@ -429,15 +428,6 @@ select {
   line-height: 1.45;
 }
 
-.valuation-lineage {
-  margin-top: 12px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-
-.lineage-head,
 .data-definitions > summary {
   display: flex;
   align-items: center;
@@ -455,12 +445,10 @@ select {
   display: none;
 }
 
-.lineage-head b,
 .data-definitions summary b {
   display: block;
 }
 
-.lineage-head small,
 .data-definitions summary small {
   display: block;
   margin-top: 4px;
@@ -477,51 +465,6 @@ select {
 
 .data-definitions[open] > summary {
   border-bottom: 1px solid var(--line);
-}
-
-.lineage-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-  padding: 14px 18px 18px;
-}
-
-.lineage-grid article {
-  display: grid;
-  align-content: start;
-  gap: 8px;
-  min-height: 176px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 14px;
-  background: #fbfaf6;
-}
-
-.lineage-grid article > b {
-  line-height: 1.25;
-}
-
-.lineage-grid article > strong {
-  font-size: 17px;
-  line-height: 1.2;
-}
-
-.lineage-grid article > small {
-  color: var(--muted);
-  line-height: 1.4;
-}
-
-.lineage-grid .lineage-output {
-  border-color: rgba(255, 210, 0, 0.78);
-  background: #fffaf0;
-}
-
-.lineage-output > span:not(.source-type) {
-  color: #8a5b00;
-  font-size: 11px;
-  font-weight: 850;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .investment-summary {
@@ -1472,12 +1415,10 @@ select {
 }
 
 .performance-panel {
-  min-height: 430px;
+  min-height: 474px;
   color: #ffffff;
   border-color: #171717;
-  background:
-    radial-gradient(circle at 78% 15%, rgba(0, 214, 255, 0.12), transparent 31%),
-    linear-gradient(135deg, #151515, #080808);
+  background: #101010;
 }
 
 .performance-panel h3,
@@ -1489,6 +1430,13 @@ select {
   opacity: 0.68;
 }
 
+.performance-control-stack {
+  display: grid;
+  justify-items: end;
+  gap: 7px;
+}
+
+.performance-range-controls,
 .performance-controls {
   display: inline-flex;
   gap: 4px;
@@ -1509,13 +1457,98 @@ select {
   cursor: pointer;
 }
 
+.performance-range {
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: rgba(255, 255, 255, 0.68);
+  background: transparent;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
 .performance-mode.active {
   color: var(--black);
   background: var(--yellow);
 }
 
+.performance-range.active {
+  color: var(--black);
+  background: var(--yellow);
+}
+
+.performance-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 2px 0 12px;
+  border-block: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 14px 0;
+}
+
+.performance-summary article {
+  min-width: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 0 18px;
+}
+
+.performance-summary article:first-child {
+  padding-left: 0;
+}
+
+.performance-summary article:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.performance-summary span {
+  display: block;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.performance-summary strong {
+  display: block;
+  margin-top: 7px;
+  color: #ffffff;
+  font-size: clamp(19px, 2vw, 27px);
+  line-height: 1.1;
+}
+
+.performance-legend {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 0 2px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.performance-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.legend-line {
+  display: inline-block;
+  width: 26px;
+  height: 0;
+  border-top: 2px solid #aeb3bd;
+}
+
+.legend-line.mwg {
+  border-top-width: 4px;
+  border-color: var(--yellow);
+}
+
 .price-performance-chart {
-  min-height: 345px;
+  min-height: 320px;
 }
 
 .performance-panel .chart-note,
@@ -1867,6 +1900,16 @@ td.num {
     text-align: left;
   }
 
+  .performance-control-stack {
+    justify-items: start;
+    width: 100%;
+  }
+
+  .performance-range-controls {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
   .simulator-controls {
     border-right: 0;
     border-bottom: 1px solid var(--line);
@@ -1882,7 +1925,6 @@ td.num {
   .download-grid,
   .market-view-grid,
   .thesis-monitor-grid,
-  .lineage-grid,
   .definitions-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1951,7 +1993,6 @@ td.num {
   .download-grid,
   .market-view-grid,
   .thesis-monitor-grid,
-  .lineage-grid,
   .definitions-grid {
     grid-template-columns: 1fr;
   }
@@ -1975,7 +2016,6 @@ td.num {
   }
 
   .valuation-scenario,
-  .lineage-head,
   .data-definitions > summary {
     align-items: stretch;
     flex-direction: column;
@@ -1985,12 +2025,20 @@ td.num {
     align-self: flex-start;
   }
 
-  .lineage-grid {
-    padding: 12px;
+  .performance-summary article {
+    padding-inline: 10px;
   }
 
-  .lineage-grid article {
-    min-height: 0;
+  .performance-summary article:first-child {
+    padding-left: 0;
+  }
+
+  .performance-summary article:last-child {
+    padding-right: 0;
+  }
+
+  .performance-summary strong {
+    font-size: clamp(16px, 4.8vw, 23px);
   }
 
   .fpa-table,
