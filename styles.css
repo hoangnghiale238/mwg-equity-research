@@ -11,7 +11,7 @@
   --green: #18844f;
   --red: #b42318;
   --blue: #2556a3;
-  --shadow: 0 6px 18px rgba(12, 12, 12, 0.06);
+  --shadow: 0 18px 48px rgba(12, 12, 12, 0.13);
   --nav-offset: 76px;
 }
 
@@ -370,7 +370,7 @@ main {
   gap: 18px;
   margin-top: 28px;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 18px;
   background: var(--surface);
   box-shadow: var(--shadow);
@@ -412,7 +412,7 @@ select {
   gap: 18px;
   margin-top: 16px;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 16px 18px;
   background: var(--surface);
 }
@@ -432,36 +432,35 @@ select {
 .valuation-lineage {
   margin-top: 12px;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
-.valuation-lineage > summary,
-.source-register > summary,
+.lineage-head,
 .data-definitions > summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  cursor: pointer;
-  list-style: none;
   padding: 16px 18px;
 }
 
-.valuation-lineage > summary::-webkit-details-marker,
-.source-register > summary::-webkit-details-marker,
+.data-definitions > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
 .data-definitions > summary::-webkit-details-marker {
   display: none;
 }
 
-.valuation-lineage summary b,
-.source-register summary b,
+.lineage-head b,
 .data-definitions summary b {
   display: block;
 }
 
-.valuation-lineage summary small,
-.source-register summary small,
+.lineage-head small,
 .data-definitions summary small {
   display: block;
   margin-top: 4px;
@@ -476,8 +475,6 @@ select {
   font-weight: 850;
 }
 
-.valuation-lineage[open] > summary,
-.source-register[open] > summary,
 .data-definitions[open] > summary {
   border-bottom: 1px solid var(--line);
 }
@@ -495,7 +492,7 @@ select {
   gap: 8px;
   min-height: 176px;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 14px;
   background: #fbfaf6;
 }
@@ -537,7 +534,7 @@ select {
 .summary-main,
 .summary-lists article {
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -576,7 +573,7 @@ select {
 .recommendation-line > div,
 .summary-range > div {
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 14px;
   background: #fbfaf6;
 }
@@ -669,7 +666,7 @@ select {
 
 .clean-list li {
   position: relative;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 12px 12px 12px 44px;
   background: #fbfaf6;
   counter-increment: summary-item;
@@ -701,7 +698,7 @@ select {
 .methodology-box {
   margin-top: 16px;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 20px;
   background: var(--surface);
   box-shadow: var(--shadow);
@@ -732,7 +729,7 @@ select {
 .methodology-grid article,
 .talking-points article {
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 14px;
   background: #fbfaf6;
 }
@@ -790,7 +787,7 @@ select {
 .model-integrity,
 .data-definitions {
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   background: #fbfaf6;
 }
 
@@ -841,7 +838,10 @@ select {
 }
 
 .model-integrity {
-  padding: 16px;
+  min-height: 340px;
+  padding: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .model-integrity h3 {
@@ -915,7 +915,7 @@ select {
   align-content: start;
   gap: 7px;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 12px;
   background: #ffffff;
 }
@@ -1203,7 +1203,7 @@ select {
 .workflow,
 .download-section {
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -1275,7 +1275,7 @@ select {
 .market-view-grid article,
 .monitor-card {
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 18px;
   background: var(--surface);
 }
@@ -1636,10 +1636,6 @@ svg {
 }
 
 .site-footer {
-  display: grid;
-  grid-template-columns: auto auto minmax(280px, 1fr);
-  align-items: start;
-  gap: 16px;
   width: min(1440px, calc(100% - 36px));
   margin: 0 auto 28px;
   padding: 18px 0 4px;
@@ -1647,33 +1643,6 @@ svg {
   color: var(--muted);
   font-size: 14px;
   font-weight: 700;
-}
-
-.site-footer div {
-  display: grid;
-  gap: 3px;
-  color: var(--black);
-}
-
-.site-footer div span {
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.site-footer a {
-  color: var(--blue);
-  font-size: 13px;
-}
-
-.site-footer p {
-  justify-self: end;
-  max-width: 500px;
-  margin: 0;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.45;
-  text-align: right;
 }
 
 .table-wrap {
@@ -1772,23 +1741,6 @@ td.num {
   margin-bottom: 18px;
 }
 
-.ownership-note {
-  grid-column: 1 / -1;
-  border-top: 1px solid var(--line);
-  padding-top: 14px;
-}
-
-.ownership-note b {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.ownership-note p {
-  max-width: 880px;
-  margin: 0;
-  font-size: 13px;
-}
-
 .download-section {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -1802,14 +1754,6 @@ td.num {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-}
-
-.download-disclaimer {
-  grid-column: 1 / -1;
-  margin: 0;
-  border-top: 1px solid var(--line);
-  padding-top: 12px;
-  font-size: 12px;
 }
 
 .download-card {
@@ -2031,8 +1975,7 @@ td.num {
   }
 
   .valuation-scenario,
-  .valuation-lineage > summary,
-  .source-register > summary,
+  .lineage-head,
   .data-definitions > summary {
     align-items: stretch;
     flex-direction: column;
@@ -2048,25 +1991,6 @@ td.num {
 
   .lineage-grid article {
     min-height: 0;
-  }
-
-  .source-register-row {
-    grid-template-columns: 1fr;
-  }
-
-  .source-register-row > div:last-child {
-    justify-items: start;
-    text-align: left;
-  }
-
-  .site-footer {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .site-footer p {
-    justify-self: start;
-    text-align: left;
   }
 
   .fpa-table,

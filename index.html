@@ -12,7 +12,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffd200'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-weight='800' font-size='19' fill='%230c0c0c'%3EMWG%3C/text%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260712-report" />
+    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260712-card-style" />
   </head>
   <body>
     <header class="site-nav" aria-label="Main navigation">
@@ -243,27 +243,6 @@
           </article>
         </div>
         <div class="methodology-evidence">
-          <details class="source-register">
-            <summary>
-              <span>
-                <b>Sources &amp; key valuation inputs</b>
-                <small>Trace the public actuals, management guidance, and external benchmarks behind the case.</small>
-              </span>
-              <span class="details-action">Open source register</span>
-            </summary>
-            <div id="sourceRegister" class="source-register-list"></div>
-            <p class="details-footnote">The full source register, locations, and model links are included in the downloadable Excel model.</p>
-          </details>
-
-          <article class="model-integrity" aria-label="Model integrity checks">
-            <div>
-              <p class="eyebrow">Model integrity</p>
-              <h3>Checks tied to the current Excel export</h3>
-            </div>
-            <div id="modelChecks" class="model-check-grid" aria-live="polite"></div>
-            <p class="model-integrity-note">Forecast-model checks are shown here; BHX productivity and rollout are deliberately tracked separately above.</p>
-          </article>
-
           <details class="data-definitions">
             <summary>
               <span>
@@ -356,7 +335,7 @@
         <div>
           <p class="eyebrow">Scenario</p>
           <h3>Switch the valuation case</h3>
-          <small>Updates the headline valuation snapshot, range chart, and selected target price.</small>
+          <small>Updates the headline valuation, range chart, and simulator inputs to the selected case.</small>
         </div>
         <div class="scenario-tabs" role="group" aria-label="Valuation scenario">
           <button class="scenario active" data-scenario="base" type="button" aria-pressed="true">Base</button>
@@ -365,14 +344,13 @@
         </div>
       </section>
 
-      <details id="valuation-lineage" class="valuation-lineage">
-        <summary>
+      <section id="valuation-lineage" class="valuation-lineage" aria-labelledby="lineageTitle">
+        <div class="lineage-head">
           <span>
-            <b>Trace the target: source → assumption → valuation</b>
+            <b id="lineageTitle">Trace the target: source → assumption → valuation</b>
             <small>Follow the core BHX value bridge used in the selected scenario.</small>
           </span>
-          <span class="details-action">Open valuation lineage</span>
-        </summary>
+        </div>
         <div class="lineage-grid">
           <article>
             <span class="source-type public">Public actual</span>
@@ -399,7 +377,7 @@
             <small id="lineageOutputNote">Loading</small>
           </article>
         </div>
-      </details>
+      </section>
 
       <section id="simulator" class="simulator panel" aria-label="Interactive valuation simulator">
         <div class="simulator-head">
@@ -412,7 +390,7 @@
               and how the DCF cross-check reacts to discount-rate assumptions.
             </p>
           </div>
-          <button class="btn reset-sim" id="simReset" type="button">Reset base case</button>
+          <button class="btn reset-sim" id="simReset" type="button">Reset selected case</button>
         </div>
 
         <div class="simulator-grid">
@@ -458,7 +436,7 @@
                 <span>WACC</span>
                 <strong id="simWaccLabel">Loading</strong>
               </div>
-              <input id="simWacc" type="range" min="0.097" max="0.127" step="0.001" value="0.112" />
+              <input id="simWacc" type="range" min="0.097" max="0.133" step="0.001" value="0.112" />
               <small>Discount rate used in the DCF sensitivity table. Higher WACC lowers DCF value.</small>
             </article>
 
@@ -621,6 +599,17 @@
           </div>
           <div id="anchorList" class="anchor-list"></div>
         </article>
+        <article class="model-integrity" aria-label="Model integrity checks">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Model integrity</p>
+              <h3>Checks tied to the current Excel export</h3>
+            </div>
+            <span class="badge">Forecast + DCF</span>
+          </div>
+          <div id="modelChecks" class="model-check-grid" aria-live="polite"></div>
+          <p class="model-integrity-note">Forecast-model checks are shown here; BHX productivity and rollout are deliberately tracked separately above.</p>
+        </article>
       </section>
 
       <section id="fpa" class="section-head">
@@ -692,10 +681,6 @@
             <p>This front end reads the clean exports and visualizes the project.</p>
           </li>
         </ol>
-        <aside class="ownership-note">
-          <b>Research ownership</b>
-          <p>Model architecture, forecast assumptions, valuation, and investment interpretation by Hoang Nghia. Data preparation was AI-assisted where noted; outputs were manually reviewed against the Excel model.</p>
-        </aside>
       </section>
 
       <section id="downloads" class="download-section">
@@ -712,25 +697,17 @@
           <a class="download-card ready" href="./downloads/MWG_Initiation_Report.pdf" download>
             <span>PDF report</span>
             <strong>Download PDF report</strong>
-            <small>12-page MWG initiation-style report aligned to the research case.</small>
+            <small>16-page initiation-style equity research report</small>
           </a>
         </div>
-        <p class="download-disclaimer">Personal research project using public information and analyst assumptions. Not affiliated with MWG. Not investment advice.</p>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div>
-        <strong>Hoang Nghia</strong>
-        <span>Equity Research Portfolio</span>
-      </div>
-      <a href="https://github.com/hoangnghiale238/mwg-equity-research" target="_blank" rel="noreferrer">Contact via GitHub</a>
-      <p>Personal research project using public information and analyst assumptions. Not affiliated with MWG. Not investment advice.</p>
-    </footer>
+    <footer class="site-footer">Built by Hoang Nghia · Equity Research Portfolio</footer>
 
     <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
 
-    <script src="./script.js?v=cv-ready-20260712-research-flow"></script>
+    <script src="./script.js?v=cv-ready-20260712-scenario-sync"></script>
   </body>
 </html>
 

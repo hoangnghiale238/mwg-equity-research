@@ -1,5 +1,5 @@
 const DATA_ROOT = "./data/";
-const DATA_VERSION = "20260712-research-flow";
+const DATA_VERSION = "20260712-scenario-sync";
 
 const state = {
   scenario: "base",
@@ -790,33 +790,6 @@ function sourceById(sourceId) {
   return state.sources.find((row) => row.source_id === sourceId);
 }
 
-function renderSourceRegister() {
-  const el = document.querySelector("#sourceRegister");
-  if (!el) return;
-  const ids = ["COMPS-001", "BD2026-001", "KQKD5M26-008", "SOTP-001", "SOTP-004"];
-  const rows = ids.map(sourceById).filter(Boolean);
-
-  el.innerHTML = rows
-    .map((row) => {
-      const type = sourceType(row);
-      const displayValue = row.source_id === "COMPS-001" ? `${money(currentPrice())} VND/share` : row.value;
-      return `
-        <article class="source-register-row">
-          <div>
-            <span class="source-type ${sourceTypeClass(type)}">${type}</span>
-            <b>${row.data_point}</b>
-            <small>${row.period}</small>
-          </div>
-          <div>
-            <strong>${displayValue}</strong>
-            <small>Source: ${sourceLabel(row)}</small>
-          </div>
-        </article>
-      `;
-    })
-    .join("");
-}
-
 function renderModelChecks() {
   const el = document.querySelector("#modelChecks");
   if (!el) return;
@@ -1110,30 +1083,34 @@ function renderSensitivity() {
   });
 }
 
-function simulatorBase() {
-  const bhxMultiple = valuationDetailNum("SOTP", "BHX", "BHX EV/Sales multiple") ?? 0.8;
-  const bhxValue = valuationDetailNum("SOTP", "Segment Value", "BHX value") ?? 44400;
-  const netDebt = valuationDetailNum("SOTP", "Equity Bridge", "Net Debt / (Net Cash)") ?? -18284.153128745;
+function selectedScenarioName() {
+  return state.scenario.charAt(0).toUpperCase() + state.scenario.slice(1);
+}
+
+function simulatorBase(scenario = selectedScenarioName()) {
+  const bhxMultiple = valuationDetailNum("SOTP", "BHX", "BHX EV/Sales multiple", scenario) ?? 0.8;
+  const bhxValue = valuationDetailNum("SOTP", "Segment Value", "BHX value", scenario) ?? 44400;
+  const netDebt = valuationDetailNum("SOTP", "Equity Bridge", "Net Debt / (Net Cash)", scenario) ?? -18284.153128745;
 
   return {
     current: currentPrice() ?? 78500,
     shares:
-      valuationDetailNum("SOTP", "Market Data", "Diluted Shares Outstanding") ??
-      valuationDetailNum("DCF", "Market Data", "Diluted Shares Outstanding") ??
+      valuationDetailNum("SOTP", "Market Data", "Diluted Shares Outstanding", scenario) ??
+      valuationDetailNum("DCF", "Market Data", "Diluted Shares Outstanding", scenario) ??
       1468423529,
-    dmxValue: valuationDetailNum("SOTP", "DMX IPO Anchor", "DMX 100% post-money equity value") ?? 102460,
+    dmxValue: valuationDetailNum("SOTP", "DMX IPO Anchor", "DMX 100% post-money equity value", scenario) ?? 102460,
     dmxOwnership:
-      valuationDetailNum("SOTP", "DMX IPO Anchor", "Implied MWG ownership after planned IPO") ?? 0.8598510283,
+      valuationDetailNum("SOTP", "DMX IPO Anchor", "Implied MWG ownership after planned IPO", scenario) ?? 0.8598510283,
     bhxRevenue: bhxMultiple ? bhxValue / bhxMultiple : (segmentRevenue("2026E", "BHX Revenue") ?? 55500),
     bhxMultiple,
-    anKhangValue: valuationDetailNum("SOTP", "Segment Value", "An Khang value") ?? 858,
-    avaKidsValue: valuationDetailNum("SOTP", "Segment Value", "AVAKids value") ?? 840,
-    otherValue: valuationDetailNum("SOTP", "Segment Value", "Other / unallocated value") ?? 0,
-    holdingDiscount: valuationDetailNum("SOTP", "Holding Company", "Holding company discount") ?? 0.1,
+    anKhangValue: valuationDetailNum("SOTP", "Segment Value", "An Khang value", scenario) ?? 858,
+    avaKidsValue: valuationDetailNum("SOTP", "Segment Value", "AVAKids value", scenario) ?? 840,
+    otherValue: valuationDetailNum("SOTP", "Segment Value", "Other / unallocated value", scenario) ?? 0,
+    holdingDiscount: valuationDetailNum("SOTP", "Holding Company", "Holding company discount", scenario) ?? 0.1,
     netCash: Math.abs(netDebt),
-    netCashFactor: valuationDetailNum("SOTP", "Equity Bridge", "Consolidated net cash inclusion factor") ?? 0.5,
-    wacc: valuationDetailNum("DCF", "Discount Rate", "WACC") ?? 0.112,
-    terminalGrowth: valuationDetailNum("DCF", "Terminal Value", "Terminal Growth") ?? 0.03,
+    netCashFactor: valuationDetailNum("SOTP", "Equity Bridge", "Consolidated net cash inclusion factor", scenario) ?? 0.5,
+    wacc: valuationDetailNum("DCF", "Discount Rate", "WACC", scenario) ?? 0.112,
+    terminalGrowth: valuationDetailNum("DCF", "Terminal Value", "Terminal Growth", scenario) ?? 0.03,
   };
 }
 
@@ -1146,7 +1123,7 @@ function setSimulatorInput(id, value) {
   if (input && value != null) input.value = String(value);
 }
 
-function resetSimulatorInputs() {
+function setSimulatorInputsForScenario() {
   const base = simulatorBase();
   setSimulatorInput("simDmxValue", base.dmxValue);
   setSimulatorInput("simBhxMultiple", base.bhxMultiple);
@@ -1154,7 +1131,11 @@ function resetSimulatorInputs() {
   setSimulatorInput("simNetCash", base.netCashFactor);
   setSimulatorInput("simWacc", base.wacc);
   setSimulatorInput("simTerminalGrowth", base.terminalGrowth);
-  renderSimulator();
+}
+
+function resetSimulatorInputs(render = true) {
+  setSimulatorInputsForScenario();
+  if (render) renderSimulator();
 }
 
 function bracket(values, selected) {
@@ -1169,6 +1150,18 @@ function bracket(values, selected) {
 }
 
 function dcfSensitivityValue(wacc, terminalGrowth) {
+  const scenario = selectedScenarioName();
+  const scenarioWacc = valuationDetailNum("DCF", "Discount Rate", "WACC", scenario);
+  const scenarioGrowth = valuationDetailNum("DCF", "Terminal Value", "Terminal Growth", scenario);
+  const scenarioTarget = valuationDetailNum("DCF", "DCF Output", "Target Price", scenario);
+  if (
+    scenarioTarget != null &&
+    Math.abs(wacc - scenarioWacc) < 0.000001 &&
+    Math.abs(terminalGrowth - scenarioGrowth) < 0.000001
+  ) {
+    return scenarioTarget;
+  }
+
   const rows = state.sensitivities.filter((row) => row.table_id === "dcf_wacc_terminal_growth");
   if (!rows.length) return scenarioValue(byLine("DCF", "Target Price"));
 
@@ -1289,6 +1282,8 @@ function renderSimulator() {
   const result = computeSimulator();
   const primaryView = recommendation(result.sotpUpside);
 
+  setText("#simReset", `Reset ${scenarioLabel[state.scenario]}`);
+
   setText("#simDmxValueLabel", vndTnFromBn(result.dmxValue));
   setText("#simBhxMultipleLabel", multiple(result.bhxMultiple));
   setText("#simHoldingDiscountLabel", pct(result.holdingDiscount));
@@ -1325,7 +1320,6 @@ function renderAll() {
   renderSnapshot();
   renderInvestmentSummary();
   renderThesisMonitor();
-  renderSourceRegister();
   renderModelChecks();
   renderValuationLineage();
   renderSimulator();
@@ -1353,6 +1347,7 @@ function wireControls() {
     button.addEventListener("click", () => {
       setPressedGroup(".scenario", button);
       state.scenario = button.dataset.scenario;
+      resetSimulatorInputs(false);
       renderAll();
     });
   });
