@@ -126,8 +126,9 @@ input {
   background-image:
     linear-gradient(90deg, rgba(12, 12, 12, 0.96), rgba(12, 12, 12, 0.74) 40%, rgba(12, 12, 12, 0.18) 74%, rgba(12, 12, 12, 0.08)),
     url("./assets/hero-mwg-brand.png");
-  background-size: cover;
-  background-position: center;
+  background-size: cover, 93% auto;
+  background-position: center, right center;
+  background-repeat: no-repeat;
 }
 
 .hero::after {
@@ -1953,7 +1954,8 @@ td.num {
     align-items: stretch;
     gap: 18px;
     padding: 52px 18px 36px;
-    background-position: 62% center;
+    background-size: cover, cover;
+    background-position: 62% center, 62% center;
   }
 
   .hero-content {
