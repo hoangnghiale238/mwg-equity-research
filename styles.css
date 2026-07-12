@@ -181,7 +181,7 @@ input {
 }
 
 .eyebrow {
-  color: var(--muted);
+  color: var(--yellow);
 }
 
 h1,
@@ -555,9 +555,9 @@ select {
   align-items: center;
   border-radius: 999px;
   padding: 7px 10px;
-  border: 1px solid var(--line);
-  color: var(--charcoal);
-  background: #f1eee5;
+  border: 0;
+  color: var(--black);
+  background: var(--yellow);
   font-size: 12px;
   font-weight: 850;
   white-space: nowrap;
@@ -607,7 +607,7 @@ select {
 }
 
 #summaryRecommendation.hold {
-  color: #8a5b00;
+  color: var(--yellow-2);
 }
 
 #summaryRecommendation.sell {
@@ -677,7 +677,7 @@ select {
   position: absolute;
   left: 12px;
   top: 13px;
-  color: #9a907f;
+  color: var(--yellow-2);
   font-size: 13px;
   font-weight: 900;
 }
@@ -1069,7 +1069,7 @@ select {
 }
 
 .sim-scorecard strong.hold {
-  color: #8a5b00;
+  color: var(--yellow-2);
 }
 
 .sim-scorecard strong.sell {
@@ -1246,7 +1246,7 @@ select {
 .thesis-band span {
   display: inline-block;
   margin-bottom: 24px;
-  color: #9a907f;
+  color: var(--yellow-2);
   font-size: 28px;
   font-weight: 900;
 }
@@ -1440,9 +1440,9 @@ select {
   white-space: nowrap;
   border-radius: 999px;
   padding: 7px 10px;
-  border: 1px solid var(--line);
-  color: var(--charcoal);
-  background: #f1eee5;
+  border: 0;
+  color: var(--black);
+  background: var(--yellow);
   font-size: 12px;
   font-weight: 850;
 }
