@@ -349,8 +349,6 @@ main {
 .investment-summary,
 .methodology-box,
 .performance-section,
-.market-view,
-.thesis-monitor,
 .valuation-scenario,
 .simulator,
 .snapshot,
@@ -1203,76 +1201,6 @@ select {
   line-height: 1.55;
 }
 
-.market-view,
-.thesis-monitor {
-  margin-top: 36px;
-}
-
-.market-view-grid,
-.thesis-monitor-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.market-view-grid article,
-.monitor-card {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 18px;
-  background: var(--surface);
-}
-
-.market-view-grid article > span,
-.monitor-card-head > div > span {
-  display: block;
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 850;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
-
-.market-view-grid h3 {
-  margin-top: 9px;
-  font-size: 19px;
-  line-height: 1.18;
-}
-
-.market-view-grid p {
-  margin: 12px 0 10px;
-  line-height: 1.5;
-}
-
-.market-view-grid small {
-  display: block;
-  border-top: 1px solid var(--line);
-  padding-top: 10px;
-  color: var(--muted);
-  line-height: 1.45;
-}
-
-.monitor-card {
-  display: grid;
-  gap: 10px;
-}
-
-.monitor-card-head {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.monitor-card-head strong {
-  display: block;
-  margin-top: 7px;
-  font-size: 25px;
-  line-height: 1;
-}
-
-.monitor-status,
 .fpa-status,
 .source-type {
   display: inline-flex;
@@ -1286,7 +1214,6 @@ select {
   white-space: nowrap;
 }
 
-.monitor-status.on-track,
 .fpa-status.favorable,
 .source-type.public {
   border: 1px solid rgba(24, 132, 79, 0.26);
@@ -1294,7 +1221,6 @@ select {
   background: #eaf7ef;
 }
 
-.monitor-status.ahead,
 .fpa-status.ahead,
 .source-type.guidance {
   border: 1px solid rgba(37, 86, 163, 0.22);
@@ -1302,7 +1228,6 @@ select {
   background: #edf3ff;
 }
 
-.monitor-status.watch,
 .fpa-status.watch,
 .source-type.analyst {
   border: 1px solid #ded8c8;
@@ -1316,25 +1241,6 @@ select {
   border: 1px solid var(--line);
   color: var(--muted);
   background: #f5f2eb;
-}
-
-.monitor-comparison,
-.monitor-consequence {
-  margin: 0;
-  line-height: 1.45;
-}
-
-.monitor-card > small {
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.4;
-}
-
-.monitor-consequence {
-  border-top: 1px solid var(--line);
-  padding-top: 10px;
-  color: #3e3a31;
-  font-size: 13px;
 }
 
 .section-head {
@@ -1924,8 +1830,6 @@ td.num {
   .sim-scorecard,
   .workflow-steps,
   .download-grid,
-  .market-view-grid,
-  .thesis-monitor-grid,
   .definitions-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1993,8 +1897,6 @@ td.num {
   .sim-bridge-row,
   .workflow-steps,
   .download-grid,
-  .market-view-grid,
-  .thesis-monitor-grid,
   .definitions-grid {
     grid-template-columns: 1fr;
   }

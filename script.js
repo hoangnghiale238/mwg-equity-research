@@ -868,62 +868,6 @@ function renderModelChecks() {
     .join("");
 }
 
-function renderThesisMonitor() {
-  const el = document.querySelector("#thesisMonitorGrid");
-  if (!el) return;
-  const findFpa = (metric, period) => state.fpa.find((row) => row.metric === metric && row.actual_period === period);
-  const bhxRevenue = findFpa("BHX revenue", "5M2026");
-  const bhxStores = findFpa("BHX new stores", "5M2026");
-  const cards = [
-    {
-      label: "BHX revenue",
-      value: bhxRevenue ? vndTnFromBn(bhxRevenue.actual) : "Loading",
-      comparison: bhxRevenue ? `${pct(bhxRevenue.variance_pct_or_ppt)} vs simulated plan` : "Loading",
-      status: "On track",
-      statusClass: "on-track",
-      source: "5M2026 public update; model-calculated actual vs external plan",
-      consequence: "If it misses: lower BHX revenue and SOTP value.",
-    },
-    {
-      label: "BHX new stores",
-      value: bhxStores ? `${fmt0.format(num(bhxStores.actual))} stores` : "Loading",
-      comparison: bhxStores ? `${pct(bhxStores.variance_pct_or_ppt)} vs phased plan` : "Loading",
-      status: "Ahead",
-      statusClass: "ahead",
-      source: "Public actual; the plan is a model phasing of 2026 guidance.",
-      consequence: "If rollout slows: revisit store count and BHX revenue assumptions.",
-    },
-    {
-      label: "BHX RPSM",
-      value: "Validate / watch",
-      comparison: "Productivity needs confirmation after the store rollout.",
-      status: "Watch",
-      statusClass: "watch",
-      source: "Forecast driver; not treated as a clean pass in the current export.",
-      consequence: "If RPSM weakens: lower revenue/store and BHX SOTP value.",
-    },
-  ];
-
-  el.innerHTML = cards
-    .map(
-      (card) => `
-        <article class="monitor-card">
-          <div class="monitor-card-head">
-            <div>
-              <span>${card.label}</span>
-              <strong>${card.value}</strong>
-            </div>
-            <b class="monitor-status ${card.statusClass}">${card.status}</b>
-          </div>
-          <p class="monitor-comparison">${card.comparison}</p>
-          <small>${card.source}</small>
-          <p class="monitor-consequence"><b>${card.consequence}</b></p>
-        </article>
-      `,
-    )
-    .join("");
-}
-
 function fpaValue(metric, value) {
   const n = num(value);
   if (n == null) return "NM";
@@ -1339,7 +1283,6 @@ function renderSimulator() {
 function renderAll() {
   renderSnapshot();
   renderInvestmentSummary();
-  renderThesisMonitor();
   renderModelChecks();
   renderSimulator();
   renderSharePriceChart();
