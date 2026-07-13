@@ -1,5 +1,5 @@
 const DATA_ROOT = "./data/";
-const DATA_VERSION = "20260712-scenario-sync";
+const DATA_VERSION = "20260713-peer-metric-toggle";
 
 const state = {
   scenario: "base",
@@ -18,6 +18,7 @@ const state = {
   pricePerformance: [],
   performanceMode: "price",
   performanceRange: "1y",
+  peerMetric: "ev_sales_ltm",
   driverMetric: "ending_stores",
 };
 
@@ -33,6 +34,19 @@ const segmentColors = {
   "BHX Revenue": "#18844f",
   "An Khang Revenue": "#2556a3",
   "AVAKids Revenue": "#c57b00",
+};
+
+const peerMetricConfig = {
+  ev_sales_ltm: {
+    title: "Peer EV/Sales LTM",
+    label: "EV/Sales LTM",
+    note: "Enterprise-value cross-check. It supports selected revenue-based SOTP proxies.",
+  },
+  p_e_ltm: {
+    title: "Peer P/E LTM",
+    label: "P/E LTM",
+    note: "Equity-level cross-check. It is affected by earnings quality, leverage, and business mix.",
+  },
 };
 
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -576,11 +590,15 @@ function renderSharePriceChart() {
 function renderPeerChart() {
   const el = document.querySelector("#peerChart");
   if (!el) return;
+  const metric = peerMetricConfig[state.peerMetric] ?? peerMetricConfig.ev_sales_ltm;
   const rows = state.peers
-    .map((row) => ({ ...row, value: num(row.ev_sales_ltm) }))
+    .map((row) => ({ ...row, value: num(row[state.peerMetric]) }))
     .filter((row) => row.value != null)
     .sort((a, b) => a.value - b.value);
   if (!rows.length) return clear(el);
+
+  setText("#peerChartTitle", metric.title);
+  setText("#peerChartMeta", metric.note);
 
   const width = 560;
   const height = 250;
@@ -596,7 +614,7 @@ function renderPeerChart() {
     const y = height - pad.bottom - h;
     const fill = row.ticker === "MWG" ? "#ffd200" : "#18844f";
     const rect = svgEl("rect", { x, y, width: barW, height: h, rx: 6, fill, stroke: row.ticker === "MWG" ? "#0c0c0c" : "none", "stroke-width": 2 });
-    attachTooltip(rect, `<b>${row.ticker}</b><br>${row.company}<br>EV/Sales LTM: ${multiple(row.value)}`);
+    attachTooltip(rect, `<b>${row.ticker}</b><br>${row.company}<br>${metric.label}: ${multiple(row.value)}`);
     svg.appendChild(rect);
     svg.appendChild(svgEl("text", { x: x + barW / 2, y: height - 16, "text-anchor": "middle", class: "axis" }, row.ticker));
     svg.appendChild(svgEl("text", { x: x + barW / 2, y: y - 8, "text-anchor": "middle", class: "value-label" }, multiple(row.value)));
@@ -1335,6 +1353,13 @@ function wireControls() {
       setPressedGroup(".performance-range", button);
       state.performanceRange = button.dataset.performanceRange;
       renderSharePriceChart();
+    });
+  });
+  document.querySelectorAll(".peer-metric").forEach((button) => {
+    button.addEventListener("click", () => {
+      setPressedGroup(".peer-metric", button);
+      state.peerMetric = button.dataset.peerMetric;
+      renderPeerChart();
     });
   });
   document.querySelector("#fpaFilter")?.addEventListener("change", renderFpaTable);

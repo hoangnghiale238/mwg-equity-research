@@ -12,7 +12,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffd200'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-weight='800' font-size='19' fill='%230c0c0c'%3EMWG%3C/text%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260713-remove-monitor" />
+    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260713-peer-metric-toggle" />
   </head>
   <body>
     <header class="site-nav" aria-label="Main navigation">
@@ -455,11 +455,18 @@
           <div class="panel-head">
             <div>
               <p class="eyebrow">Cross-check</p>
-              <h3>Peer EV/Sales LTM</h3>
+              <h3 id="peerChartTitle">Peer EV/Sales LTM</h3>
             </div>
-            <span class="badge">26 Jun 2026</span>
+            <div class="peer-chart-actions">
+              <div class="peer-metric-tabs" role="group" aria-label="Peer valuation metric">
+                <button class="peer-metric active" data-peer-metric="ev_sales_ltm" type="button" aria-pressed="true">EV/Sales LTM</button>
+                <button class="peer-metric" data-peer-metric="p_e_ltm" type="button" aria-pressed="false">P/E LTM</button>
+              </div>
+              <span class="badge">26 Jun 2026</span>
+            </div>
           </div>
           <div id="peerChart" class="chart compact"></div>
+          <p id="peerChartMeta" class="peer-chart-meta"></p>
         </article>
 
         <article class="panel">
@@ -659,7 +666,7 @@
 
     <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
 
-    <script src="./script.js?v=cv-ready-20260713-remove-monitor"></script>
+    <script src="./script.js?v=cv-ready-20260713-peer-metric-toggle"></script>
   </body>
 </html>
 

@@ -1283,6 +1283,46 @@ select {
   margin-bottom: 16px;
 }
 
+.peer-chart-actions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.peer-metric-tabs {
+  display: inline-flex;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #f7f5ef;
+}
+
+.peer-metric {
+  border: 0;
+  border-radius: 5px;
+  padding: 6px 8px;
+  color: var(--muted);
+  background: transparent;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.peer-metric.active {
+  color: var(--black);
+  background: var(--yellow);
+}
+
+.peer-chart-meta {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -1884,6 +1924,10 @@ td.num {
   .panel-head {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .peer-chart-actions {
+    justify-content: space-between;
   }
 
   .snapshot,
