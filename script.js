@@ -447,6 +447,11 @@ function renderPerformanceSummary(first, last) {
   setText("#performanceMwgReturn", signedPct(mwgReturn));
   setText("#performanceIndexReturn", signedPct(indexReturn));
   setText("#performanceRelative", signedPercentagePoints(relative));
+  const relativeEl = document.querySelector("#performanceRelative");
+  if (relativeEl) {
+    relativeEl.classList.toggle("negative", relative < 0);
+    relativeEl.classList.toggle("positive", relative >= 0);
+  }
   return { mwgReturn, indexReturn, relative };
 }
 
@@ -537,10 +542,29 @@ function renderSharePriceChart() {
     }, "MWG price (VND)"));
   }
 
-  svg.appendChild(svgEl("path", { d: linePath("indexValue", indexRange), fill: "none", stroke: "#aeb3bd", "stroke-width": 2.2, "stroke-linecap": "round", "stroke-linejoin": "round", opacity: 0.78 }));
-  svg.appendChild(svgEl("path", { d: linePath("mwgValue", mwgRange), fill: "none", stroke: "#ffd200", "stroke-width": 4, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+  svg.appendChild(svgEl("path", {
+    d: linePath("indexValue", indexRange),
+    fill: "none",
+    stroke: "#aeb3bd",
+    "stroke-width": 2.2,
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round",
+    opacity: 0.78,
+    pathLength: 1,
+    class: "performance-series performance-series-index",
+  }));
+  svg.appendChild(svgEl("path", {
+    d: linePath("mwgValue", mwgRange),
+    fill: "none",
+    stroke: "#ffd200",
+    "stroke-width": 4,
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round",
+    pathLength: 1,
+    class: "performance-series performance-series-mwg",
+  }));
 
-  const hoverLine = svgEl("line", { y1: pad.top, y2: height - pad.bottom, stroke: "rgba(255,255,255,0.68)", "stroke-dasharray": "4 4", visibility: "hidden" });
+  const hoverLine = svgEl("line", { y1: pad.top, y2: height - pad.bottom, class: "performance-crosshair", visibility: "hidden" });
   const indexDot = svgEl("circle", { r: 5, fill: "#aeb3bd", stroke: "#ffffff", "stroke-width": 2, visibility: "hidden" });
   const mwgDot = svgEl("circle", { r: 5.5, fill: "#ffd200", stroke: "#ffffff", "stroke-width": 2, visibility: "hidden" });
   svg.append(hoverLine, indexDot, mwgDot);
@@ -566,12 +590,14 @@ function renderSharePriceChart() {
     mwgDot.setAttribute("visibility", "visible");
     const mwgText = rebased ? `${row.mwgValue.toFixed(1)} (index)` : `${money(row.mwg)} VND`;
     const indexText = rebased ? `${row.indexValue.toFixed(1)} (index)` : fmt0.format(row.index);
+    document.querySelector("#tooltip")?.classList.add("performance-tooltip");
     showTooltip(pointer, `<b>${dateFmt.format(new Date(row.timestamp))}</b><br><span style="color:#aeb3bd">VN-Index: ${indexText}</span><br><span style="color:#ffd200">MWG: ${mwgText}</span>`);
   };
   const hidePoint = () => {
     hoverLine.setAttribute("visibility", "hidden");
     indexDot.setAttribute("visibility", "hidden");
     mwgDot.setAttribute("visibility", "hidden");
+    document.querySelector("#tooltip")?.classList.remove("performance-tooltip");
     hideTooltip();
   };
   overlay.addEventListener("mousemove", showPoint);
