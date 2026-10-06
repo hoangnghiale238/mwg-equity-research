@@ -1,0 +1,672 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MWG Equity Research: Forecast & Valuation</title>
+    <meta
+      name="description"
+      content="Interactive portfolio page for a personal MWG equity research project, covering driver-based forecasting, valuation, and reporting workflow."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffd200'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-weight='800' font-size='19' fill='%230c0c0c'%3EMWG%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css?v=cv-ready-20260715-editorial-density" />
+  </head>
+  <body>
+    <header class="site-nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="MWG project home">
+        <span class="brand-mark">MWG</span>
+        <span>Equity Research Project</span>
+      </a>
+      <nav>
+        <a href="#summary">Investment case</a>
+        <a href="#valuation">Valuation</a>
+        <a href="#drivers">Forecasts</a>
+        <a class="download-pill" href="#downloads">Downloads</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Project cover">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="kicker">Personal Equity Research Project</p>
+          <h1>MWG Equity Research: Forecast &amp; Valuation</h1>
+          <p class="hero-copy">
+            A SOTP-led 12-month view on MWG: core ICT/CE recovery supports earnings
+            quality, while BHX execution remains the upside swing factor.
+          </p>
+          <p class="hero-meta" id="heroMeta">Base case · 12-month horizon · Market data as of 26 Jun 2026</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#summary">Read investment case</a>
+            <a class="btn" href="#valuation">Open valuation lab</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Live valuation snapshot">
+          <span>Selected SOTP target</span>
+          <strong id="heroTarget">Loading</strong>
+          <small id="heroUpside">Loading upside</small>
+          <div class="hero-card-grid">
+            <div>
+              <span>Current</span>
+              <b id="heroCurrent">Loading</b>
+            </div>
+            <div>
+              <span>Horizon</span>
+              <b>12 months</b>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="summary" class="investment-summary" aria-label="Investment summary">
+        <div class="summary-main">
+          <p class="eyebrow">Investment Summary</p>
+          <div class="summary-title-row">
+            <h2>MWG investment view</h2>
+            <span class="summary-scenario" id="summaryScenario">Base case</span>
+          </div>
+          <div class="recommendation-line">
+            <div>
+              <span>Recommendation</span>
+              <strong id="summaryRecommendation">Loading</strong>
+              <small id="summaryRecNote">Based on selected SOTP upside vs current price.</small>
+            </div>
+            <div>
+              <span>Selected target</span>
+              <strong id="summaryTarget">Loading</strong>
+              <small id="summaryUpside">Loading upside</small>
+            </div>
+          </div>
+          <div class="summary-range">
+            <div>
+              <span>Target price range</span>
+              <b id="summaryTargetRange">Loading</b>
+            </div>
+            <div>
+              <span>Upside range</span>
+              <b id="summaryUpsideRange">Loading</b>
+            </div>
+            <div>
+              <span>Current price</span>
+              <b id="summaryCurrent">Loading</b>
+            </div>
+            <div>
+              <span>Investment horizon</span>
+              <b>12 months</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-lists">
+          <article>
+            <div class="list-head">
+              <span>3 thesis</span>
+              <b>Why the stock works</b>
+            </div>
+            <ol class="clean-list">
+              <li>
+                <strong>DMX/TGDD anchors profit quality</strong>
+                <small id="summaryCoreEvidence">Core ICT/CE revenue is the main scale anchor.</small>
+              </li>
+              <li>
+                <strong>BHX is the execution swing factor</strong>
+                <small id="summaryBhxEvidence">Store rollout and revenue/store drive the forecast.</small>
+              </li>
+              <li>
+                <strong>SOTP is the cleaner valuation lens</strong>
+                <small id="summarySotpEvidence">Different chains deserve different valuation lenses.</small>
+              </li>
+            </ol>
+          </article>
+          <article>
+            <div class="list-head risk">
+              <span>3 risks</span>
+              <b>What can break the thesis</b>
+            </div>
+            <ol class="clean-list risk-list">
+              <li>
+                <strong>BHX RPSM dilution</strong>
+                <small>Fast rollout hurts the case if new-store productivity fails to recover.</small>
+              </li>
+              <li>
+                <strong>Margin pressure</strong>
+                <small>Gross margin or EBIT margin reversal would weaken the recovery thesis.</small>
+              </li>
+              <li>
+                <strong>Inventory and valuation risk</strong>
+                <small>Higher inventory days or DMX/BHX multiple de-rating would pressure SOTP.</small>
+              </li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section id="methodology" class="methodology-box" aria-label="Methodology and data cutoff">
+        <div class="methodology-head">
+          <div>
+            <p class="eyebrow">Methodology / Data Cutoff</p>
+            <h2>How to read the model</h2>
+          </div>
+          <p>
+            This portfolio uses public information and the Excel model output. SOTP is the
+            primary valuation method; DCF is kept as a cross-check, not the main target-price engine.
+          </p>
+        </div>
+        <div class="methodology-grid">
+          <article>
+            <span>Data cutoff</span>
+            <strong>26 Jun 2026</strong>
+            <small>Market data and current price cut at this date.</small>
+          </article>
+          <article>
+            <span>Current price</span>
+            <strong>78,500 VND/share</strong>
+            <small>Used to calculate expected return and recommendation.</small>
+          </article>
+          <article>
+            <span>Investment horizon</span>
+            <strong>12 months</strong>
+            <small>Target price is a 12-month view.</small>
+          </article>
+          <article>
+            <span>Primary valuation</span>
+            <strong>SOTP</strong>
+            <small>Best fit for a multi-format retail platform.</small>
+          </article>
+          <article>
+            <span>DCF role</span>
+            <strong>Cross-check</strong>
+            <small>Useful for FCFF discipline, but sensitive to terminal assumptions.</small>
+          </article>
+          <article>
+            <span>FP&amp;A scope</span>
+            <strong>External simulation</strong>
+            <small>Not MWG internal budget; built from public actuals and model assumptions.</small>
+          </article>
+        </div>
+        <div class="talking-points">
+          <article>
+            <b>Most important KPI to monitor</b>
+            <p>
+              BHX RPSM is the cleanest check. If store count rises but RPSM fails to recover,
+              revenue growth is less valuable because new-store dilution may be lasting.
+            </p>
+          </article>
+          <article>
+            <b>Why SOTP over DCF</b>
+            <p>
+              MWG mixes mature ICT/CE retail, grocery expansion, and smaller optionality chains.
+              SOTP separates those profiles, while DCF mainly tests whether the target still
+              makes sense under cash-flow and discount-rate assumptions.
+            </p>
+          </article>
+        </div>
+        <div class="methodology-evidence">
+          <details class="data-definitions">
+            <summary>
+              <span>
+                <b>Data definitions</b>
+                <small>Short definitions used throughout this portfolio.</small>
+              </span>
+              <span class="details-action">Open glossary</span>
+            </summary>
+            <div class="definitions-grid">
+              <article><b>RPSM</b><span>Revenue per store per month; the clearest productivity read for store rollout.</span></article>
+              <article><b>SSSG</b><span>Same-store sales growth; growth from the comparable store base rather than new openings.</span></article>
+              <article><b>Holding discount</b><span>A deduction for group complexity and limited segment disclosure in an SOTP framework.</span></article>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="performance" class="performance-section" aria-label="MWG share price performance">
+        <article class="panel performance-panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Market performance</p>
+              <h3>MWG share price vs VN-Index</h3>
+            </div>
+            <div class="performance-control-stack">
+              <div class="performance-range-controls" role="group" aria-label="Performance period">
+                <button class="performance-range" data-performance-range="3m" type="button" aria-pressed="false">3M</button>
+                <button class="performance-range" data-performance-range="6m" type="button" aria-pressed="false">6M</button>
+                <button class="performance-range" data-performance-range="ytd" type="button" aria-pressed="false">YTD</button>
+                <button class="performance-range active" data-performance-range="1y" type="button" aria-pressed="true">1Y</button>
+                <button class="performance-range" data-performance-range="since" type="button" aria-pressed="false">Since initiation</button>
+              </div>
+              <div class="performance-controls" role="group" aria-label="Chart view">
+                <button class="performance-mode active" data-performance-mode="price" type="button" aria-pressed="true">Price levels</button>
+                <button class="performance-mode" data-performance-mode="rebased" type="button" aria-pressed="false">Rebased to 100</button>
+              </div>
+            </div>
+          </div>
+          <div class="performance-summary" aria-live="polite">
+            <article>
+              <span>MWG return</span>
+              <strong id="performanceMwgReturn">Loading</strong>
+            </article>
+            <article>
+              <span>VN-Index return</span>
+              <strong id="performanceIndexReturn">Loading</strong>
+            </article>
+            <article>
+              <span>Relative performance</span>
+              <strong id="performanceRelative">Loading</strong>
+            </article>
+          </div>
+          <div class="performance-legend" aria-label="Chart legend">
+            <span><i class="legend-line mwg"></i>MWG</span>
+            <span><i class="legend-line vnindex"></i>VN-Index</span>
+          </div>
+          <div id="sharePriceChart" class="chart price-performance-chart" aria-label="Weekly MWG share price and VN-Index performance"></div>
+          <div class="performance-footnote">
+            <span id="sharePriceMeta">Loading weekly market data</span>
+            <span>Hover across the chart to inspect a weekly Friday close.</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="snapshot" aria-label="Executive snapshot">
+        <article class="metric-card">
+          <span>Current price</span>
+          <strong id="currentPrice">Loading</strong>
+          <small>VND/share, as of 26 Jun 2026</small>
+        </article>
+        <article class="metric-card accent">
+          <span>SOTP target</span>
+          <strong id="sotpTarget">Loading</strong>
+          <small id="sotpUpside">Upside/downside</small>
+        </article>
+        <article class="metric-card">
+          <span>DCF target</span>
+          <strong id="dcfTarget">Loading</strong>
+          <small id="dcfUpside">Upside/downside</small>
+        </article>
+        <article class="metric-card">
+          <span>2026E group revenue</span>
+          <strong id="revenue2026">Loading</strong>
+          <small>VND bn, management target</small>
+        </article>
+      </section>
+
+      <section class="thesis-band" aria-label="Investment thesis">
+        <article>
+          <span>01</span>
+          <h3>DMX/TGDD quality-led growth</h3>
+          <p>Core ICT/CE remains the main profit engine, supported by productivity and SSSG.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>BHX scalable expansion</h3>
+          <p>BHX is the key growth engine, with store rollout and revenue/store as the main drivers.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>SOTP over single multiple</h3>
+          <p>MWG is a multi-format retail platform, so SOTP is the primary valuation lens.</p>
+        </article>
+      </section>
+
+      <section id="valuation" class="section-head">
+        <p class="eyebrow">Valuation module</p>
+        <h2>DCF, SOTP, comps, and sensitivity</h2>
+        <p>
+          The model treats SOTP as the primary valuation method, DCF as the
+          cash-flow cross-check, and trading comps as the market sanity check.
+        </p>
+      </section>
+
+      <section class="valuation-scenario" aria-label="Scenario controls">
+        <div>
+          <p class="eyebrow">Scenario</p>
+          <h3>Switch the valuation case</h3>
+          <small>Updates the headline valuation, range chart, and simulator inputs to the selected case.</small>
+        </div>
+        <div class="scenario-tabs" role="group" aria-label="Valuation scenario">
+          <button class="scenario active" data-scenario="base" type="button" aria-pressed="true">Base</button>
+          <button class="scenario" data-scenario="bull" type="button" aria-pressed="false">Bull</button>
+          <button class="scenario" data-scenario="bear" type="button" aria-pressed="false">Bear</button>
+        </div>
+      </section>
+
+      <section id="simulator" class="simulator panel" aria-label="Interactive valuation simulator">
+        <div class="simulator-head">
+          <div>
+            <p class="eyebrow">Interactive valuation simulator</p>
+            <h3>Adjust the assumptions and see the target price move</h3>
+            <p>
+              This simulator keeps the operating forecast fixed and changes only the
+              valuation assumptions. It helps show which inputs drive the SOTP target
+              and how the DCF cross-check reacts to discount-rate assumptions.
+            </p>
+          </div>
+          <button class="btn reset-sim" id="simReset" type="button">Reset selected case</button>
+        </div>
+
+        <div class="simulator-grid">
+          <div class="simulator-controls" aria-label="Simulator controls">
+            <article class="control-card">
+              <div>
+                <span>DMX 100% equity value</span>
+                <strong id="simDmxValueLabel">Loading</strong>
+              </div>
+              <input id="simDmxValue" type="range" min="100000" max="115000" step="10" value="102460" />
+              <small>Value of the whole DMX Investment business before applying MWG ownership.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>BHX EV/Sales</span>
+                <strong id="simBhxMultipleLabel">Loading</strong>
+              </div>
+              <input id="simBhxMultiple" type="range" min="0.6" max="1.0" step="0.05" value="0.8" />
+              <small>Sales multiple used to value BHX. Higher multiple gives more credit for growth execution.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>Holding discount</span>
+                <strong id="simHoldingDiscountLabel">Loading</strong>
+              </div>
+              <input id="simHoldingDiscount" type="range" min="0.05" max="0.15" step="0.005" value="0.1" />
+              <small>Deduction applied to SOTP for holding-company complexity and limited segment disclosure.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>Net cash credited</span>
+                <strong id="simNetCashLabel">Loading</strong>
+              </div>
+              <input id="simNetCash" type="range" min="0" max="1" step="0.05" value="0.5" />
+              <small>Percentage of net cash added back to equity value; lower credit is more conservative.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>WACC</span>
+                <strong id="simWaccLabel">Loading</strong>
+              </div>
+              <input id="simWacc" type="range" min="0.097" max="0.133" step="0.001" value="0.112" />
+              <small>Discount rate used in the DCF sensitivity table. Higher WACC lowers DCF value.</small>
+            </article>
+
+            <article class="control-card">
+              <div>
+                <span>Terminal growth</span>
+                <strong id="simTerminalGrowthLabel">Loading</strong>
+              </div>
+              <input id="simTerminalGrowth" type="range" min="0.025" max="0.035" step="0.001" value="0.03" />
+              <small>Long-term growth rate used for terminal value in the DCF cross-check.</small>
+            </article>
+          </div>
+
+          <div class="simulator-output" aria-label="Simulator outputs">
+            <div class="sim-scorecard">
+              <article>
+                <span>SOTP target</span>
+                <strong id="simSotpTarget">Loading</strong>
+                <small id="simSotpUpside">Loading</small>
+              </article>
+              <article>
+                <span>DCF cross-check</span>
+                <strong id="simDcfTarget">Loading</strong>
+                <small id="simDcfUpside">Loading</small>
+              </article>
+              <article class="accent">
+                <span>Primary read</span>
+                <strong id="simBlendedTarget">Loading</strong>
+                <small id="simBlendedUpside">Loading</small>
+              </article>
+              <article>
+                <span>Implied rating</span>
+                <strong id="simRating">Loading</strong>
+                <small>BUY if upside is 15% or more.</small>
+              </article>
+            </div>
+
+            <div id="simBridgeChart" class="sim-bridge" aria-label="SOTP value bridge"></div>
+
+            <div class="sim-takeaway">
+              <b>Analyst read-through</b>
+              <p id="simTakeaway">
+                Change the assumptions to see which variables matter most for the investment case.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel xl">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Target price</p>
+              <h3>Valuation range by method</h3>
+            </div>
+            <span class="badge" id="scenarioBadge">Base case</span>
+          </div>
+          <div id="valuationRangeChart" class="chart"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Cross-check</p>
+              <h3 id="peerChartTitle">Peer EV/Sales LTM</h3>
+            </div>
+            <div class="peer-chart-actions">
+              <div class="peer-metric-tabs" role="group" aria-label="Peer valuation metric">
+                <button class="peer-metric active" data-peer-metric="ev_sales_ltm" type="button" aria-pressed="true">EV/Sales LTM</button>
+                <button class="peer-metric" data-peer-metric="p_e_ltm" type="button" aria-pressed="false">P/E LTM</button>
+              </div>
+              <span class="badge">26 Jun 2026</span>
+            </div>
+          </div>
+          <div id="peerChart" class="chart compact"></div>
+          <p id="peerChartMeta" class="peer-chart-meta"></p>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">DCF sensitivity</p>
+              <h3>WACC vs terminal growth</h3>
+            </div>
+            <span class="badge">VND/share</span>
+          </div>
+          <div id="dcfSensitivity" class="heatmap"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">SOTP sensitivity</p>
+              <h3>DMX IPO anchor vs holding discount</h3>
+            </div>
+            <span class="badge">VND/share</span>
+          </div>
+          <div id="sotpSensitivity" class="heatmap"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">SOTP sensitivity</p>
+              <h3>BHX multiple vs holding discount</h3>
+            </div>
+            <span class="badge">VND/share</span>
+          </div>
+          <div id="bhxSensitivity" class="heatmap"></div>
+        </article>
+      </section>
+
+      <section id="drivers" class="section-head">
+        <p class="eyebrow">Operating drivers</p>
+        <h2>Segment forecast and historical quality check</h2>
+        <p>
+          Revenue is forecast by chain-level drivers rather than a single top-down growth rate.
+          Use the toggles to inspect store footprint, revenue scale, and revenue/store productivity.
+        </p>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel xl">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Operating footprint</p>
+              <h3>Store count, revenue, and productivity by chain</h3>
+            </div>
+            <div class="driver-controls">
+              <div class="mini-tabs" id="driverMetricTabs" role="group" aria-label="Driver metric">
+                <button class="driver-metric" data-driver-metric="revenue_vnd_bn" type="button" aria-pressed="false">Revenue</button>
+                <button class="driver-metric active" data-driver-metric="ending_stores" type="button" aria-pressed="true">Store Count</button>
+                <button class="driver-metric" data-driver-metric="revenue_per_store_month_vnd_bn" type="button" aria-pressed="false">Rev / Store</button>
+              </div>
+              <select id="segmentSelect" aria-label="Choose segment">
+                <option value="all">All key segments</option>
+              </select>
+            </div>
+          </div>
+          <div id="segmentChart" class="chart tall"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Historical ratios</p>
+              <h3>Margin and ROIC recovery</h3>
+            </div>
+            <select id="ratioSelect" aria-label="Choose ratio">
+              <option value="gross_margin">Gross margin</option>
+              <option value="ebit_margin">EBIT margin</option>
+              <option value="roic">ROIC</option>
+              <option value="cash_conversion_cycle">Cash conversion cycle</option>
+            </select>
+          </div>
+          <div id="ratioChart" class="chart compact"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Source-backed KPIs</p>
+              <h3>Latest public anchors</h3>
+            </div>
+            <span class="badge">5M2026</span>
+          </div>
+          <div id="anchorList" class="anchor-list"></div>
+        </article>
+        <article class="model-integrity" aria-label="Model integrity checks">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Model integrity</p>
+              <h3>Checks tied to the current Excel export</h3>
+            </div>
+            <span class="badge">Forecast + DCF</span>
+          </div>
+          <div id="modelChecks" class="model-check-grid" aria-live="polite"></div>
+        </article>
+      </section>
+
+      <section id="fpa" class="section-head">
+        <p class="eyebrow">FP&A module</p>
+        <h2>External budget simulation and variance analysis</h2>
+        <p>
+          Since MWG internal budgets are not public, this module simulates a management-style
+          budget from public guidance and compares it with actual public disclosures.
+        </p>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel xl">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Budget vs actual</p>
+              <h3>Variance dashboard</h3>
+            </div>
+            <select id="fpaFilter" aria-label="Filter FP&A variance">
+              <option value="all">All metrics</option>
+              <option value="Favorable">Favorable only</option>
+              <option value="Ahead of plan">Ahead of plan</option>
+            </select>
+          </div>
+          <div id="fpaTable" class="table-wrap"></div>
+          <p class="fpa-table-note">External simulation only; periods are shown below each metric. On smaller screens, each metric is shown as a compact card.</p>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Monthly model</p>
+              <h3>2026 budget phasing</h3>
+            </div>
+            <span class="badge">Monthly</span>
+          </div>
+          <div id="monthlyChart" class="chart compact"></div>
+        </article>
+      </section>
+
+      <section id="workflow" class="workflow">
+        <div class="section-head compact-head">
+          <p class="eyebrow">Data workflow</p>
+          <h2>Excel to Python, SQL, CSV, and web</h2>
+          <p>
+            The page reads the same clean tables created for Power BI/reporting.
+            This is the data layer behind the portfolio.
+          </p>
+        </div>
+        <ol class="workflow-steps">
+          <li>
+            <span>01</span>
+            <b>Excel model</b>
+            <p>The Excel model contains the historical analysis, forecast, valuation and FP&A outputs.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <b>Python export</b>
+            <p>Tables are extracted from the workbook into clean CSV files.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <b>SQLite database</b>
+            <p>Financials, segments, peers, valuation, and FP&A tables are stored locally.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <b>Interactive web</b>
+            <p>This front end reads the clean exports and visualizes the project.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="downloads" class="download-section">
+        <div>
+          <p class="eyebrow">Downloads</p>
+          <h2>Model and report files</h2>
+        </div>
+        <div class="download-grid">
+          <a class="download-card ready" href="./downloads/MWG_Equity_Research_Model_Main.xlsx" download>
+            <span>Excel model</span>
+            <strong>Download Excel model</strong>
+            <small>3-statement model, DCF, SOTP, comps, sensitivities, and integrity checks.</small>
+          </a>
+          <a class="download-card ready" href="./downloads/MWG_Initiation_Report.pdf" download>
+            <span>PDF report</span>
+            <strong>Download PDF report</strong>
+            <small>16-page initiation-style equity research report</small>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">Built by Hoang Nghia · Equity Research Portfolio</footer>
+
+    <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+
+    <script src="./script.js?v=cv-ready-20260715-performance-motion"></script>
+  </body>
+</html>
+
